@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-072",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można stosować jednocześnie NitraPhos Minus Bio S NP Pro przy NO3 50 ppm",
+    "query_text": "NitraPhos Minus Bio S NP Pro jednocześnie stosować NO3 50 ppm obniżyć bakterie probiotyczne Pro Bio S pożywka bakterie nitryfikacyjne",
+    "full_content": "PYTANIE: Czy mogę jednocześnie stosować Nitrofos minus + Bio-S + Np Pro? Mój NO3 wynosi około 50 ppm. ODPOWIEDŹ: Aby obniżyć NO3 i PO4 należy stosować bakterie probiotyczne Pro Bio S oraz pożywkę: NitraPhos Minus lub -NP Pro. Bio S to bakterie nitryfikacyjne.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NitraPhos_Minus", "Bio_S", "NP_Pro", "NO3_50_ppm", "bakterie_probiotyczne", "Pro_Bio_S", "pożywka", "bakterie_nitryfikacyjne", "obniżyć_NO3_PO4"],
+    "related_items": ["nitraphos-minus", "bio-s", "pro-bio-s", "np-pro", "bakterie-probiotyczne", "bakterie-nitryfikacyjne", "wysokie-azotany"],
+    "updated_at": "2025-06-03"
+  }

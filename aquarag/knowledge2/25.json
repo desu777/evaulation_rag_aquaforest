@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-036",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy muszę wyłączać odpieniacz białek na czas karmienia ryb i koralowców",
+    "query_text": "odpieniacz białek wyłączać karmienie ryb koralowców godzina maksymalne wykorzystanie pokarmu nie konieczne ponowne załączenie",
+    "full_content": "PYTANIE: Czy muszę wyłączać odpieniacz białek na czas karmienia ryb i koralowców? ODPOWIEDŹ: Podczas karmienia można wyłączyć odpieniacz na około godzinę aby zapewnić koralowcom maksymalne wykorzystanie dawkowanego pokarmu, jednak nie jest to konieczne. WAŻNE: Ważne jest aby pamiętać o ponownym załączeniu odpieniacza.",
+    "domain": "seawater",
+    "category": "maintenance",
+    "intent": ["maintenance", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["odpieniacz_białek", "wyłączanie", "karmienie", "ryby", "koralowce", "godzina", "maksymalne_wykorzystanie", "pokarm", "nie_konieczne", "ponowne_załączenie"],
+    "related_items": ["odpieniacz-białek", "karmienie-ryb", "karmienie-koralowców", "filtracja-morska", "wykorzystanie-pokarmu"],
+    "updated_at": "2025-06-03"
+}
+

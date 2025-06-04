@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-107",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Component 123 Pro vs bufory - podwójne stężenie i wpływ na pH",
+    "query_text": "Component 123 Pro bufory korzyści podwójne stężenie niemożliwe osiągnięcie Component 2 Pro pH wody podnosi",
+    "full_content": "PYTANIE: Jakie są korzyści z używania komponentu 123 Pro w porównaniu do korzystania tylko z buforów? ODPOWIEDŹ: component. pro. zawiera podwójne stężenie. niemożliwe do osiągnięcia z buforów.dodatkowo komponent 2 pro, podnosi znacząco ph wody",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Component_123_Pro", "bufory", "podwójne_stężenie", "Component_2_Pro", "pH_wody", "korzyści"],
+    "related_items": ["component-1-2-3-plus", "bufory-akwarium", "stężenie-składników", "ph-wody"],
+    "updated_at": "2025-06-03"
+}

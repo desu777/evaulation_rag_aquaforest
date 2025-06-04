@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-113",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Ferrum Lab vs AF Iron - różnica w stężeniu i sposobie dozowania",
+    "query_text": "AF Ferrum Lab AF Iron różnica stężenie żelazo zbiorniki rafowe sposób dozowania forma wygodniejsza wybór klienta",
+    "full_content": "PYTANIE: Czy istnieje jakaś różnica między Waszym AF ferrum lab 200ml a AF iron 50ml poza stężeniem? ODPOWIEDŹ: Oba produkty są źródłem żelaza dla zbiorników rafowych. Różną się stężeniem, różnią się sposobem dozowania - dajemy klientom możliwość wyboru jaka forma będzie dla nich wygodniejsza.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Ferrum_Lab", "AF_Iron", "żelazo", "zbiorniki_rafowe", "stężenie", "sposób_dozowania", "forma", "wybór_klienta"],
+    "related_items": ["af-ferrum-lab", "af-iron", "żelazo-rafowe", "dozowanie-mikroelementów"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-028",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można stosować NitraPhos Minus kiedy mam w akwarium Chaeto",
+    "query_text": "NitraPhos Minus Chaeto refugium glony stosowanie razem pożywka bakterie probiotyczne NO3 PO4 obniżają wzrost kontrolowanie parametrów przyrost dawka",
+    "full_content": "PYTANIE: Czy mogę stosować NitraPhos Minus kiedy mam w akwarium Chaeto? ODPOWIEDŹ: Tak, można. UWAGI: Należy pamiętać, że NitraPhos Minus jest pożywką dla bakterii probiotycznych, które to obniżają NO3 i PO4 a refugium(chaeto to rodzaj glonów w refugium) do wzrostu potrzebuje NO3 i PO4. ZALECENIA: Dlatego też zalecamy kontrolowanie parametrów, obserwacje przyrostu chaeto w refugium i znalezienie odpowiedniej dawki dla siebie.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NitraPhos_Minus", "Chaeto", "refugium", "glony", "pożywka", "bakterie_probiotyczne", "NO3", "PO4", "obniżają", "wzrost", "kontrolowanie_parametrów", "przyrost", "dawka"],
+    "related_items": ["nitraphos-minus", "chaeto", "refugium", "bakterie-probiotyczne", "no3-po4", "glony-refugium", "parametry-nutrientów"],
+    "updated_at": "2025-06-03"
+  }

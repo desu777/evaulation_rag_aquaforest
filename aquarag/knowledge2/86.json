@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-097",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Równowaga azotanów i fosforanów - problem z Dino i rosnącą zasadowością",
+    "query_text": "azotany fosforany równowaga Dinosaurki Dino zasadowość rosnąca nano akwarium dawkowanie składniki odżywcze plaga ciano",
+    "full_content": "PYTANIE: Mam kilka pytań dotyczących dawkowania azotanów i fosforanów. Mam 9-litrową nano z 1 błazenkiem, krewetką, inwertami i kilkoma koralowcami. Zbiornik ma około 5 miesięcy i przez ten czas cierpiałem z Dinosami. Mam trudności z utrzymaniem azotanów i fosforanów na odpowiednim poziomie, więc dozuję azotany i fosforany w miarę potrzeb, aby utrzymać je na poziomie 10 ppm azotanów i 0,1 ppm fosforanów. Używałem Nitrobacter7 do walki z Dinosami, co wydaje się działać, ale zużywa składniki odżywcze, co prowadzi do większego dawkowania. Mój problem polega na tym, że moja zasadowość wynosi dzisiaj 11,4 i wydaje się rosnąć za każdym razem, gdy dozuję azotany. Unikam podmian wody, aby pomóc w walce z Dinosami, co trochę by je obniżyło. jakieś pomysły? Używam twojej soli rafowej, której alk wynosi 8,0 ze świeżo zmieszanego dzbanka. Czy dozowanie azotanów może zwiększyć zawartość alkoholu? Nie jestem pewien, co zrobić? ODPOWIEDŹ: Azotany i foforany powinny być na niższym poziomie, ale w ronowadze ze sobą. Zachwianie tej równowagi. skutkuje plaga dino lub ciano.",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "maintenance"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["azotany", "fosforany", "równowaga", "Dinosaurki", "Dino", "zasadowość", "nano_akwarium", "dawkowanie", "Nitrobacter7", "plaga", "ciano"],
+    "related_items": ["nitrobacter7", "azotany-fosforany", "dino-problem", "nano-akwarium", "równowaga-parametrów"],
+    "updated_at": "2025-06-03"
+}

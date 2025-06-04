@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-139",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Protect Dip czy można używać do koralowców miękkich - tak nadaje się",
+    "query_text": "AF Protect Dip AFProtectDip Protect Dip koralowce miękkie kąpiel używać nadaje się soft corals",
+    "full_content": "PYTANIE: Czy AF Protect Dip mogę używać także do koralowców miękkich? ODPOWIEDŹ: Tak, AF Protect Dip nadaję się także do kąpieli koralowców miękkich",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Protect_Dip", "koralowce_miękkie", "kąpiel", "nadaje_się", "użycie"],
+    "related_items": ["af-protect-dip", "koralowce-miękkie", "kąpiele-koralowców", "pielęgnacja-koralowców"],
+    "updated_at": "2025-06-03"
+}

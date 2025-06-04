@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-153",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Bio Sand przechowywanie pozostałej części i dosypywanie - lepiej w formie suchej dosypanie po ustabilizowaniu",
+    "query_text": "AF Bio Sand AFBioSand bio sand 7,5kg połowa solanka bakterie przechowywanie suszenie kilka miesięcy dosypanie dojrzewanie cyano glony forma sucha ustabilizowany okrzemki nalot",
+    "full_content": "PYTANIE: Przygotowałem 7,5kg Bio Sand, jednak użyłem tylko połowę. Pytanie pierwsze - jak długo pozostała część może pozostać w wiadrze z solanką i bakteriami? Czy może lepiej ten piasek wysuszyć do ponownego użycia np za kilka miesięcy? Z drugiej strony - jak bym chciał dosypać jeszcze piasku to czy nie zakłóci to procesu dojrzewania akwarium (zbiornik na żywej skale zalany 1,5 tyg temu, zaczyna wychodzić cyano i glony)? ODPOWIEDŹ: Jeżeli piasek ma być użyty za kilka miesięcy to zdecydowanie lepiej przechowywać go w formie suchej. Jeżeli zbiornik będzie dojrzały i ustabilizowany to dosypanie niewielkiej ilości piasku nie powinno stanowić żadnego problemu. Wiadomo – wszystko zależy od tego jak dużo tego piasku dosypiemy – zawsze będzie to nowy element w akwarium, który może wywołać jakąś reakcję. Z doświadczenia jednak wiemy, że takie zabiegi skończą się co najwyżej lekkim zielonym lub okrzemkowym nalotem na świeżym piasku, który ustąpi po czasie.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_Bio_Sand", "przechowywanie", "forma_sucha", "dosypanie", "dojrzewanie_akwarium", "cyano", "glony", "ustabilizowany", "okrzemki"],
+    "related_items": ["af-bio-sand", "przechowywanie-produktów", "startup-akwarium", "dojrzewanie-zbiornika"],
+    "updated_at": "2025-06-03"
+}

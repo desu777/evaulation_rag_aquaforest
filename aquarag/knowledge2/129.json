@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-140",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Sea Salt zamiast Reef Salt przypadkowo zamówione - może brakować pierwiastków śladowych mieszać 50/50",
+    "query_text": "Sea Salt Reef Salt przypadkowo zamówione różnica pierwiastki śladowe akwarium rafowe mieszać 50/50 proporcje problem",
+    "full_content": "PYTANIE: Przypadkowo zamówiłem Sea Salt zamiast Reef Salt, czy jest duża różnica? ODPOWIEDŹ: Może brakować pierwiastków śladowych. Jeśli masz akwarium rafowe i zamierzasz mieszać tę Sea Salt w proporcjach 50/50 z Reef Salt, nie powinno to stanowić istotnego problemu.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Sea_Salt", "Reef_Salt", "różnica", "pierwiastki_śladowe", "akwarium_rafowe", "mieszać", "50/50", "proporcje"],
+    "related_items": ["sea-salt", "reef-salt", "sole-morskie", "pierwiastki-śladowe", "porównanie-produktów"],
+    "updated_at": "2025-06-03"
+}

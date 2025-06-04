@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-151",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Component C czy można używać do dostosowania poziomów F i I po ICP - nie zalecamy Iodum i Fluorum Lab",
+    "query_text": "Component C ComponentC F I fluor jod ICP analiza dostosowanie poziomy wyrównywanie Iodum Fluorum Lab linia dedykowane produkty precyzyjnie dawka",
+    "full_content": "PYTANIE: Czy mogę używać Component C do dostosowania poziomów F i I po analizie ICP? ODPOWIEDŹ: Component C nie jest używany do wyrównywania poziomów I i F po testach ICP. Do tego zalecamy stosowanie dedykowanych produktów, dzięki którym można precyzyjnie dobrać dawkę i podnieść poziomy określonych pierwiastków do pożądanej wartości. Zalecamy Iodum i Fluorum z linii Lab.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["Component_C", "fluor", "jod", "ICP_analiza", "Iodum", "Fluorum", "Lab_linia", "dedykowane_produkty", "pierwiastki"],
+    "related_items": ["component-c", "iodum", "fluorum", "lab-linia", "icp-analiza", "mikroelementy"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-071",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy produkt Fluorine zawiera fluor - różnica między fluorem gazowym a jonami fluorkowymi",
+    "query_text": "fluor Fluorine produkt ICP analiza gaz jonowa woda morska pierwiastek fluorowcy wolna związana F2 gazowa fluorki NaF CaF2 KF SrF2 minerały jon fluorkowy oznaczane zawiera",
+    "full_content": "PYTANIE: Zastanawiam się, dlaczego niektóre produkty i analizy ICP odnoszą się do poziomu fluoru, podczas gdy Państwo sprzedajecie Fluor. Moje zrozumienie jest takie, że Fluor jest gazem i nie występuje w formie jonowej w wodzie morskiej. Czy Państwa produkt faktycznie zawiera fluor? ODPOWIEDŹ: Fluor to pierwiastek z grupy fluorowców. Może występować w formie wolnej lub związanej. W formie wolnej występuje w postaci dwuatomowej cząsteczki F2 (i wtedy tak - jest to forma gazowa). Fluor może jednak tworzyć również związki z innymi pierwiastkami i robi to bardzo chętnie - tak zwane fluorki - NaF, CaF2, KF, SrF2 i wiele wiele innych. Wchodzą w skład różnych minerałów budujących skorupę ziemską (np. Na3[AlF6]). W roztworze wodnym najczęściej występuje jako jon fluorkowy F−. To właśnie jony fluorkowe są oznaczane w wodzie morskiej i na ich podstawie podawane są wartości referencyjne (nie oznacza się formy gazowej fluoru bo to bez sensu). Czy nasz produkt Fluorine zawiera fluor? - TAK, zawiera.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["learning", "product_info"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["fluor", "Fluorine", "pierwiastek", "fluorowcy", "F2", "gazowa", "fluorki", "NaF", "CaF2", "KF", "SrF2", "jon_fluorkowy", "F−", "ICP", "analiza", "zawiera_fluor"],
+    "related_items": ["fluorine", "testy-icp", "pierwiastki-śladowe", "chemia-wody-morskiej", "jony-fluorkowe"],
+    "updated_at": "2025-06-03"
+  }

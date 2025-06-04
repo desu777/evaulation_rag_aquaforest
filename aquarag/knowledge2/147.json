@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-158",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Life Bio Media AF Lava Soil Black czy zatwardzają wodę - TDS materiał naturalny wpływ na GH",
+    "query_text": "AF Life Bio Media AFLifeBioMedia Life Bio Media AF Lava Soil Black AFLavaSoilBlack zatwardzać woda TDS twardość całkowita GH materiał skalny naturalny pierwiastki stabilizacja woda RO KH pomiary",
+    "full_content": "PYTANIE: Czy produkt AQUAFOREST Life Bio Media lub AF Lava Soil Black może zatwardzać wodę? ODPOWIEDŹ: TDS czyli Total dissolved solids - jest to wskaźnik mówiący o całkowitej zawartości wszystkich ruchomych naładowanych jonów w roztworze wodnym. Podłoża typu Lava Soil są materiałem skalnym pochodzenia naturalnego - zawierają więc w swoim składzie różne pierwiastki - oznacza to że w pewnym stopniu mogą wpływać na twardość całkowitą wody. Sytuacja powinna się szybko ustabilizować. Jeżeli klientowi zależy na niższym GH to polecamy kolejną podmianę wody zrobić na samej wodzie RO aż do osiągnięcia pożądanej wartości GH w akwarium. Następnie kontynuować podmiany już według własnych preferencji. Jedna jeszcze uwaga – zalecamy porównywać wyniki z tych samych metod pomiarowych. Jeżeli wodę do podmian mierzymy miernikiem TDS to wodę w akwarium również. Jeżeli w akwarium określamy poziomy KH i GH to w wodzie do podmian również zmierzmy KH i GH. Eliminujemy sobie w tedy błędy związane z metodą pomiarową – a tak to trochę porównujemy teoretycznie.",
+    "domain": "freshwater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["AF_Life_Bio_Media", "AF_Lava_Soil_Black", "zatwardzanie_wody", "TDS", "twardość_całkowita", "GH", "materiał_naturalny", "woda_RO", "metody_pomiarowe"],
+    "related_items": ["af-life-bio-media", "af-lava-soil-black", "parametry-wody", "podłoża-akwarystyczne", "twardość-wody"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-052",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy gotową wodę do podmian można przechowywać po otwarciu",
+    "query_text": "gotowa woda podmiany przechowywać otwarcie słodkowodne morskie parametry szczelny pojemnik czysty parowanie zasolenie kolejna podmiana",
+    "full_content": "PYTANIE: Czy gotową wodę do podmian należy zużyć podczas jednej podmiany czy może być ona przechowywana po jej otwarciu? ODPOWIEDŹ WODA SŁODKOWODNA: Woda do akwarium słodkowodnego może zostać wykorzystana przy kolejnej podmianie, jej parametry nieznacznie mogą ulec zmianie ale nie stanowi to zagrożenia dla akwarium. WODA MORSKA: Woda w morskim akwarium, również może zostać użyta w kolejnej podmianie jednak musi być przechowywana w szczelnym oraz czystym pojemniku, gdyż na skutem parowania mogą może ulec zmiana zasolenia.",
+    "domain": "universal",
+    "category": "maintenance",
+    "intent": ["maintenance", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["gotowa_woda", "podmiany", "przechowywanie", "słodkowodne", "morskie", "parametry", "szczelny_pojemnik", "czysty", "parowanie", "zasolenie", "kolejna_podmiana"],
+    "related_items": ["podmiany-wody", "przechowywanie-wody", "woda-słodkowodna", "woda-morska", "zasolenie", "parowanie"],
+    "updated_at": "2025-06-03"
+  }
+  

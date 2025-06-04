@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-091",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Hybrid Pro Salt dawkowanie - informacje na opakowaniu",
+    "query_text": "Hybrid Pro Salt dawkowanie zasolenie sól morska opakowanie informacje dozowanie gram ppt",
+    "full_content": "PYTANIE: Liczba 41,5 grama jest wiarygodną liczbą do uzyskania zasolenia 35 ppt? ODPOWIEDŹ: Proszę zapoznać się z informacjami na opakowaniu - rozwiewa wszelkie wątpliwości ;) https://aquaforest.eu/pl/product/hybrid-pro-salt-2/ Jest informacja o dozowaniu, ile gram potrzeba na jakie zasolenie, o poziomach poszczególnych makroelementów.",
+    "domain": "seawater",
+    "category": "parameters",
+    "intent": ["product_info", "dosing"],
+    "difficulty": "beginner",
+    "url": "https://aquaforest.eu/pl/product/hybrid-pro-salt-2/",
+    "tags": ["Hybrid_Pro_Salt", "dawkowanie", "zasolenie", "sól_morska", "opakowanie", "informacje", "dozowanie"],
+    "related_items": ["hybrid-pro-salt", "zasolenie-akwarium", "sól-morska", "dawkowanie-soli"],
+    "updated_at": "2025-06-03"
+}

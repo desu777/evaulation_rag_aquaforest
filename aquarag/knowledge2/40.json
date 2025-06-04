@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-051",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Ile trwa cykl azotowy z AF Bio Sand - czy akwarium gotowe po 3 dniach",
+    "query_text": "AF Bio Sand nowe akwarium cykl azotowy amoniak azotyny azotany 3 dni gotowe ile trwa dojrzewa Life Bio Fil 14-30 dni minimum wprowadzać życie",
+    "full_content": "PYTANIE: Właśnie założyłem nowe akwarium, używając AF Bio Sand. Podążałem za instrukcją podczas używania piasku, po 3 dniach zrobiłem pierwszy test na występowanie amoniaku i azotyny. Wyniki pokazały mi, że nie występują w moim akwarium, natomiast azotany już tak. Czy to znaczy, że moje akwarium jest gotowe? Ile trwa cykl azotowy z użyciem AF Bio Sand? ODPOWIEDŹ: Nie ma jednoznacznej odpowiedzi na to pytanie. Każdy zbiornik dojrzewa inaczej. Użycie AF Bio Sand przyśpiesza domknięcie się cyklu azotowego, ale mimo wszystko dla bezpieczeństwa zalecamy wprowadzać życie po upływie minimum 14-30 dni. 3 dni to stanowczo za wcześnie. DODATKOWE ZALECENIE: Dla nowego zbiornika zalecamy również użycie medium filtracyjnego Life Bio Fil który zawiera wyselekcjonowane szczpy bakterii co również wpływa na sprawniejsze zamknięcie cyklu azotowego.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["startup", "learning", "troubleshooting"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Bio_Sand", "cykl_azotowy", "nowe_akwarium", "amoniak", "azotyny", "azotany", "3_dni_za_wcześnie", "14-30_dni_minimum", "Life_Bio_Fil", "dojrzewa_inaczej"],
+    "related_items": ["af-bio-sand", "life-bio-fil", "cykl-azotowy", "start-akwarium", "bakterie-nitryfikacyjne", "dojrzewanie-akwarium"],
+    "updated_at": "2025-06-03"
+  }

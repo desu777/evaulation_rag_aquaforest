@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-133",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Stone Fix czy można stosować po dacie ważności - można jeżeli zachowuje właściwości",
+    "query_text": "Stone Fix stone fix Stonefix data ważności termin ważności przeterminowany właściwości klejenia tracić kleje tężeć wizualnie odpowiedzialność akwarysty gwarantujemy działanie",
+    "full_content": "PYTANIE: Czy można stosować stone fix po dacie ważności? ODPOWIEDŹ: Można - jeżeli zachowuje swoje właściwości klejenia. Z czasem kleje tego typu mogą tracić swoje właściwości dlatego data ważności jest dosyć krótka. Jednak jeżeli od upływu daty ważności nie minęło jakoś bardzo dużo czasu, klej wizualnie wygląda dobrze i po rozrobieniu zaczyna tężeć to można go użyć. My jako producent określamy datę w której gwarantujemy działanie kleju - jeżeli używany jest po dacie to wiadomo, że na odpowiedzialność akwarysty.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Stone_Fix", "data_ważności", "właściwości_klejenia", "przeterminowany", "odpowiedzialność_akwarysty", "klej"],
+    "related_items": ["stone-fix", "kleje-akwarystyczne", "data-ważności", "aquascaping"],
+    "updated_at": "2025-06-03"
+}

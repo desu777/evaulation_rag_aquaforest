@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-2050",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF K Boost - jaki typ potasu zawiera suplement Aquaforest",
+    "query_text": "AF K Boost typ potasu siarczan potasu składnik aktywny suplement potas akwarium morskie koralowce parametry wody jakie związki potasu Aquaforest K Boost chemiczny skład formuła",
+    "full_content": "PYTANIE: Jaki typ potasu jest stosowany w AF K Boost? ODPOWIEDŹ: W suplemencie AF K Boost stosowany jest siarczan potasu. DODATKOWE INFORMACJE: Siarczan potasu (K2SO4) to wysokiej jakości źródło potasu używane w akwarystyce morskiej. Jest to forma potasu łatwo przyswajalna przez koralowce i inne organizmy morskie. Siarczan potasu nie wprowadza niepożądanych jonów do akwarium, co czyni go bezpiecznym wyborem dla delikatnych ekosystemów rafowych. AF K Boost zawiera siarczan potasu w odpowiednim stężeniu umożliwiającym precyzyjne dozowanie i kontrolę poziomu potasu w akwarium morskim. Potas jest kluczowym mikroelementem dla zdrowia koralowców, wpływa na ich wzrost, kolory i ogólną witalność.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning", "understanding"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_K_Boost", "siarczan_potasu", "K2SO4", "potas", "suplement", "składnik_aktywny", "parametry_wody", "mikroelementy", "Aquaforest"],
+    "related_items": ["af-k-boost", "af-mg-boost", "af-ca-boost", "parametry-wody-morskie", "suplementacja-mikroelementów", "potas-w-akwarium"],
+    "updated_at": "2025-06-03"
+  }

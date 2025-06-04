@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-073",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy sól Hybrid nadaje się do cotygodniowych podmian wody",
+    "query_text": "Hybrid Salt sól hybrydowa cotygodniowe podmiany wody nadaje się 10% weekly pierwiastki KH wapń codziennie",
+    "full_content": "PYTANIE: Niedawno zmieniłem sól i używam soli hybrydowej. Czy ta sól nadaje się do cotygodniowych podmian wody? Pierwiastki oraz KH i wapń podaje się codziennie. ODPOWIEDŹ: TAK - zalecamy podmiany wody w ilości 10% co tydzień.",
+    "domain": "seawater",
+    "category": "maintenance",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Hybrid_Salt", "sól_hybrydowa", "cotygodniowe_podmiany", "10%_cotygodniowo", "zalecamy", "pierwiastki", "KH", "wapń", "codziennie"],
+    "related_items": ["hybrid-pro-salt", "podmiany-wody", "pierwiastki-śladowe", "kh-wapń", "suplementacja-codzienna"],
+    "updated_at": "2025-06-03"
+  }

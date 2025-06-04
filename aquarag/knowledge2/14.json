@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-025",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Jak przechowywać AF Power Elixir - warunki przechowywania",
+    "query_text": "AF Power Elixir przechowywanie lodówka 6 miesięcy po otwarciu temperatura pokojowa 30 dni wydłużenie przydatności",
+    "full_content": "PYTANIE: Jak przechowywać AF Power Elixir? ODPOWIEDŹ: W celu wydłużenia przydatności do użycia zalecamy przechowywanie w lodówce do 6 miesięcy po otwarciu. W temperaturze pokojowej AF Power Elixir może być przechowywany do 30 dni.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Power_Elixir", "przechowywanie", "lodówka", "6_miesięcy", "po_otwarciu", "temperatura_pokojowa", "30_dni", "wydłużenie_przydatności"],
+    "related_items": ["af-power-elixir", "przechowywanie-suplementów", "trwałość-produktów"],
+    "updated_at": "2025-06-03"
+  }

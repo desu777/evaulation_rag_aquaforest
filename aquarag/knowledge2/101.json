@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-112",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Pro Bio F źródło węgla i porównanie z Pro Bio S NP Pro - różne produkty różne zastosowania",
+    "query_text": "Pro Bio F źródło węgla cukry witaminy Pro Bio S NP Pro porównanie silniejszy płynny proszek pożywka mikroflora probiotyczna różnorodność naprzemiennie zbiornik obserwacja",
+    "full_content": "PYTANIE: Jakim źródłem węgla jest w Pro Bio F? Czy Pro Bio S + NP Pro jest potężniejszy niż Pro Bio F ODPOWIEDŹ: Węgiel wchodzi w skład wielu związków organicznych. Źródłami węgla w produkcje Pro Bio F są odpowiednio dobrane cukry i witaminy. Czy można jednoznacznie stwierdzić co jest silniejsze - Pro Bio S+ NP Pro czy też Pro Bio F - nie należy tego w ten sposób rozpatrywać. Są to inne produkty - Pro Bio S jest preparatem płynnym do stosowania wraz z dedykowaną pożywką. Pro Bio F jest produktem w proszku zawierającym w składzie pożywkę. Dla jednego użytkownika bardziej będzie odpowiednia jedna forma dozowania a dla innego druga. Pro Bio F i Pro Bio S różnią się także pod względem składu mikroflory. Można te produkty stosować także naprzemiennie zapewniając tym większą różnorodność probiotyczną. Nie da się jednoznacznie odpowiedzieć który preparat jest silniejszy - dużo zależy od zbiornika - każde akwarium jest inne, ma specyficzną dla siebie bioróżnorodność - najlepiej więc dobierać produkty na podstawie obserwacji własnego zbiornika.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["Pro_Bio_F", "źródło_węgla", "cukry", "witaminy", "Pro_Bio_S", "NP_Pro", "płynny", "proszek", "pożywka", "mikroflora", "probiotyczna", "różnorodność", "naprzemiennie", "obserwacja_zbiornika"],
+    "related_items": ["pro-bio-f", "pro-bio-s", "np-pro", "porównanie-produktów", "mikroflora-probiotyczna"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-080",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można dawkować Kalkmedia razem z Component 1+2+3+",
+    "query_text": "Kalkmedia Component 123 dawkować razem przerwać stosowanie kalkmedia podnoszenie Ca Component1+ nie ma potrzeby",
+    "full_content": "PYTANIE: Obecnie dawkuję Kalkmedia i planuję zacząć dawkować Składniki 1,2,3. Czy muszę przerwać stosowanie leku Kalkmedia, czy nadal mogę dawkować oba leki? ODPOWIEDŹ: Nie ma potrzeby dawkowania Kalkmedia kiedy stosuje się Component 1+2+3+ - zadaniem kalkmedia jest podnoszenie poziomu Ca, który jest zawarty w Component1+.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Kalkwasser", "kalkmedia", "Component_1+2+3+", "nie_ma_potrzeby", "podnoszenie_Ca", "Component1+", "przerwać_stosowanie", "zadaniem_kalkwasser"],
+    "related_items": ["kalkwasser", "kalkmedia", "component-1-2-3-plus", "component-1", "wapń-ca", "dawkowanie-kombinowane"],
+    "updated_at": "2025-06-03"
+  }

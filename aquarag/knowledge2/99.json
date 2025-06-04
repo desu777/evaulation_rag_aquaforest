@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-110",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Bakterie Dino dawkowanie azotanów alkaliczność - równowaga biologiczna i test ICP",
+    "query_text": "bakterie Dino dinoflagellaty azotany alkaliczność dawkowanie nano akwarium równowaga biologiczna test ICP podmiany wody bakterie wstrzymać",
+    "full_content": "PYTANIE: Chciałbym dowiedzieć się, czy podawanie azotanów może być przyczyną podwyższonej alkaliczności? Mam małe akwarium nano, w którym próbuję pozbyć się dino-flagelanów. Unikam zmian wody (używam soli morskiej AF), aby pomóc w walce z dino-flagelanami i dodaję czysty azotan AF, aby utrzymać poziom składników odżywczych, jednocześnie podając Brightwell Microbacter7, aby konkurować z dino-flagelanami. Bakterie nadal zużywają składniki odżywcze, a im więcej dodaję azotanu, tym wyższy jest poziom alkaliczności. Obecnie wynosi on 11,7 dkh, podczas gdy świeżo przygotowana woda morska pokazuje 8 dkh. Bardzo doceniam wszelką pomoc lub porady dotyczące tego, czy podwyższona alkaliczność może być wynikiem podawania azotanu. Czy używacie w swoim produkcie czystego azotanu potasu lub sodu? ODPOWIEDŹ: Jeśli masz bakterie dino zalecamy nie dolewanie azotanów do zbiornika, nie dozowanie żadnego produktu bakteryjnego,podmiany wody wstrzymać. Należy wyrównać równowagę biologiczną w zbiorniku. Zalecamy wykonanie testu ICP",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "maintenance"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["bakterie_Dino", "dinoflagellaty", "azotany", "alkaliczność", "nano_akwarium", "równowaga_biologiczna", "test_ICP", "podmiany_wody_wstrzymać", "nie_dawkować_bakterii"],
+    "related_items": ["dino-problem", "test-icp", "równowaga-biologiczna", "nano-akwarium", "alkaliczność-problem"],
+    "updated_at": "2025-06-03"
+}

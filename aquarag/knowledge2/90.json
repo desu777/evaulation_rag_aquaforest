@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-101",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Największe akwaria - nóżki w szafkach regulowane",
+    "query_text": "największe akwaria szafki nóżki regulowane wymiana RS Reefer 625XXL stopy stojaków 8 sztuk",
+    "full_content": "PYTANIE: Mam starszą maszynę RS Reefer 625XXL, którą chciałbym wymienić. Muszę wiedzieć, ile stóp znajduje się na spodzie stojaka? Czy potrafisz wyregulować stopy? Interesują mnie 2 największe czołgi jakie posiadasz. Proszę daj mi znać. ODPOWIEDŹ: W dwóch największych szafkach jest po 8 szt. nóżek ktore są regulowane.",
+    "domain": "universal",
+    "category": "equipment",
+    "intent": ["product_info", "equipment_selection"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["największe_akwaria", "szafki", "nóżki", "regulowane", "8_sztuk", "wymiana", "RS_Reefer", "stopy"],
+    "related_items": ["akwaria-duże", "szafki-akwariowe", "instalacja-akwarium", "wymiana-akwarium"],
+    "updated_at": "2025-06-03"
+}

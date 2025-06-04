@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-124",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Sea Salt czy zawiera aminokwasy - nie zawiera",
+    "query_text": "Sea Salt aminokwasy zawiera skład produktu nie sól morska",
+    "full_content": "PYTANIE: Czy Sea Salt zawiera aminokwasy? ODPOWIEDŹ: Nie",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Sea_Salt", "aminokwasy", "nie_zawiera", "skład_produktu", "sól_morska"],
+    "related_items": ["sea-salt", "skład-produktu", "aminokwasy", "sól-morska"],
+    "updated_at": "2025-06-03"
+}

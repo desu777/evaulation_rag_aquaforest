@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-046",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy NP Pro sam obniża azotany i fosforany - potrzeba Pro Bio S",
+    "query_text": "NP Pro azotany fosforany 45 0,1 pożywka bakterie probiotyczne Pro Bio S obniżyć poziom matured tank skruber algowy GFO dawka",
+    "full_content": "PYTANIE: Obecnie mam azotany około 45 fosforanów przy 0,1. Zacząłem -NP Pro 4 dni temu. Czy muszę zaopatrzyć się w jakiś inny produkt AF, aby obniżyć poziom azotanów? Posiadam zbiornik typu Matured Tank od około 4 lat. Mam też skruber algowy i GFO. Czy muszę to wyłączyć, gdy używam Np Pro. Jak długo trzeba czekać na takie wyniki? Czy powinienem zwiększyć dawkę? ODPOWIEDŹ: -NP Pro jest pożywką dla bakterii probiotycznych. Aby obniżyć poziom azotanów i fosforanów należy dozować bakterie probiotyczne Pro Bio S. Podobne pytanie i odpowiedź jest w wierszu 31.",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NP_Pro", "Pro_Bio_S", "azotany_45", "fosforany_0,1", "pożywka", "bakterie_probiotyczne", "obniżyć_poziom", "matured_tank", "skruber_algowy", "GFO"],
+    "related_items": ["np-pro", "pro-bio-s", "nitraphos-minus", "bakterie-probiotyczne", "azotany-fosforany", "matured-tank"],
+    "updated_at": "2025-06-03"
+}

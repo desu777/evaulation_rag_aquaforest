@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-067",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Dlaczego wytrąca się brązowy osad przy mieszaniu Strong A i Strong B",
+    "query_text": "Strong A Strong B brązowy osad wytrąca mieszanie składnik 1 Ca 250g 25ml 30 minut normalny nadmiar żelaza",
+    "full_content": "PYTANIE: Zacząłem korzystać z Twoich rozwiązań. Podczas mieszania składnika 1 Ca +Strong A+Strong B wytrąca się brązowy osad. Moja pojemność to 5 litrów – Około 250g – Strong A 25ml – Strong B 25ml Mieszaj przez 30 minut. Czy robię wszystko dobrze? dlaczego osad? ODPOWIEDŹ: Brązowy osad w Strong B jest normalny - jest to nadmiar żelaza.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Strong_A", "Strong_B", "brązowy_osad", "normalny", "nadmiar_żelaza", "składnik_1_Ca", "wytrąca_się", "mieszanie", "250g", "25ml"],
+    "related_items": ["strong-a", "strong-b", "metoda-ballinga", "sporządzanie-roztworów", "składnik-1-ca"],
+    "updated_at": "2025-06-03"
+  }

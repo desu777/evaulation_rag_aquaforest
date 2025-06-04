@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-033",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy muszę dozować Pro Bio S i NP Pro jeśli używam soli Hybrid Pro Salt",
+    "query_text": "Pro Bio S NP Pro Hybrid Pro Salt dozować razem metoda probiotyczna Aquaforest NO3 PO4 koralowce miękkie LPS nutrienty bakterie pożywka niskie poziomy",
+    "full_content": "PYTANIE: Czy muszę dozować Pro Bio S i -NP Pro jeśli używam soli Hybrid Pro Salt? ODPOWIEDŹ: Odpowiedź brzmi: i tak i nie. UZALEŻNIENIE OD KORALOWCÓW: Pożądany poziom NO3 i PO4 zależy tylko i wyłącznie od Ciebie i od koralowców jakie masz w swoim akwarium. Jeśli masz koralowce miękkie lub LPS to nie ma potrzeby bardzo mocnego obniżania nutrientów, które są ich pożywieniem. PEŁNA METODA PROBIOTYCZNA: Pełna metoda probiotyczna Aquaforest zakłada używanie soli Hybrid Pro Salt oraz codziennie dawkowanie bakterii - Pro Bio S i pożywki dla nich -NP Pro dzięki czemu możemy utrzymywać akwarium na możliwie niskich poziomach NO3 i PO4.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Pro_Bio_S", "NP_Pro", "Hybrid_Pro_Salt", "metoda_probiotyczna", "Aquaforest", "NO3", "PO4", "koralowce_miękkie", "LPS", "nutrienty", "bakterie", "pożywka", "niskie_poziomy"],
+    "related_items": ["pro-bio-s", "np-pro", "hybrid-pro-salt", "metoda-probiotyczna-af", "koralowce-miękkie", "lps", "nutrienty-akwarium"],
+    "updated_at": "2025-06-03"
+  }
+  

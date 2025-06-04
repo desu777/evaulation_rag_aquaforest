@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-117",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Potas inny kolor i banderole - oryginalność produktu bez sztucznych barwników",
+    "query_text": "potas inny kolor bursztynowy bezbarwny banderole oryginalność produktu sztuczne barwniki partie różnice białe bezbarwne wątpliwości",
+    "full_content": "PYTANIE: Chciałbym uzyskać informacje na temat Państwa produktów. Po ok roku kupiłem ponownie nawozy i jedna rzecz zwróciła moją uwagę. Kolor produktu, potas ma inny kolor. Wcześniej barwa była bursztynowa, a ten zakupiony teraz jest bezbarwny. Druga sprawa to banderole na zakrętkach, mam wrażenie, że też są inne. W załączniku przesyłam Państwu zdjęcia i bardzo proszę o kontakt. Mam wątpliwości co do oryginalności produktów, ale być może się mylę. Produkty były kupione u dużego sprzedawcy, ale na chwilę obecną może nie będę zdradzał kto to jest ODPOWIEDŹ: Proszę się nie obawiać – produkt jest oryginalny. My jako producent nie używamy sztucznych barwników do nawozów dla utrzymania koloru – dlatego czasami partie produktu delikatnie różnią się kolorem. Jeżeli chodzi o banderole – są w wersji bezbarwnej oraz białej – jak najbardziej są OK.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["potas", "inny_kolor", "bursztynowy", "bezbarwny", "banderole", "oryginalność", "sztuczne_barwniki", "partie_produktu", "białe", "bezbarwne"],
+    "related_items": ["oryginalność-produktów", "kontrola-jakości", "nawozy", "różnice-partii"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-2053",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Jak poprawnie łączyć AF Power Elixir z produktami ABEV",
+    "query_text": "AF Power Elixir ABEV łączenie stosowanie razem ograniczenie dawkowania stopniowe wprowadzanie monitorowanie koralowców kombinacja produktów suplementacja mieszanie",
+    "full_content": "PYTANIE: Jak poprawnie stosować ABEV z AF Power Elixirem? ODPOWIEDŹ: Po pierwsze ogranicz dawkowanie suplementów ABEV i stopniowo wprowadzaj AF Power Elixir. Pamiętaj o monitorowaniu stanu koralowców. SZCZEGÓŁOWA PROCEDURA: 1. OGRANICZENIE ABEV: Zmniejsz dawkowanie stosowanych suplementów ABEV (prawdopodobnie o 50% lub więcej w zależności od aktualnego dawkowania) 2. STOPNIOWE WPROWADZANIE: Rozpocznij od małych dawek AF Power Elixir, stopniowo zwiększając zgodnie z instrukcją producenta 3. MONITOROWANIE: Uważnie obserwuj reakcję koralowców na zmiany w suplementacji - sprawdzaj polipowanie, kolory, ogólną witalność 4. DOSTOSOWANIE: W zależności od reakcji koralowców można dalej modyfikować proporcje obu produktów UWAGI BEZPIECZEŃSTWA: Nie zaleca się nagłego przechodzenia między systemami suplementacji. Koralowce potrzebują czasu na adaptację do nowych składników odżywczych. Zbyt szybkie zmiany mogą spowodować stres lub niepożądane reakcje. DLACZEGO OSTROŻNIE: Różne systemy suplementacji mogą zawierać podobne składniki w różnych stężeniach, dlatego nakładanie pełnych dawek może prowadzić do przedawkowania niektórych elementów.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_Power_Elixir", "ABEV", "łączenie_produktów", "ograniczenie_dawkowania", "stopniowe_wprowadzanie", "monitorowanie_koralowców", "kombinacja_suplementów", "bezpieczeństwo"],
+    "related_items": ["af-power-elixir", "systemy-suplementacji", "monitorowanie-koralowców", "dawkowanie-suplementów", "adaptacja-koralowców", "stres-koralowców"],
+    "updated_at": "2025-06-03"
+  }

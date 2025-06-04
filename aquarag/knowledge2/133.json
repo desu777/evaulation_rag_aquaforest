@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-144",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "ABEV czy wyłączyć odpieniacz podczas stosowania suplementów - tak na godzinę dla absorpcji",
+    "query_text": "ABEV abev suplementy odpieniacz wyłączyć godzina koralowce absorpcja zaabsorbować największą ilość procedura",
+    "full_content": "PYTANIE: Czy podczas stosowania suplementów ABEV należy wyłączyć odpieniacz? ODPOWIEDŹ: Zalecamy wyłączenie odpieniacza na około godzinę, aby koralowce mogły zaabsorbować jak największą ilość suplementów",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["ABEV", "suplementy", "odpieniacz", "wyłączyć", "godzina", "absorpcja", "koralowce"],
+    "related_items": ["abev", "suplementy-koralowców", "odpieniacz", "procedury-dozowania"],
+    "updated_at": "2025-06-03"
+}

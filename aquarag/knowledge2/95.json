@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-106",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "NP Pro Bio S jednocześnie z reaktorem granulatem biologicznym - kompatybilność",
+    "query_text": "NP Pro Bio S reaktor granulat biologiczny jednocześnie dozowanie kompatybilność możliwość",
+    "full_content": "PYTANIE: Czy mogę kontynuować dozowanie -NP pro+bio S, jednocześnie korzystając z reaktora z granulatem biologicznym? ODPOWIEDŹ: tak możesz",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NP_Pro", "Bio_S", "reaktor", "granulat_biologiczny", "jednocześnie", "dozowanie", "kompatybilność"],
+    "related_items": ["np-pro", "bio-s", "reaktor-biologiczny", "granulat-biologiczny", "kompatybilność-produktów"],
+    "updated_at": "2025-06-03"
+}

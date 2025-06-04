@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-122",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Life Bio Fil wpływ na pH wody - nie wpływa zgodnie z zaleceniem",
+    "query_text": "Life Bio Fil pH wody zwiększa wpływa zgodnie zalecenie",
+    "full_content": "PYTANIE: Czy Life Bio Fil zwiększa pH wody? ODPOWIEDŹ: Life BioFil stosowany zgodnie z zaleceniem nie wpływa na wzrost pH.",
+    "domain": "freshwater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Life_Bio_Fil", "pH_wody", "nie_wpływa", "zgodnie_z_zaleceniem", "wzrost_pH"],
+    "related_items": ["life-bio-fil", "ph-wody", "filtry-biologiczne", "freshwater-produkty"],
+    "updated_at": "2025-06-03"
+}

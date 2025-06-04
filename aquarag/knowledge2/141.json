@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-152",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Components Strong zamarzło podczas transportu - można używać może pojawić się osad",
+    "query_text": "Components Strong ComponentsStrong zamarzło zamrożenie transport wysyłka można używać osad precypitat koncentracja pierwiastków niższa niebezpieczne",
+    "full_content": "PYTANIE: Moje zamówienie Components Strong zamarzło podczas transportu. Czy nadal mogę go używać? ODPOWIEDŹ: Nic złego się nie powinno stać. Można go używać. Przez zamrożenie może dość mocno wytrącić się osad - nie martw się, to nie jest niebezpieczne - może ewentualnie spowodować, że koncentracja pierwiastków będzie nieco niższa.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Components_Strong", "zamarzło", "transport", "można_używać", "osad", "koncentracja_pierwiastków", "niebezpieczne"],
+    "related_items": ["components-strong", "transport-produktów", "przechowywanie-produktów", "mikroelementy"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-042",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można zastosować matę poziomującą pod sumpem AF980",
+    "query_text": "sump AF980 mata poziomująca akwarium pianka antywibracyjna dno montaż można zastosować",
+    "full_content": "PYTANIE: Sump AF980 posiada na dnie piankę antywibracyjną. Czy można zamontować sump na macie poziomującej akwarium? Możliwe, ale nie obowiązkowe, czy w ogóle nie zalecane? ODPOWIEDŹ: Można zastosować matę poziomującą akwarium.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["sump_AF980", "mata_poziomująca", "pianka_antywibracyjna", "montaż", "można_zastosować"],
+    "related_items": ["sump-af980", "mata-poziomująca", "montaż-sumpu", "pianka-antywibracyjna"],
+    "updated_at": "2025-06-03"
+  }

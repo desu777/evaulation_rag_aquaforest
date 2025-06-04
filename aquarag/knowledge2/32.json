@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-043",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy Pro Bio S nadaje się do użytku po umieszczeniu w zamrażarce",
+    "query_text": "Pro Bio S zamrażarka jeden dzień pokarm ryby nadaje się użytku bakterie zginęły przetrwać właściwa temperatura stosować",
+    "full_content": "PYTANIE: Przez przypadek umieściłam Pro Bio S w zamrażarce na jeden dzień razem z pokarmem dla ryb. Czy będzie jeszcze nadawał się do użytku, czy bakterie zginęły? ODPOWIEDŹ: Bakterie powinny przetrwać. Należy doprowadzić produkt do właściwej temperatury i stosować jak dotychczas.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Pro_Bio_S", "zamrażarka", "jeden_dzień", "bakterie", "przetrwać", "właściwa_temperatura", "stosować_jak_dotychczas", "nadaje_się"],
+    "related_items": ["pro-bio-s", "przechowywanie-bakterii", "temperatura-przechowywania", "żywotność-bakterii"],
+    "updated_at": "2025-06-03"
+  }

@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-029",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Jak często i w jakiej ilości używać AF Growth Boost",
+    "query_text": "AF Growth Boost dawkowanie częstotliwość ilość codziennie 1 łyżeczka na 100L aminokwasy połowa dawki obserwacja koralowców reakcja pokarm suplement",
+    "full_content": "PYTANIE: Jak często i w jakiej ilości powinienem używać AF Growth Boost? ODPOWIEDŹ: Jak każdy suplement dla koralowców - AF Growth Boost, który zawiera aminokwasy można dawkować nawet codziennie. DAWKOWANIE: Zalecane dawkowanie to 1 łyżeczka na 100 l (27 US gal). UWAGI: Należy pamiętać, że wszystkie suplementy do koralowców mają zalecane dawkowanie 1 kropla na 100 l wody, jednak ważne jest, aby każde akwarium było inne i dawkowanie może się różnić w zależności od obsady koralowców. ROZPOCZĘCIE: Zalecamy rozpoczęcie dawkowania pokarmów i suplementów od połowy dawki (nawet ¼) i obserwację koralowców oraz ich reakcji na podany pokarm.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Growth_Boost", "dawkowanie", "codziennie", "1_łyżeczka_na_100L", "aminokwasy", "suplement_koralowców", "połowa_dawki", "obserwacja", "reakcja_koralowców", "indywidualne_dawkowanie"],
+    "related_items": ["af-growth-boost", "karmienie-koralowców", "aminokwasy", "dawkowanie-suplementów", "obserwacja-koralowców"],
+    "updated_at": "2025-06-03"
+  }
+  

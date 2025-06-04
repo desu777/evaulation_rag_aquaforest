@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-099",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Clarisea SK-3000 roller w sumpie zamiast skarpetek filtrujących - kompatybilność",
+    "query_text": "sump skarpetki filtrujące Clarisea SK-3000 Automatic roller polar filter zamiast skarpetek mniejszy model pasować",
+    "full_content": "PYTANIE: Czyli w sumpie, gdzie są skarpetki filtrujące. Zamiast skarpetek ludzie używają filtrów polarowych takich jak ten Clarisea SK-3000 Automatic - GEN 3. Chciałbym zrobić to samo. Czy jest jakiś sposób, aby doradzić to w sumpie. ODPOWIEDŹ: niestety ten model rollera Clarisea sk 3000 nie będzie pasował do naszego sumpa zalecamy jakiś mniejszy model",
+    "domain": "universal",
+    "category": "equipment",
+    "intent": ["equipment_selection", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["sump", "skarpetki_filtrujące", "Clarisea_SK-3000", "roller", "filter_polar", "mniejszy_model", "kompatybilność"],
+    "related_items": ["sump-equipment", "skarpetki-filtrujące", "clarisea-roller", "filtracja-mechaniczna"],
+    "updated_at": "2025-06-03"
+}

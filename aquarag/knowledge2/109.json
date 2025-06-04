@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-120",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Power Elixir czy zawiera witaminę C - nie zawiera",
+    "query_text": "Power Elixir witamina C zawiera skład produktu nie",
+    "full_content": "PYTANIE: Czy Power Elixir zawiera witaminę C ODPOWIEDŹ: Nie",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Power_Elixir", "witamina_C", "nie_zawiera", "skład_produktu"],
+    "related_items": ["power-elixir", "skład-produktu", "witaminy", "suplementy"],
+    "updated_at": "2025-06-03"
+}

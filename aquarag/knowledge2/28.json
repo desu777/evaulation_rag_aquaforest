@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-039",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można podwoić dawkę Ca KH lub Mg używając proszków Calcium Magnesium KH Buffer",
+    "query_text": "podwoić dawka Ca KH Mg proszki Calcium Magnesium KH Buffer podwójna ilość proszku woda w pełni nasycony nie możliwe",
+    "full_content": "PYTANIE: Czy można podwoić dawkę Ca, KH lub Mg używając proszków: Calcium, Magnesium, KH Buffer? ODPOWIEDŹ: W przypadku Calcium oraz Magnesium możliwe jest zastosowanie podwójnej ilości proszku w stosunku do wody. W przypadku KH Buffer nie jest to możliwe z uwagi na to, że produkt jest już w pełni nasycony.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["podwójna_dawka", "Calcium", "Magnesium", "KH_Buffer", "proszki", "możliwe", "nie_możliwe", "w_pełni_nasycony", "podwójna_ilość_proszku"],
+    "related_items": ["calcium-proszek", "magnesium-proszek", "kh-buffer", "dawkowanie-proszków", "parametry-wody-morskie"],
+    "updated_at": "2025-06-03"
+  }
+  

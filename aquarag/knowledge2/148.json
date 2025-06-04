@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-159",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Phosphate Minus spadek KH Mg Ca po wymianie medium - wpływ na KH nie na Mg Ca",
+    "query_text": "Phosphate Minus PhosphateMinus PO4 minus po4 minus spadek KH magnez wapń wymiana medium filtracyjne pochłanianie fosforany skutek uboczny selektywnie",
+    "full_content": "PYTANIE: Używam PO4 minus, gdy wymieniam medium na nowe mam spadek KH, magnezu i wapnia, czy medium ma na to wpływ? Dlaczego? ODPOWIEDŹ: Efektem użycia Phosphate Minus może być spadek KH. Phosphate Minus jest medium filtracyjnym czyli ma za zadanie coś pochłaniać z wody. Selektywnie działa na obniżając skutecznie poziom fosforanów ale skutkiem ubocznym może być niewielki wpływ na poziom KH. Na poziom Mg lub Ca nie powinno mieć wpływu.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["troubleshooting", "product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Phosphate_Minus", "spadek_KH", "magnez", "wapń", "medium_filtracyjne", "fosforany", "skutek_uboczny", "selektywnie"],
+    "related_items": ["phosphate-minus", "kh-buffer", "parametry-wody", "filtracja-chemiczna"],
+    "updated_at": "2025-06-03"
+}

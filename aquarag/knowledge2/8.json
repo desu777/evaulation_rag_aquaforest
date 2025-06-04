@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-019",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Optymalne DKH podczas stosowania Metody Probiotycznej Aquaforest",
+    "query_text": "DKH metoda probiotyczna Aquaforest alkaliczność KH parametry NSW Natural Seawater 7.0-8.0 wapń magnez 400-450 1200-1400 parametry naturalne",
+    "full_content": "PYTANIE: Ile powinno wynosić DKH podczas stosowania Metody Probiotycznej Aquaforest? ODPOWIEDŹ: Jako Aquaforest zalecamy utrzymywanie parametrów zbliżonych do parametrów naturalnej wody morskiej (NSW - Natural Seawater) czyli KH 7.0-8.0, Ca 400-450, Mg 1200-1400. SZCZEGÓŁOWE PARAMETRY NSW: ALKALICZNOŚĆ (DKH/KH): 7.0-8.0 - optymalne dla większości koralowców, stabilne pH, naturalne warunki rafowe. WAPŃ (Ca): 400-450 mg/L - wystarczające dla wzrostu szkieletu koralowców, bezpieczne dla wszystkich organizmów. MAGNEZ (Mg): 1200-1400 mg/L - wspiera prawidłowe funkcjonowanie enzymów, stabilizuje inne parametry. DLACZEGO PARAMETRY NSW: Metoda Probiotyczna Aquaforest opiera się na naturalnych procesach biologicznych występujących w rafach koralowych. Parametry zbliżone do naturalnych zapewniają optymalne warunki dla bakterii probiotycznych i mikroorganizmów. Koralowce ewoluowały w tych warunkach przez miliony lat - są do nich najlepiej przystosowane. STABILNOŚĆ: W metodzie probiotycznej kluczowa jest stabilność parametrów, nie maksymalne wartości. Utrzymywanie parametrów w zakresach NSW zapewnia długoterminową stabilność systemu. MONITORING: Regularne testowanie i stopniowe korekty dla utrzymania parametrów w zalecanym zakresie.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["DKH", "KH", "alkaliczność", "metoda_probiotyczna", "Aquaforest", "NSW", "Natural_Seawater", "7.0-8.0", "parametry_naturalne", "wapń_400-450", "magnez_1200-1400"],
+    "related_items": ["metoda-probiotyczna-af", "parametry-wody-morskie", "nsw-natural-seawater", "testy-parametrów", "stabilność-akwarium", "probiotyki-af"],
+    "updated_at": "2025-06-03"
+  }

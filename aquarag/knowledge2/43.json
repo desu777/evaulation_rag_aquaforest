@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-054",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można dodawać chlorek wapnia sodę i magnez do Components Strong",
+    "query_text": "Components Strong pierwiastki śladowe chlorek wapnia soda chlorek siarczan magnezu metoda Ballinga sporządzanie roztworów nie dozować bezpośrednio akwarium NaHCO3",
+    "full_content": "PYTANIE: Czy mogę dodawać jako pierwiastki śladowe do Components Strong dodatkowo chlorek wapnia, sodę oraz chlorek/siarczan magnezu? ODPOWIEDŹ: Po pierwsze ani wapń, ani magnez, a tym bardziej NaHCo3 nie są pierwiastkami śladowymi. Po drugie zalecamy zapoznanie się z Metodą Ballinga i zrozumienie, na jakiej zasadzie ona działa. Comp. Strong służą do sporządzania roztworów Ballinga i w żadnym wypadku nie powinny być dozowane bezpośrednio do akwarium!",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Components_Strong", "pierwiastki_śladowe", "chlorek_wapnia", "soda", "NaHCO3", "magnez", "metoda_Ballinga", "sporządzanie_roztworów", "nie_dozować_bezpośrednio", "akwarium"],
+    "related_items": ["components-strong", "metoda-ballinga", "chlorek-wapnia", "sporządzanie-roztworów", "pierwiastki-śladowe", "bezpieczeństwo-dozowania"],
+    "updated_at": "2025-06-03"
+  }
+  

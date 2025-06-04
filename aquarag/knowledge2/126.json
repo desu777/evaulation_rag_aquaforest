@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-137",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Calcium Magnesium KH Buffer czy potrzeba mieszadeł magnetycznych - nie są konieczne łatwo rozpuszczalne",
+    "query_text": "Calcium Magnesium KH Buffer mieszadła magnetyczne rozpuścić rozpuszczalne konieczne nie przyspieszają proces przygotowanie łatwo",
+    "full_content": "PYTANIE: Chcę zacząć korzystać z produktów Aquaforest: Magnesium, KH Buffer i Calcium. Czy potrzebuję specjalnych mieszadeł magnetycznych, aby rozpuścić te produkty? ODPOWIEDŹ: Tak naprawdę, nie jest konieczne posiadanie mieszadła. Zastosowane substancje są łatwo rozpuszczalne w wodzie. Wymienione sprzęty oczywiście przyspieszają proces przygotowania, ale nie są konieczne.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Calcium", "Magnesium", "KH_Buffer", "mieszadła_magnetyczne", "rozpuszczalne", "nie_konieczne", "przygotowanie"],
+    "related_items": ["calcium", "magnesium", "kh-buffer", "mieszadła-magnetyczne", "przygotowywanie-roztworów"],
+    "updated_at": "2025-06-03"
+}

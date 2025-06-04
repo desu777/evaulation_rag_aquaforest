@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-147",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Life Source czy skimmer musi być włączony podczas stosowania - nie nie jest konieczny",
+    "query_text": "AF Life Source AFLifeSource Life Source LifeSource skimmer odpieniacz odpieniacz białek włączony konieczny podczas stosowania nie",
+    "full_content": "PYTANIE: Czy skimmer musi był włączony podczas stosowanie tego produktu? ODPOWIEDŹ: Nie, skimmer nie jest konieczny podczas stosowaania tego produktu",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Life_Source", "skimmer", "odpieniacz", "włączony", "nie_konieczny", "stosowanie"],
+    "related_items": ["af-life-source", "odpieniacz", "procedury-dozowania"],
+    "updated_at": "2025-06-03"
+}

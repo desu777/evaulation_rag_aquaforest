@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-070",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Ile mililitrów KH Buffer podnosi wartość KH o 0,1 w systemie 100 litrów",
+    "query_text": "KH Buffer mililitry podnosi KH 0,1 100 litrów dawkowanie 80g 1000ml 100ml 2,6 dKH 10g 3,3 dKH 0,5 dKH dziennie kalkulator",
+    "full_content": "PYTANIE: Ile mililitrów KH Buffer podnosi wartość KH o 0,1 w systemie o pojemności 100 litrów? ODPOWIEDŹ: Dawkowanie: rozpuścić 80 g KH Buffer w 1000 ml wody RODI. Dawkowanie powinno być określone przez wyniki testów wody i dzienne zużycie koralowców. Przed zastosowaniem roztworu KH Buffer do wody, zaleca się wykonanie testu wody w celu sprawdzenia aktualnych parametrów. 100 ml roztworu KH Buffer podnosi poziom KH w 100 l (27 US gal) wody o 2,6 dKH. Produkt nadaje się również do okazjonalnego użytku w celu jednorazowego podniesienia poziomu KH. 10 g KH Buffer w 100 l wody podnosi poziom KH o około 3,3 dKH (Alk. 1,18 meg/l). Nie zalecamy podnoszenia poziomu KH o więcej niż 0,5 dKH dziennie. Użyj naszego kalkulatora https://aquaforest.eu/pl/kalkulator/",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["KH_Buffer", "dawkowanie", "80g_1000ml", "100ml_2,6_dKH", "10g_3,3_dKH", "0,5_dKH_dziennie", "100_litrów", "kalkulator", "RODI_woda", "test_wody"],
+    "related_items": ["kh-buffer", "alkaliczność", "dawkowanie-kh", "kalkulator-aquaforest", "parametry-wody-morskie"],
+    "updated_at": "2025-06-03"
+  }

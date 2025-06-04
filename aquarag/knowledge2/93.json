@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-104",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Wysokie azotany i fosforany w rafie mieszanej - Nitra Phos Minus i podmiany wody",
+    "query_text": "wysokie azotany fosforany rafa mieszana SPS wolny wzrost ciemne kolory Nitra Phos Minus podmiany wody przekarmianie substancje organiczne",
+    "full_content": "PYTANIE: Rozpocząłem zbiornik z piaskiem i produktami Pro Bio. Obecnie używam soli morskiej Reef, składników 1, 2, 3, dozowania elementów w ilości 150 ml/dziennie każdy (jeśli jest to potrzebne w przypadku wapnia, alkaliczności, boru, strontu itp.), błota biologicznego itp. Prawdopodobnie brakuje kilku rzeczy. Mój zbiornik działa z bardzo wysokim poziomem składników odżywczych. Fosforany 0,4, azotany 40, alkaliczność 8,1, wapń 450, magnez 1377, pH 8,41, temperatura 78,4, zasolenie 1,026. Światła to oświetlenie LED Neptune, dwa nad zbiornikiem o pojemności około 140 galonów, około 40 galonów komora filtracyjna z makroalgami i skałami. Skimmer Octopus 200 i mata walcowa. Cztery pompy MP40 na bokach zbiornika pracujące na poziomie około 60%, oraz dwie pompy gyro na tylnej stronie pracujące na poziomie około 60%. Mój zbiornik ma prawie rok, a korale SPS rosną, ale dość wolno jak na moje upodobania. Kolory są dobre, ale w miarę jak rosną i przechodzą w nowe stadium, zaczynają być bardziej ciemne zielenie i limonkowe. Moje różowe korale też są raczej ciemne, czerwone korale prezentują dobre kolory. Jedynymi problemami, jakie miałem, to niektóre z moich toczków nabawiły się infekcji podczas podziału i straciłem je. Straciłem także kilka mniejszych goniotropów, але reszta się dobrze rozwija. Jak widać, mam rafę mieszaną. Rozważam stosowanie mieszanki Zeomix, węgla i środka zmniejszającego poziom fosforanów, a także dozowanie bakterii. Czy mogę prosić o zalecenia lub sugestie dotyczące dobrego zestawu początkowego? Rozpocznę od zera, bez reaktora ODPOWIEDŹ: masz wysokie parametry substancji organicznych, zalecane poziomy NO3 przy obsadzie mieszanej to NO3 5, PO4 0,05. Aby z obecnego poziomu przejść do właściwych. zalecamy. zastosowanie pożywki nitra phos minus wg. instrukcji, dodatkowo podmiany wody. raz na tydzień 10%. Proszę sprawdzić czy zwierzęta nie są przekarmiane gdyż to może. być problemem obecnych parametrów. To powinno rozwiązać wszystkie problemy",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "maintenance"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["wysokie_azotany", "wysokie_fosforany", "rafa_mieszana", "SPS_wolny_wzrost", "ciemne_kolory", "Nitra_Phos_Minus", "podmiany_wody", "przekarmianie", "substancje_organiczne"],
+    "related_items": ["nitra-phos-minus", "wysokie-parametry", "sps-korale", "rafa-mieszana", "troubleshooting-kolorów"],
+    "updated_at": "2025-06-03"
+}

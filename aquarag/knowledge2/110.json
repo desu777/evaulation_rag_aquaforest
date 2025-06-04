@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-121",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Iron rdzawy kolor produktu - normalne dla związków żelaza",
+    "query_text": "Iron rdzawy kolor normalne związki żelaza charakterystyczne czas pojawia się",
+    "full_content": "PYTANIE: Produkt posiada rdzawy kolor czy to normalne? ODPOWIEDŹ: Tak, rdzawy kolor może pojawić się z czasem i jest to charakterystyczne dla produktów zawierających związki żelaza",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Iron", "rdzawy_kolor", "normalne", "związki_żelaza", "charakterystyczne", "czas"],
+    "related_items": ["iron", "af-iron", "żelazo", "kolor-produktu"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-061",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można dodawać Iodum gdy akwarium pochłania duże ilości jodu",
+    "query_text": "jod Iodum akwarium pochłania duże ilości testy ICP Component 1+2+3+ Component 2+ suplementować zapotrzebowanie zakraplacz 50ml LAB 1L",
+    "full_content": "PYTANIE: Moje akwarium pochłania duże ilości jodu, testy ICP to potwierdzają. Także dodaję Component 1+2+3+ ze wszystkimi pierwiastkami śladowymi. Jedynym moim źródłem jodu jest Component 2+. Czy mogę dodawać Iodum w zależności od konsumpcji? Czy mogę mieć jakieś problemy chemiczne w akwarium przez to? ODPOWIEDŹ: Tak jak najbardziej jeżeli Twoje akwarium ma takie zapotrzebowanie to możesz dodatkowo suplementować jod. Aquaforest Iodum jest dostępne zarówno w stężonej wersji z zakraplaczem w butelce 50ml jak również w linii LAB w opakowaniu 1L.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["jod", "Iodum", "duże_zapotrzebowanie", "testy_ICP", "Component_1+2+3+", "Component_2+", "suplementować", "zakraplacz_50ml", "LAB_1L", "stężona_wersja"],
+    "related_items": ["iodum", "component-1-2-3-plus", "component-2-plus", "testy-icp", "pierwiastki-śladowe", "suplementacja-jodu"],
+    "updated_at": "2025-06-03"
+  }

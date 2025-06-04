@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-032",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można prowadzić akwarium morskie bez podmian wody",
+    "query_text": "akwarium morskie bez podmian wody co tydzień 10% objętości uzupełnienie składników oczyszczenie zanieczyszczenia Aquaforest zaleca",
+    "full_content": "PYTANIE: Czy można prowadzić akwarium morskie bez podmian? ODPOWIEDŹ: Jako Aquaforest zalecamy robić podmianę wody co tydzień w ilości około 10% objętości akwarium. Pozwoli to na uzupełnienie niezbędnych składników wody morskiej oraz oczyszczenie wody z nadmiernych zanieczyszczeń.",
+    "domain": "seawater",
+    "category": "maintenance",
+    "intent": ["maintenance", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["podmiany_wody", "co_tydzień", "10%_objętości", "uzupełnienie_składników", "oczyszczenie", "zanieczyszczenia", "akwarium_morskie", "zalecenia_Aquaforest"],
+    "related_items": ["podmiany-wody", "utrzymanie-akwarium", "jakość-wody", "składniki-wody-morskiej", "konserwacja-akwarium"],
+    "updated_at": "2025-06-03"
+  }

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-030",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Ile procentowo zawiera Fish V każdej witaminy - szczegółowy skład",
+    "query_text": "Fish V skład witamin procenty koncentracja B1 B2 B6 B12 pantenol niacynamid biotyna K3 cholina mg/l tiamina ryboflawina",
+    "full_content": "PYTANIE: Ile procentowo zawiera Fish V każdej witaminy? ODPOWIEDŹ: Skład dodatków (na 1 litr): Witamina B1 (chlorowodorek tiaminy)(3a820) 8000 mg/l, Witamina B2 (s.l sodowa, fosforan ryboflawiny)(3a700) 8000 mg/l, D-pantenol (3a842) 18000 mg/l, Witamina B6 (3a831) 5000 mg/l, Witamina B12 30 mg/l, Niacynamid (3a315) 60 000 mg/l, Biotyna (3a880) 1 000 mg/l, Witamina K3 (3a710) 10 000 mg/l, chlorek choliny.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Fish_V", "skład_witamin", "koncentracja", "B1_8000mg", "B2_8000mg", "pantenol_18000mg", "B6_5000mg", "B12_30mg", "niacynamid_60000mg", "biotyna_1000mg", "K3_10000mg", "chlorek_choliny"],
+    "related_items": ["fish-v", "witaminy-ryb", "suplement-witamin", "składniki-aktywne"],
+    "updated_at": "2025-06-03"
+  }

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-108",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Life Source Mud i wata filtracyjna - czy stosować jednocześnie",
+    "query_text": "Life Source Mud wata filtracyjna jednocześnie przejrzysty zbiornik wymiana wkład dobre substancje zanieczyszczenie negatywny wpływ",
+    "full_content": "PYTANIE: Wczoraj wieczorem wypróbowałem Life Source Mud, a dziś zbiornik jest bardziej przejrzysty. Moje pytanie może wydać się głupie, ale czy powinienem teraz wymienić wkład z waty filtracyjnej, czy może już zawiera wszystkie dobre substancje? Wymieniłem go dopiero wczoraj razem z wodą. ODPOWIEDŹ: Przy zastosowaniu life source mud nie zalecamy równoczesnego stosowania waty filtracyjnej. Jeśli już ją zastosowałeś może zostać użyta do końca czasu aż jej zanieczyszczenie nie będzie miało negatywnego wpływu. na zbiornik",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Life_Source_Mud", "wata_filtracyjna", "jednocześnie", "przejrzysty_zbiornik", "wymiana_wkład", "zanieczyszczenie", "negatywny_wpływ"],
+    "related_items": ["life-source-mud", "wata-filtracyjna", "filtracja-mechaniczna", "kompatybilność-produktów"],
+    "updated_at": "2025-06-03"
+}

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-078",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można lać Iodum Lab 1ml raz na 2 dni zamiast 0.5ml dziennie",
+    "query_text": "Iodum Lab 1000ml instrukcja 0.5ml dziennie 1ml raz na 2 dni pompa dozuje minimalnie sinosudalne zmiany poziom jodu monitorowanie organizmy akwarium",
+    "full_content": "PYTANIE: Suplement Aquaforest Iodum Lab 1000 ml. Według instrukcji powinienem lać 0.5 ml na moje akwarium dziennie. Czy można lać np 1ml raz na 2 dni? Moja pompa niestety dozuje 1ml minimalnie. ODPOWIEDŹ: Jak najbardziej można 1 ml na 2 dni, ale mogą być sinosudalne zmiany poziomu jodu dzień do dnia. Nie powinno się to odbić na organizmach akwarium, zalecamy monitorowanie poziomu jodu.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Iodum_Lab", "1000ml", "0.5ml_dziennie", "1ml_na_2_dni", "pompa_dozuje_minimalnie", "sinosudalne_zmiany", "poziom_jodu", "monitorowanie", "organizmy_akwarium"],
+    "related_items": ["iodum-lab", "iodum", "pompy-dozujące", "dawkowanie-jodu", "monitorowanie-jodu"],
+    "updated_at": "2025-06-03"
+  }

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-127",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Artemia Mysis Liquid Vege czy zawierają antyoksydanty - tak zawierają przeciwutleniacze",
+    "query_text": "Artemia Mysis Liquid Vege antyoksydanty przeciwutleniacze zawierają karmy skład pożywienie",
+    "full_content": "PYTANIE: Czy Artemia, Mysis, Vege zawierają antyoksydanty? ODPOWIEDŹ: Tak, zawierają przeciwutleniacze (antyoksydanty)",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Artemia", "Mysis", "Liquid_Vege", "antyoksydanty", "przeciwutleniacze", "karmy", "skład"],
+    "related_items": ["artemia", "mysis", "liquid-vege", "karmy-ryb", "antyoksydanty"],
+    "updated_at": "2025-06-03"
+}

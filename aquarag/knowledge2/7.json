@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-018",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Najlepsza ekipa czyszcząca do akwarium morskiego - dobór żyjątek sprzątaczy",
+    "query_text": "ekipa czyszcząca akwarium morskie żyjątka sprzątacze ślimaki turbo kraby pustelniki krewetki wundermanii rozgwiazda piaskowa dobór rozmiaru najlepsza start akwarium cleaning crew",
+    "full_content": "PYTANIE: Jaka jest najlepsza i jak dobierać ekipę czyszczącą do danego rozmiaru akwarium? ODPOWIEDŹ: Najlepsza ekipa czyszcząca na start każdego akwarium to: ślimaki turbo, kraby pustelniki, krewetki wundermanii, rozgwiazda piaskowa. SZCZEGÓŁOWA CHARAKTERYSTYKA EKIPY: ŚLIMAKI TURBO: Skutecznie usuwają glony z szkła i skał, aktywne w dzień i noc, wytrzymałe i łatwe w utrzymaniu. KRABY PUSTELNIKI: Sprzątają resztki pokarmu i detrytusy, pomagają w cyrkulacji piasku, interesujące zachowanie. KREWETKI WUNDERMANII: Specjalizują się w czyszczeniu ryb z pasożytów, jedząg także detrytusy i resztki pokarmu, bardzo pokojowe. ROZGWIAZDA PIASKOWA: Przesijają piasek jedząc bakterie i detrytusy, pomagają utrzymać piasek w dobrej kondycji, aktywne nocą. ZALETY TEGO ZESTAWU: Kompleksowe czyszczenie wszystkich stref akwarium (szkło, skały, piasek, ryby), różne pory aktywności zapewniają całodobowe sprzątanie, wzajemnie się uzupełniają nie konkurując o pokarm, bezpieczne dla koralowców i ryb. WPROWADZANIE: Ekipę czyszczącą wprowadza się po ustabilizowaniu parametrów i cyklu azotowego, najlepiej przed koralowcami i rybami lub równocześnie z pierwszymi spokojnymi rybami.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["learning", "startup", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["ekipa_czyszcząca", "żyjątka", "sprzątacze", "ślimaki_turbo", "kraby_pustelniki", "krewetki_wundermanii", "rozgwiazda_piaskowa", "cleaning_crew", "start_akwarium", "dobór_żyjątek"],
+    "related_items": ["żyjątka-morskie", "ślimaki-akwarium", "kraby-pustelniki", "krewetki-morskie", "rozgwiazdy", "start-akwarium-morskiego", "utrzymanie-czystości"],
+    "updated_at": "2025-06-03"
+  }

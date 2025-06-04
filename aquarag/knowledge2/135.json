@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-146",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Life Source ile czasu po otwarciu można dozować - 6 miesięcy szczelnie zamknięty",
+    "query_text": "AF Life Source AFLifeSource Life Source LifeSource czas otwarcie dozować 6 miesięcy szczelnie zamknięty przechowywać zużycie",
+    "full_content": "PYTANIE: Ile czasu po otwarciu mogę dozować ten produkt? ODPOWIEDŹ: AF Life Source należy przechowywać szczelnie zamknięty i zalecamy zużycie go w ciągu 6 miesięcy po otwarciu.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Life_Source", "czas_otwarcia", "6_miesięcy", "szczelnie_zamknięty", "przechowywać", "zużycie"],
+    "related_items": ["af-life-source", "przechowywanie-produktów", "termin-ważności", "procedury-przechowywania"],
+    "updated_at": "2025-06-03"
+}

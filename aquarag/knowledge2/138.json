@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-149",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Power Elixir czy można rozcieńczać wodą RODI - można ale ryzyko zepsucia produktu",
+    "query_text": "AF Power Elixir AFPowerElixir Power Elixir PowerElixir rozcieńczać woda RODI ryzyko zepsucie kompozycja trwałość gwarantowana niezmienna forma",
+    "full_content": "PYTANIE: Używam AF Power Elixir. Czy można go rozcieńczać wodą RODI? ODPOWIEDŹ: Można rozcieńczać, ale niesie to ze sobą ryzyko zepsucia produktu, ponieważ zmienia się ustaloną i sprawdzoną kompozycję. Trwałość produktu jest gwarantowana tylko w niezmienionej formie produktu.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_Power_Elixir", "rozcieńczać", "woda_RODI", "ryzyko_zepsucia", "kompozycja", "trwałość", "niezmienna_forma"],
+    "related_items": ["af-power-elixir", "rozcieńczanie-produktów", "woda-rodi", "przechowywanie-produktów"],
+    "updated_at": "2025-06-03"
+}

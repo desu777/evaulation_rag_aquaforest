@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-041",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Dlaczego NitraPhos Minus nie obniża azotanów - troubleshooting",
+    "query_text": "NitraPhos Minus nie działa azotany nie znikają wysokie azotany niskie fosforany stosunek 16:1 przerybione Pro Bio S pożywka bakterie probiotyczne Hybrid Pro Salt Life Bio Fil",
+    "full_content": "PYTANIE: Kupiłem nitrafos bez moich 50 azotanów. Lek dozuje się w ilości 24ml na 800-litrowy zbiornik. Dlaczego azotany nie znikają? Używam od 1 tygodnia. Moje fosforany wynoszą 0,01, azotany 50. Karmienie ryb 1 raz dziennie płatkami. Dodano 50 litrów siporaxu 6 miesięcy temu. Myślę, że to nie działa i chcę zastąpić Life Bio Fil Waszym produktem. ODPOWIEDŹ: Stosunek azotanów do fosforanów powinien wynosić 16:1. W przypadku wysokich azotanów a bardzo niskich fosforanów zalecamy zwrócić uwagę czy akwarium nie jest przerybione. ALTERNATYWA: W przypadku utrzymującego się wysokiego poziomu azotanów można spróbować obniżyć je za pomocą Hybrid Pro Salt. KLUCZOWE PYTANIE: Czy oprócz NitraPhos są dozowane bakterie probiotyczne - Pro Bio S? NitraPhos Minus jest pożywką dla bakterii probiotycznych zatem, żeby produkt obniżał NO3 i PO4 konieczne jest dozowanie bakterii Pro Bio S.",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "product_info", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NitraPhos_Minus", "nie_działa", "wysokie_azotany", "niskie_fosforany", "stosunek_16:1", "przerybione", "Pro_Bio_S", "pożywka", "bakterie_probiotyczne", "Hybrid_Pro_Salt", "Life_Bio_Fil"],
+    "related_items": ["nitraphos-minus", "pro-bio-s", "hybrid-pro-salt", "life-bio-fil", "azotany-fosforany", "bakterie-probiotyczne", "przerybienie"],
+    "updated_at": "2025-06-03"
+  }
+  

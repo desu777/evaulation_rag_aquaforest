@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-076",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Średni poziom jodu w produktach Aquaforest - Iodum dawkowanie dla rekinów",
+    "query_text": "Iodum jod poziom rekiny tarczyca µg/l salinity ppt podnosi mg/l ppm maksymalna bezpieczna dawka dzienna rozbij kilka dni zalecany poziom zalecana dawka",
+    "full_content": "PYTANIE: Moje rekiny miały problemy z tarczycą, dlatego interesuje mnie poziom jodu. Jaki jest średni poziom jodu w Państwa produktach w µg/l dla salinity 34 ppt? ODPOWIEDŹ: 10 ml produktu podnosi poziom jodu o 0.1 mg/l (ppm) w 100 litrach wody. Pamiętaj, że maksymalna bezpieczna dawka dzienna wynosi 2 ml na 100 litrów wody. Jeżeli wymagana jest większa dawka, rozbij ją na kilka dni. Zalecany poziom: 0.055 – 0.07 mg/l (ppm). Zalecana dawka: 1 ml/100 l wody dziennie.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Iodum", "jod", "rekiny", "tarczyca", "10ml_0.1mg/l", "maksymalna_2ml", "zalecany_poziom_0.055-0.07", "zalecana_dawka_1ml", "rozbij_kilka_dni"],
+    "related_items": ["iodum", "jod-w-akwarium", "rekiny", "problemy-tarczycy", "dawkowanie-jodu", "poziom-jodu"],
+    "updated_at": "2025-06-03"
+  }

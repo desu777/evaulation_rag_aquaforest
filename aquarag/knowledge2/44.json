@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-055",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Jakich produktów używać z linii Freshwater aby utrzymać zdrowe akwarium",
+    "query_text": "Freshwater produkty podstawowe zdrowe akwarium wodociągowa RO AF Water Conditioner AF Remineralizer AF Micro AF Macro AF Carbon Boost CO2 Life Bio Media Carbon nawozy media filtracyjne",
+    "full_content": "PYTANIE: Jakich produktów używać z linii Freshwater, aby utrzymać zdrowe akwarium? (W tym pytaniu chodzi chyba o to, że jak w akwarystyce morskiej podstawowy produkt to sól morska, to jaki produkt jest taką podstawą w akwarystyce słodkowodnej?) ODPOWIEDŹ: Zależnie czy używamy do podmian wodę wodociągową czy wodę RO zalecamy korzystanie z AF Water Conditioner lub AF Remineralizer. PODSTAWOWE NAWOZY: Do tego jako podstawowe nawozy: AF Micro i AF Macro, plus AF Carbon Boost jeżeli nie jest dawkowane CO2 z butli. MEDIA FILTRACYJNE: Zalecamy również użycie mediów filtracyjnych jak Life Bio Media oraz Carbon.",
+    "domain": "freshwater",
+    "category": "education",
+    "intent": ["startup", "learning", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Freshwater", "podstawowe_produkty", "woda_wodociągowa", "woda_RO", "AF_Water_Conditioner", "AF_Remineralizer", "AF_Micro", "AF_Macro", "AF_Carbon_Boost", "CO2", "Life_Bio_Media", "Carbon"],
+    "related_items": ["af-water-conditioner", "af-remineralizer", "af-micro", "af-macro", "af-carbon-boost", "life-bio-media", "carbon", "akwarium-słodkowodne"],
+    "updated_at": "2025-06-03"
+  }

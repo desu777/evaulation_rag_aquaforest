@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-162",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF N Boost czy na bazie KNO3 pochodzenie azotu - receptura tajemnica kilka surowców jeden KNO3",
+    "query_text": "AF N Boost AFNBoost N Boost NBoost KNO3 azotan potasu pochodzenie azot receptura tajemnica zakład surowce składy nawozu",
+    "full_content": "PYTANIE: Czy AF N Boost jest na bazie KNO3? Jakiego pochodzenia jest tam azot? ODPOWIEDŹ: Dokładna receptura nawozu jest tajemnicą zakładu. W skład wchodzi kilka surowców - jednym z nich jest KNO3.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_N_Boost", "KNO3", "azotan_potasu", "pochodzenie_azotu", "receptura", "tajemnica_zakładu", "surowce"],
+    "related_items": ["af-n-boost", "kno3", "nawozy-azotowe", "skład-produktu"],
+    "updated_at": "2025-06-03"
+}

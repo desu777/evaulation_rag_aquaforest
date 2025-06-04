@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-050",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czego używać do uzupełnienia składników odżywczych z Component 1+2+3+",
+    "query_text": "Component 1+2+3+ składniki odżywcze odporność koralowców AF AMINO MIX AF BUILD AF ENERGY AF VITALITY suplementy",
+    "full_content": "PYTANIE: Czego najlepiej używać w uzupełnieniu składników odżywczych oraz aby zwiększyć odporność koralowców, podczas stosowania Component 1+2+3+? ODPOWIEDŹ: Suplementy dla koralowców: AF AMINO MIX, AF BUILD, AF ENERGY I AF VITALITY.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Component_1+2+3+", "składniki_odżywcze", "odporność_koralowców", "AF_AMINO_MIX", "AF_BUILD", "AF_ENERGY", "AF_VITALITY", "suplementy"],
+    "related_items": ["component-1-2-3-plus", "af-amino-mix", "af-build", "af-energy", "af-vitality", "suplementy-koralowców", "odporność-koralowców"],
+    "updated_at": "2025-06-03"
+  }
+  

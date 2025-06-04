@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-096",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Konie morskie 18 stopni azotany rosną - czy bakterie działają w niskiej temperaturze",
+    "query_text": "konie morskie akwarium 18 stopni temperatura azotany NO3 rosną NP Pro Bio S Nitraphos Minus Pro Bio F bakterie probiotycze niskie temperatury pokarm",
+    "full_content": "PYTANIE: Mam akwarium dedykowane na konie morskie. Temperatura jest ustawiona na 18 stopni, ale poziomy azotanów ciągle rosną. Używam NP Pro, Pro Bio S, Nitraphos Minus, Pro Bio F. Czy to dlatego, że nie mogą one działać w niskich temperaturach? ODPOWIEDŹ: Bakterie probiotycze i pożywki powinny działać w takich temperaturach. Jeśli NO3 i PO4 rośnie to zalecam kontrolowanie ilości podawanego pokarmu.",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["konie_morskie", "18_stopni", "azotany_NO3", "NP_Pro", "Pro_Bio_S", "Nitraphos_Minus", "Pro_Bio_F", "bakterie_probiotycze", "niskie_temperatury", "pokarm"],
+    "related_items": ["np-pro", "pro-bio-s", "nitraphos-minus", "pro-bio-f", "konie-morskie", "kontrola-karmienia"],
+    "updated_at": "2025-06-03"
+}

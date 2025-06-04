@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-123",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Component B czy zawiera wanad - tak zawiera",
+    "query_text": "Component B wanad zawiera posiada skład mikroelementy",
+    "full_content": "PYTANIE: Czy posiada wanad? ODPOWIEDŹ: Tak, posiada wanad",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Component_B", "wanad", "zawiera", "skład", "mikroelementy"],
+    "related_items": ["component-b", "wanad", "mikroelementy", "skład-produktu"],
+    "updated_at": "2025-06-03"
+}

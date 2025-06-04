@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-044",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy można używać produktów Aquaforest po terminie ważności",
+    "query_text": "termin ważności produkty Aquaforest po upływie data ważności Calcium Magnesium KH Buffer Reef Mineral Salt Component ABCK używanie po terminie producent zaleca",
+    "full_content": "PYTANIE: Czy używanie tych produktów po terminie ważności jest możliwe? Czy data ważności jest tylko wymaganiem, który musi być na produkcie? Zauważyłem, że Component ABC 2L nie posiadają z jakiegoś powodu dat ważności, a buteleczki 75ml już tak. ODPOWIEDŹ: Jako producent nie zalecamy używania produktów po upływie terminu ważności.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["termin_ważności", "po_upływie", "nie_zalecamy", "producent", "Calcium", "Magnesium", "KH_Buffer", "Reef_Mineral_Salt", "Component_ABCK", "data_ważności"],
+    "related_items": ["przechowywanie-produktów", "termin-ważności", "bezpieczeństwo-produktów", "calcium", "magnesium", "kh-buffer", "reef-mineral-salt", "component-abck"],
+    "updated_at": "2025-06-03"
+  }

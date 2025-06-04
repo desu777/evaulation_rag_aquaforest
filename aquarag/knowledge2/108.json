@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-119",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Fish V zawartość witaminy D - jednostki w litrze",
+    "query_text": "Fish V witamina D zawartość jednostki litr skład produktu",
+    "full_content": "PYTANIE: Ile witaminy D zawiera fish V? ODPOWIEDŹ: 50 000 jednostek w litrze.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Fish_V", "witamina_D", "zawartość", "jednostki", "litr", "skład"],
+    "related_items": ["fish-v", "witaminy-ryb", "skład-produktu", "suplementy-witaminowe"],
+    "updated_at": "2025-06-03"
+}

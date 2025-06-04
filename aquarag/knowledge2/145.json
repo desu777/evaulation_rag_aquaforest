@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-156",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Bio Sand woda mętna 2 tygodnie biała błonka - filtracja mechaniczna i podmiany wody",
+    "query_text": "AF Bio Sand AFBioSand bio sand woda mętna 2 tygodnie biała błonka film nowy system rafowy filtracja mechaniczna gąbka włóknina podmiany wody zakładanie zbiornik",
+    "full_content": "PYTANIE: Kupiłem bio sand do mojego nowego systemu rafowego i woda jest mętna od 2 tygodni, a wszystko pokryte jest białą błonką. Czy macie jakieś zalecenia, aby się tego pozbyć? ODPOWIEDŹ: Zalecamy filtrację mechaniczną – użycie drobnej gąbki lub włókniny akwarystycznej. Dodatkowo można zastosować częściowe podmiany wody – tak jak to robi się w nowo zakładanych zbiornikach.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["troubleshooting"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Bio_Sand", "woda_mętna", "biała_błonka", "filtracja_mechaniczna", "gąbka", "włóknina", "podmiany_wody", "nowy_zbiornik"],
+    "related_items": ["af-bio-sand", "startup-akwarium", "filtracja-mechaniczna", "podmiany-wody"],
+    "updated_at": "2025-06-03"
+}

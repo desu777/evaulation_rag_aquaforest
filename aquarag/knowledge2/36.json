@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-047",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Life Source - odpieniacz światła i objawy przedawkowania",
+    "query_text": "AF Life Source odpieniacz wyłączyć dozowanie światła włączone wyłączone pora podawania przedawkowanie objawy nalot szyby piasek skały produkt biologiczny",
+    "full_content": "PYTANIE: Mam kilka pytań dotyczących korzystania z AF Life Source. 1- Czy powinienem wyłączyć odpieniacz podczas dozowania? Jeśli tak, to jak długo? 2- Czy ma znaczenie, czy światła są włączone, czy wyłączone? Jeśli tak, kiedy powinienem to dawkować? 3- Jakie są objawy przedawkowania? ODPOWIEDŹ: 1 - nie ma takiej potrzeby, 2 - nie ma znaczenia pora podawania produktu, 3 - Jak kazdy produkt biologiczny oznakami przedawkowania jest nalot na szybach lub piasku oraz skałach.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "maintenance", "troubleshooting"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Life_Source", "odpieniacz", "nie_wyłączać", "światła", "nie_ma_znaczenia", "pora_podawania", "przedawkowanie", "nalot", "szyby", "piasek", "skały", "produkt_biologiczny"],
+    "related_items": ["af-life-source", "odpieniacz-białek", "dozowanie-produktów", "przedawkowanie", "bioróżnorodność"],
+    "updated_at": "2025-06-03"
+}

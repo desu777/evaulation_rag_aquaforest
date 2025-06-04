@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-114",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "NP Pro azotany wzrosły po 2 dniach - produkt nie jest źródłem azotanów",
+    "query_text": "NP Pro azotany wzrosły 2 dni stabilny poziom nie źródło azotanów pośrednie działanie bakterie odżywiające podmiany wody NitraPhos Minus fosforany kontrola",
+    "full_content": "PYTANIE: Rozpocząłem stosowanie NP Pro 2 dni temu, a moje azotany utrzymywały się na stabilnym poziomie 60 przez kilka miesięcy. Po 2 dniach stosowania NP Pro moje azotany wzrosły do 70? ODPOWIEDŹ: Produkt -NP Pro nie jest źródłem azotanów więc nie może powodować wzrostu ich poziomu. Dwa dni to bardzo krótki okres aby móc zauważyć jakiekolwiek skutki działania -NP Pro. Produkt ten nie wpływa bezpośrednio na poziom azotanów. Działa on pośrednio to znaczy sprzyja rozwojowi bakterii odżywiających się azotanami a co za tym idzie z czasem poziom azotanów zaczyna spadać. Poziom 60 ppm to dosyć wysoki wynik. Zalecałabym Spróbowanie obniżenia poziomu azotanów poprzez podmiany wody oraz użycie NitraPhos Minus, który może przyspieszyć redukcję poziomu azotanów. Proszę kontrolować także poziom fosforanów.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["troubleshooting", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NP_Pro", "azotany_wzrosły", "nie_źródło_azotanów", "pośrednie_działanie", "bakterie_odżywiające", "podmiany_wody", "NitraPhos_Minus", "fosforany", "kontrola"],
+    "related_items": ["np-pro", "nitraphos-minus", "azotany-wysokie", "bakterie-nitryfikacyjne", "podmiany-wody"],
+    "updated_at": "2025-06-03"
+}

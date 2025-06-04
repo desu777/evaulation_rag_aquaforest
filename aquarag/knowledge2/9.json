@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-020",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy AF Build podnosi poziom wapnia w akwarium morskim",
+    "query_text": "AF Build wapń poziom Ca podnoszenie pH nie podnosi calcium funkcja zastosowanie do czego służy AF Build wpływ na wapń",
+    "full_content": "PYTANIE: Czy AF Build podnosi poziom wapnia? ODPOWIEDŹ: AF Build nie podnosi poziomu wapnia i nie powinien być stosowany do podnoszenia poziomu wapnia. AF Build podnosi pH.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Build", "wapń", "calcium", "pH", "nie_podnosi_wapnia", "podnosi_pH", "funkcja_produktu", "błędne_zastosowanie", "Ca_Plus"],
+    "related_items": ["af-build", "ca-plus", "component-1-2-3-plus", "ph-akwarium", "parametry-wody-morskie", "reef-mineral-salt", "suplementy-wapnia"],
+    "updated_at": "2025-06-03"
+  }

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-089",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Dodawanie nowych skał AF Rock do istniejącego akwarium rafowego bez usuwania starych",
+    "query_text": "AF Rock istniejące akwarium rafowe 5 lat nowe kamienie dodać stare skały wpływ system utwardzać bezpośrednio zakwit okrzemek glonów wypłukanie RO partiami obserwacja parametrów",
+    "full_content": "PYTANIE: Mam ustalony zbiornik rafowy morski. Około 5 lat. Muszę teraz zmienić wystrój akwarium.... Zdecydowałem się więc na AQUAFOREST ROCKS. Czy możecie mi pomóc i udzielić wskazówek, Zanurzyłem już nowe kamienie AF według własnych upodobań. (wszystkie kamienie na moim stole warsztatowym) Teraz muszę dodać te kamienie (około 60 kg – 3 pudełka) do mojego ISTNIEJĄCEGO akwarium. Bez usuwania STARYCH, utwardzonych skał. Czy będzie to miało wpływ na mój system? Czy muszę je najpierw utwardzać, czy mogę dodać je bezpośrednio.. Czy nie spowoduje to zakwitu okrzemek glonów? ODPOWIEDŹ: Tak duża ingerencja w akwarium może spowodować zatrzymanie konsumpcji Ca, KH i Mg dlatego zalecamy wypłukanie nowej skały w wodzie RO oraz dodawanie do funkcjonującego akwarium partiami i obserwację parametrów. Stopniowe dodawanie skały do akwarium bez zachwiania parametrów nie powinno spowodować zakwitu okrzemek lub glonów.",
+    "domain": "seawater",
+    "category": "maintenance",
+    "intent": ["maintenance", "troubleshooting", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_Rock", "istniejące_akwarium", "60kg", "duża_ingerencja", "zatrzymanie_konsumpcji", "Ca_KH_Mg", "wypłukanie_RO", "dodawanie_partiami", "obserwacja_parametrów", "stopniowe_dodawanie", "zakwit_okrzemek", "glony"],
+    "related_items": ["af-rock", "modyfikacja-akwarium", "wypłukanie-skał", "konsumpcja-parametrów", "zakwit-glonów", "aranżacja-akwarium"],
+    "updated_at": "2025-06-03"
+  }

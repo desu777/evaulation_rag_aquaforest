@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-084",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy żywy pokarm z artemia salina nadaje się dla rybek słodkowodnych",
+    "query_text": "żywy pokarm płyn artemia salina rybki słodkowodne nadaje się młode rybki morskie zaszkodzić słone wody szok słodka woda poszkodowany",
+    "full_content": "PYTANIE: Kupiłam produkt żywy pokarm w płynie z artemia salina, ale mam wątpliwość czy nadaje się ten produkt dla rybek słodkowodnych? Jest napisane, że dla młodych rybek morskich, a nie chcę zaszkodzić swoim rybkom. ODPOWIEDŹ: Można użyć dla rybek słodkowodnych 😉 Po prostu artemia żyje w słonych wodach i dozna lekkiego szoku w słodkiej wodzie. Jedynym poszkodowanym będzie Artemia.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["żywy_pokarm", "artemia_salina", "rybki_słodkowodne", "można_użyć", "młode_rybki_morskie", "słone_wody", "szok", "słodka_woda", "poszkodowany_artemia"],
+    "related_items": ["artemia-salina", "pokarm-żywy", "karmienie-ryb", "ryby-słodkowodne", "ryby-morskie"],
+    "updated_at": "2025-06-03"
+  }

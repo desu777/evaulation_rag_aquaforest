@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-083",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF K Boost różnice dawkowania między opakowaniem a stroną internetową",
+    "query_text": "AF K Boost 2L dawkowanie problem opakowanie 10ml 3,8mg/l strona internetowa 1ml 10l 5mg/l jakie wskazanie stosować zalecenia na opakowaniu",
+    "full_content": "PYTANIE: Właśnie kupiłem 2-litrowe opakowanie AF K Boost. Mam jednak problem z dawkowaniem, w opakowaniu 2L znajduje się informacja: „10 ml AF Boost litrów wody podniesie poziom potasu o 3,8 mg/k, natomiast na Twojej stronie internetowej znajduje się informacja: „1 ml na 10 l wody w akwarium podniesie poziom: K Potas 5 mg/l. Jakie wskazanie stosować? ODPOWIEDŹ: Postępuj zgodnie z zalecaniami na opakowaniu.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "troubleshooting"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_K_Boost", "2L_opakowanie", "dawkowanie", "problem", "10ml_3.8mg", "strona_internetowa", "1ml_10l_5mg", "zalecenia_na_opakowaniu", "postępuj_zgodnie"],
+    "related_items": ["af-k-boost", "dawkowanie-produktów", "instrukcja-opakowania", "różnice-dawkowania"],
+    "updated_at": "2025-06-03"
+  }

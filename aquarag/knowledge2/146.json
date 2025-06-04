@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-157",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Magnesium Test Kit brak końcówki strzykawki wysokie wyniki - test tylko zgodnie z zaleceniem nowy test",
+    "query_text": "Magnesium Test Kit MagnesiumTestKit test magnez strzykawka końcówka brak wysokie wyniki precyzyjnie zalecenie producent modyfikacje niekompletny nowy test wiarygodne",
+    "full_content": "PYTANIE: Używam zestawu testowego magnezu i otrzymuję wyniki, które wydają się zbyt wysokie. Problem może być w tym, że brakuje mi końcówki strzykawki. Czy powinienem dodać więcej objętości do strzykawki jeśli brakuje końcówki i jeśli tak, to ile. ODPOWIEDŹ: Test działa precyzyjnie tylko używany zgodnie z zaleceniem producenta. Wszelkie zmiany i modyfikacje mogą mieć wpływ na wynik. Jeżeli Test niekompletny lub od odpakowania testu upłynęło już dużo czasu to zalecamy zakupić nowy test tak aby mieć pewność, że otrzymane wyniki są wiarygodne.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["troubleshooting", "product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Magnesium_Test_Kit", "strzykawka", "końcówka", "wysokie_wyniki", "niekompletny", "nowy_test", "wiarygodne_wyniki"],
+    "related_items": ["magnesium-test-kit", "testy-parametrów", "kontrola-jakości", "instrukcje-użytkowania"],
+    "updated_at": "2025-06-03"
+}
+

@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-090",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Poly Glue biodegradacja w akwarium - czy klej ulega rozkładowi",
+    "query_text": "AF Poly Glue biodegradacja rozkład akwarium klej polimerowy bakterie polimery pożywka degradacja biologiczna proces powolny lata silikon porównanie trwałość ekologiczny",
+    "full_content": "PYTANIE: Jest napisane, że AF Poly Glue ulega biodegradacji. Czy ulegnie degradacji w moim akwarium? Jeśli tak, to kiedy i w jakich okolicznościach? Czy uważacie to za najtrwalszy ekologicznie rodzaj kleju? A może silikon jest bardziej trwały ekologicznie? ODPOWIEDŹ: Klej poly glue jest klejem polimerowym. Jak wiadomo polimery są biodegradowalne, gdyż istnieją bakterie, dla których polimery są pożywką. Czy ulega degradacji w Twoim akwarium - tak będzie ulegać degradacji w środowisku w których zachodzą procesy biologiczne. Akwarium to mały ekosystem, więc zachodzą w nim procesy biologiczne. Procesy biodegradacji takich polimerów są bardzo powolne, mierzone w latach więc przez cały okres życia zbiornika taka degradacja będzie praktycznie niezauważalna. Czy uważamy Poly Glue za najtrwalszy ekologicznie rodzaj kleju oraz czy silikon jest bardziej trwały - Nie prowadziliśmy porównań z silikonem.",
+    "domain": "universal",
+    "category": "aquascaping",
+    "intent": ["product_info", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["AF_Poly_Glue", "biodegradacja", "klej_polimerowy", "polimery", "bakterie", "degradacja_biologiczna", "powolny_proces", "lata", "ekosystem_akwarium", "silikon", "porównanie", "ekologiczny", "trwałość"],
+    "related_items": ["af-poly-glue", "kleje-akwarystyczne", "aquascaping-tools", "biodegradacja-materiaów", "ekologia-akwarium"],
+    "updated_at": "2025-06-03"
+}

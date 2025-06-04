@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-082",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Component 1+2+3+ wysokie KH Dino koralowce umierają jak obniżyć",
+    "query_text": "Component 1+2+3+ Dino koralowce umierają wysokie KH obniżyć dawkowany konsumpcja Ca Mg nie stosowanie Ca Plus Mg Plus czasowe użycie",
+    "full_content": "PYTANIE: Używam Component 1+2+3+, występuje u mnie Dino i moje koralowce umierają przez wysokie kH które wynosi 12,1. Co mam zrobić, aby obniżyć moje kH? ODPOWIEDŹ: Component 1+2+3+ powinien być dawkowany w oparciu o dzienną konsumpcję Ca, KH i Mg. Jeśli KH nie jest konsumowane to zalecamy nie stosowanie tego produktu. Jeśli konsumowane jest tylko Ca i Mg to zalecamy czasowe użycie Ca Plus lub Mg Plus.",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Component_1+2+3+", "wysokie_KH", "Dino", "koralowce_umierają", "obniżyć_KH", "konsumpcja", "Ca", "Mg", "nie_stosowanie", "Ca_Plus", "Mg_Plus", "czasowe_użycie"],
+    "related_items": ["component-1-2-3-plus", "ca-plus", "mg-plus", "wysokie-kh", "dinoflagellaty", "śmierć-koralowców", "konsumpcja-parametrów"],
+    "updated_at": "2025-06-03"
+  }

@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-031",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Do czego służy Reef Mineral Salt - sól bez soli w metodzie Ballinga",
+    "query_text": "Reef Mineral Salt sól bez soli NaCl chlorek sodu metoda Ballinga chlorek wapnia CA CL2 wodorowęglan sodu NaHCO3 równowaga jonowa produkt uboczny koralowce szkielet",
+    "full_content": "PYTANIE: Do czego służy Reef Mineral Salt? ODPOWIEDŹ: Reef Mineral Salt jest to tzw. Sól bez soli, która jest mieszaniną soli morskich, nie zawierającą w swoim składzie NaCL czyli chlorku sodu. ZASTOSOWANIE W METODZIE BALLINGA: Prowadząc akwarium metodą Ballinga dawkujemy chlorek wapnia CA CL2 oraz wodorowęglan sodu - NaHCO3. Dostarczając powyższe składniki do akwarium, dajemy koralowcom składniki do budowy szkieletu z węglanu wapnia. PROBLEM UBOCZNY: Jednak podczas tej reakcji powstaje także produkt uboczny, a jest nim między innymi chlorek sodu (NaCl). ROZWIĄZANIE: Dlatego należy podawać Reef Mineral Salt w celu wyrównania równowagi jonowej i cieszyć się zdrowo rosnącymi koralowcami przez wiele lat.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning", "understanding"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["Reef_Mineral_Salt", "sól_bez_soli", "NaCl", "chlorek_sodu", "metoda_Ballinga", "chlorek_wapnia", "CaCl2", "wodorowęglan_sodu", "NaHCO3", "równowaga_jonowa", "produkt_uboczny"],
+    "related_items": ["reef-mineral-salt", "metoda-ballinga", "chlorek-wapnia", "wodorowęglan-sodu", "równowaga-jonowa", "szkielet-koralowców"],
+    "updated_at": "2025-06-03"
+  }
+  

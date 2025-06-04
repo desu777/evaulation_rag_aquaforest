@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-034",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czym różnią się sole w ofercie Aquaforest - porównanie wszystkich soli",
+    "query_text": "sole Aquaforest różnice Sea Salt Reef Salt Reef Salt+ Hybrid Pro Salt fish only koralowce miękkie SPS wysokie parametry ULNS bakterie probiotyczne porównanie",
+    "full_content": "PYTANIE: Czym różnią się sole w ofercie Aquaforest? SEA SALT: Jest to sól dedykowana głównie do akwariów Fish Only, jak również do akwarium z mniej wymagającymi koralowcami miękkimi i bezkręgowcami. REEF SALT: Nasza podstawowa sól rafowa, która ma szerokie zastosowanie w akwariach rafowych, z obsadą mieszaną. Parametry tej soli są zbliżone do poziomów naturalnej wody morskiej. REEF SALT +: Została stworzona z myślą o zaawansowanych akwarystach, którzy prowadzą swoje akwarium na tzw. Wysokich parametrach - mowa tutaj głównie o Ca, KH i Mg. Jako, iż w akwariach rafowych, pierwiastki są stale konsumowane, muszą być one regularnie uzupełniane, tak aby zapewnić koralowcom odpowiednie warunki do wzrostu. Reef Salt + doskonale sprawdzi się w hodowlach koralowców lub akwariach szczepkowych. Sól tego typu może być również z powodzeniem wykorzystywana do akwariów, w których nie ma stałej suplementacji wapnia, magnezu i KH a poprzez podmianę wody możemy w łatwy sposób uzupełnić brakujące elementy. HYBRID PRO SALT: Najbardziej zaawansowana sól akwarystyczna. Stworzona została specjalnie z myślą o akwariach SPS oraz prowadzonych metodą ULNS (Ultra Low Nutrient System). Sól w swoim składzie zawiera bakterie probiotyczne, pożywkę dla tych bakterii, która ułatwia ich namnażanie zatem sól przyczynia się do obniżenia NO3 i PO4 oraz dodatkowo zawiera aminokwasy i witaminy. Swoją nazwę Hybrid zawdzięcza temu iż występuje w niej dodatek soli pochodzącej z najczystszych wód oceanu.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning", "startup"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["sole_Aquaforest", "Sea_Salt", "Reef_Salt", "Reef_Salt+", "Hybrid_Pro_Salt", "fish_only", "koralowce_miękkie", "SPS", "wysokie_parametry", "ULNS", "bakterie_probiotyczne", "porównanie_soli"],
+    "related_items": ["sea-salt", "reef-salt", "reef-salt-plus", "hybrid-pro-salt", "wybor-soli", "fish-only", "sps-koralowce", "ulns", "metoda-probiotyczna"],
+    "updated_at": "2025-06-03"
+  }

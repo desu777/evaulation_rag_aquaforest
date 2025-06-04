@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-092",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Bio Sand dodawanie do dojrzałego akwarium rafowego - bakterie i przepłukanie",
+    "query_text": "AF Bio Sand dojrzałe akwarium rafowe dodać piasek goło dno przepłukanie RODI bakterie kolumna wody partiami konsumpcja Ca KH Mg koralowce",
+    "full_content": "PYTANIE: Właśnie kupiłem AF Bio Sand do mojego zbiornika rafowego. Mój zbiornik rafowy działa od 2019 roku i chciałem tylko dodać piasek do gołego dna. Czy powinienem przeprowadzić cały proces, aby aktywować piasek, dodając bakterie do piasku, czy będąc dojrzałym akwarium, muszę po prostu dodać go po spłukaniu RODI? ODPOWIEDŹ: Można dodać bakterie do kolumny wody a piasek powinien być dobrze przepłukany i dodawany partiami co kilka dni by nie zaburzać konsumpcji koralowców w Ca,KH i Mg.",
+    "domain": "seawater",
+    "category": "maintenance",
+    "intent": ["maintenance", "troubleshooting"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_Bio_Sand", "dojrzałe_akwarium", "rafowy", "goło_dno", "przepłukanie_RODI", "bakterie_kolumna_wody", "dodawanie_partiami", "konsumpcja_Ca_KH_Mg", "koralowce"],
+    "related_items": ["af-bio-sand", "bakterie-akwarium", "piasek-rafowy", "konsumpcja-parametrów", "maintenance-akwarium"],
+    "updated_at": "2025-06-03"
+}

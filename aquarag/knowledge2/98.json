@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-109",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Component Strong C z NaOH i sole mineralne z magnezem - równe dawki komponentów",
+    "query_text": "Component Strong C NaOH wodorotlenek sodu sole mineralne magnez Aquaforest wodorowęglan sodu zasolenie równe dawki komponenty uzupełnienie roztwór",
+    "full_content": "PYTANIE: Czy można bezpiecznie mieszać Component Strong C z NaOH? Czy nadal używać soli mineralnych z magnezem Aquaforest, jeśli nie dozuje się wodorowęglanu sodu i NaOH samo w sobie podnosi zasolenie ODPOWIEDŹ: nie wiem czy dobrze. rozumiem ale wszystkie komponenty. powinny być stosowane w równych dawkach. jeśli czegoś. brakuje należy to uzupełnić odpowiednim roztworem.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["Component_Strong_C", "NaOH", "wodorotlenek_sodu", "sole_mineralne", "magnez", "wodorowęglan_sodu", "zasolenie", "równe_dawki", "komponenty", "uzupełnienie"],
+    "related_items": ["component-strong", "naoh", "sole-mineralne", "magnez", "dawkowanie-komponentów"],
+    "updated_at": "2025-06-03"
+}

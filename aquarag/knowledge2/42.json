@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-053",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Co robić gdy KH wzrosło do 12 po użyciu dino s",
+    "query_text": "dino s koralowce umarły światło KH wzrosło 12 kalcyfikacja zużycie jonów wodorotlenowych podmiana wody KH spadnie",
+    "full_content": "PYTANIE: Używałem dino s, niektóre moje koralowce umarły przez co zmniejszyłem światło. Po jakimś czasie zauważyłem, że kH wzrosło do 12. Co mam teraz zrobić? ODPOWIEDŹ: Niestety nie wiemy, jak działa ten preparat, ale najwyraźniej nie jest obojętny dla koralowców. Oczywiście, KH się zwiększyło, gdyż zmniejszyła się kalcyfikacja, a przez to zużycie jonów wodorotlenowych. W takim przypadku zalecamy podmianę wody. KH spadnie samo z siebie, a podmiana może ten proces nieco przyśpieszyć.",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "maintenance"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["dino_s", "koralowce_umarły", "KH_wzrosło_12", "kalcyfikacja", "zużycie_jonów_wodorotlenowych", "podmiana_wody", "KH_spadnie", "nie_obojętny_koralowców"],
+    "related_items": ["kh-problem", "podmiana-wody", "kalcyfikacja", "śmierć-koralowców", "parametry-wody-morskie"],
+    "updated_at": "2025-06-03"
+  }

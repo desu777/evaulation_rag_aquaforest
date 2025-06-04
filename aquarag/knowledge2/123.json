@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-134",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "NP Pro rozcieńczenie 10ml 50ml aby uzyskać efekt jak 2000ml - tak 50ml NP do 1 litra wody",
+    "query_text": "NP Pro -NP Pro npro np-pro rozcieńczenie rozcieńczać 10ml 50ml 2000ml efekt przygotować samodzielnie 1 litr wody proporcje",
+    "full_content": "PYTANIE: Czy jest możliwość rozcieńczenia 10ml lub 50ml, aby uzyskać taki sam efekt jak przy 2000ml? ODPOWIEDŹ: Tak, można samodzielnie przygotować sobie takie rozcieńczenie - 50 ml NP do 1 litra wody.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["NP_Pro", "rozcieńczenie", "50ml", "1_litr_wody", "proporcje", "samodzielnie_przygotować"],
+    "related_items": ["np-pro", "rozcieńczanie-produktów", "proporcje-mieszania", "procedury-dozowania"],
+    "updated_at": "2025-06-03"
+}

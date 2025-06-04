@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-016",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Która sól Aquaforest najlepsza dla ryb i koralowców innych niż SPS",
+    "query_text": "sól Aquaforest fish only niewymagające koralowce Sea Salt Reef Salt LPS koralowce miękkie wybór soli podstawowa sól bez SPS akwarium rybne wymagające koralowce",
+    "full_content": "PYTANIE: Która sól będzie najlepsza dla ryb i koralowców innych niż SPS? ODPOWIEDŹ: Dla akwariów fish only i z niewymagającą obsadą koralowców zalecamy stosowanie Sea Salt, czyli najbardziej podstawowej z naszych soli. W przypadku bardziej wymagających koralowców warto rozważyć Reef Salt. SZCZEGÓŁOWE ZALECENIA: SEA SALT - ZASTOSOWANIE: 1. Akwaria fish only (tylko ryby) 2. Akwaria z niewymagającymi koralowcami miękkimi 3. Początkujący akwaryści 4. Budżetowe rozwiązanie REEF SALT - ZASTOSOWANIE: 1. Akwaria z bardziej wymagającymi koralowcami (LPS, niektóre miękkie) 2. Mieszane akwaria z różnymi typami koralowców (bez SPS) 3. Gdy chcemy lepszą kontrolę nad parametrami 4. Przejście przed ewentualnym upgrade do SPS RÓŻNICE: Sea Salt zapewnia podstawowe parametry potrzebne do utrzymania ryb i prostych koralowców. Reef Salt oferuje bardziej zbilansowany skład minerałów wspierający wzrost i kolory bardziej wymagających organizmów. EWOLUCJA AKWARIUM: Wielu akwarystów zaczyna od Sea Salt i przechodzi na Reef Salt w miarę rozwoju doświadczenia i wymagań obsady.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning", "startup"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Sea_Salt", "Reef_Salt", "fish_only", "niewymagające_koralowce", "LPS", "koralowce_miękkie", "wybór_soli", "podstawowa_sól", "akwarium_rybne", "początkujący"],
+    "related_items": ["sea-salt", "reef-salt", "reef-salt-plus", "hybrid-pro-salt", "parametry-wody-morskie", "fish-only", "lps-koralowce", "koralowce-miękkie"],
+    "updated_at": "2025-06-03"
+  }
+

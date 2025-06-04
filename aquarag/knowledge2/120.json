@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-131",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "No3+ Po4+ czy można stworzyć jeden roztwór - nie zalecamy dodawać jeden po drugim",
+    "query_text": "No3+ Po4+ NO3+ PO4+ no3 po4 azotany fosforany jeden roztwór nie zalecamy razem stosować jeden po drugim mieszanie produktów",
+    "full_content": "PYTANIE: Czy mogę stworzyć z tych produktów jeden roztwór? ODPOWIEDŹ: Nie zalecamy tworzenia z tych dwóch produktów jednego roztwór. Można je razem stosować, natomiast powinno się dodawać te produkty jeden po drugim.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["No3+", "Po4+", "NO3+", "PO4+", "jeden_roztwór", "nie_zalecamy", "razem_stosować", "jeden_po_drugim"],
+    "related_items": ["no3-plus", "po4-plus", "procedury-dozowania", "mieszanie-produktów"],
+    "updated_at": "2025-06-03"
+}

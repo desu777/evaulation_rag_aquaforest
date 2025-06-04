@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-064",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Czy Life Bio Fil należy umyć przed użyciem w akwarium",
+    "query_text": "Life Bio Fil myć przed użyciem akwarium pożyteczne bakterie nie myć woda mętna zmętnienie szybko zniknie absolutnie nie",
+    "full_content": "PYTANIE: Czy mogę wiedzieć, że Life Bio Fil należy umyć przed użyciem w moim akwarium? ODPOWIEDŹ: Absolutnie nie. Life Bio Fil zawiera pożyteczne bakterie, dlatego nie należy go myć przed użyciem, dlatego woda pozostaje mętna. Jednak zmętnienie powinno szybko zniknąć.",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info", "maintenance"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["Life_Bio_Fil", "nie_myć", "absolutnie_nie", "pożyteczne_bakterie", "woda_mętna", "zmętnienie", "szybko_zniknie", "przed_użyciem"],
+    "related_items": ["life-bio-fil", "bakterie-probiotyczne", "medium-filtracyjne", "zmętnienie-wody"],
+    "updated_at": "2025-06-03"
+  }
+  

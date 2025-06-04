@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-105",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Metoda probiotyczna dla koralowców SPS - dostosowanie do zbiornika i parametrów",
+    "query_text": "metoda probiotyczna koralowce SPS hodowcy media dawki produkty dostosowanie zbiornik parametry wody grupa FB doświadczenia akwaryści",
+    "full_content": "PYTANIE: Dla wszystkich hodowców koralowców SPS: jaką metodę stosujecie, jakie media wykorzystujecie i jakie dawki używacie? Zaczynam stosować metodę probiotyczną i potrzebuję waszych rad dotyczących wyboru sposobu postępowania oraz produktów do użytku ODPOWIEDŹ: nie ma jednej uniwersalnej metody. Metoda probiotyczna powinna zostać dostosowana do rodzaju prowadzonego zbiornika i poziomów parametrów wody. zachęcam do dołączenia do naszej grupy. na FB, gdzie akwaryści. wymieniają się doświadczeniami.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["learning", "community"],
+    "difficulty": "expert",
+    "url": "none",
+    "tags": ["metoda_probiotyczna", "koralowce_SPS", "dostosowanie", "zbiornik", "parametry_wody", "grupa_FB", "doświadczenia_akwaryści", "media", "dawki"],
+    "related_items": ["metoda-probiotyczna", "sps-korale", "grupa-facebook", "community-support", "parametry-wody"],
+    "updated_at": "2025-06-03"
+}

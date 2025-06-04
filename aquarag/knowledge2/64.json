@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-075",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Problem z solą - wysokie wapń niskie dKH zła partia",
+    "query_text": "wysokie Ca niskie dKH zła partia soli BRS mieszanie galony salinność film na wodzie jak mieszasz długo testy zawartość wapnia twardość wymienić badanie",
+    "full_content": "PYTANIE: Miałem naprawdę wysokie cal przy 574 i niskie dkh przy 5,1 w obu moich nowych pudełkach soli, które dostałem od brs.com! Co można zrobić. Jednorazowo mieszam 5 galonów. Dodaję sól powoli, pozwalając jej się rozpuścić, a następnie dodaję więcej soli, aż osiągnę 1,026. Zawsze zużywam w ciągu 2 godzin. Używam soli od sześciu lat. Sprawdzam wodę przed dodaniem do zbiornika. Otworzyłem kolejne pudełko soli i wszystkie testy z tym pudełkiem wyszły dobrze. Więc na pewno jest to zła partia soli. Mam też film na wodzie. Pozwoliłem nawet jednemu wymieszać przez noc, mocno poruszając powierzchnię, i nie znika nawet po nowym pudełku i nigdy wcześniej nie miałem takiego problemu. ODPOWIEDŹ: Jak mieszasz sól? Jak długo mieszasz sól i po jakim czasie od mieszania wykonujesz testy? Czy wiesz jaką zawartość wapnia ma twoja woda, oraz poziom jej twardości? Wg mnie powinien się zgłosić do BRS i BRS powinien mu wymienić sól a starą odesłać do nas do badania. O jakiej soli jest mowa?",
+    "domain": "seawater",
+    "category": "problems",
+    "intent": ["troubleshooting", "product_info"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["wysokie_Ca", "niskie_dKH", "zła_partia_soli", "BRS", "galony", "salinność", "film_na_wodzie", "mieszanie_soli", "zawartość_wapnia", "twardość", "wymienić_sól", "badanie"],
+    "related_items": ["problemy-z-solą", "parametry-soli", "reklamacja-soli", "mieszanie-soli", "kontrola-jakości"],
+    "updated_at": "2025-06-03"
+  }

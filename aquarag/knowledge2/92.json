@@ -1,0 +1,16 @@
+{
+    "id": "knowledge-pl-103",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "AF Bio S w akwarium słodkowodnym - zmiana dedykacji produktu i AF Life Essence",
+    "query_text": "AF Bio S słodkowodne akwarium etykieta freshwater zmiana produkt bakterie nitryfikacyjne AF Life Essence dedykowany słonowodne mniej wydajny",
+    "full_content": "PYTANIE: Mój przyjaciel na podstawie swoich wcześniejszych doświadczeń polecił mi użycie tego produktu do cyklicznego czyszczenia zbiornika ze słodką wodą. Zauważyliśmy jednak, że na pudełku AF BIO S nie ma już etykiety dotyczącej wody słodkiej. Po sprawdzeniu Twojej oficjalnej strony internetowej zauważyłem, że jest ona zalecana wyłącznie do słonej wody. Mój przyjaciel mówi, że już wcześniej używał tego produktu do czyszczenia zbiorników ze słodką wodą, ale wtedy na produktach znajdowała się również etykieta dotycząca wody słodkiej. Zastanawiam się, czy nastąpiła zmiana w produkcie? Czy można cyklinować zbiornik słodkiej wody za pomocą AF BIO S, czy tylko teraz jest to woda słona? Ponieważ w dziale AF Freshwater nie widziałem żadnego produktu zawierającego bakterie nitryfikacyjne innego niż LIFE BIO MEDIA ODPOWIEDŹ: AF Bio S są to bakterie startowe dedykowane do akwarium słonowodnego. Do akwarium słodkowodnego mamy AF Life Essence. Nic złego się nie stanie jeśli dodasz Bio S do słodkiego - będą działać ale mogą być mniej wydajne. Nie zalecamy takiego zastosowania, zalecamy skorzystanie z AF Life Essence który jest dedykowany do akwariów słodko wodnych",
+    "domain": "universal",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "intermediate",
+    "url": "none",
+    "tags": ["AF_Bio_S", "słodkowodne", "etykieta_freshwater", "zmiana_produktu", "bakterie_nitryfikacyjne", "AF_Life_Essence", "dedykowany", "słonowodne", "mniej_wydajny"],
+    "related_items": ["af-bio-s", "af-life-essence", "bakterie-startowe", "akwarium-słodkowodne", "cykl-azotowy"],
+    "updated_at": "2025-06-03"
+}

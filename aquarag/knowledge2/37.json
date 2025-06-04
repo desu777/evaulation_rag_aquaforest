@@ -1,0 +1,17 @@
+{
+    "id": "knowledge-pl-048",
+    "content_type": "knowledge",
+    "lang": "pl",
+    "title": "Który reaktor AF wybrać dla zbiornika 800 litrów z rowafos i węglem",
+    "query_text": "reaktor AF 800 litrów rowafos AF130 AF110 węgiel pompa regulowana 2000l/h rozmiar reaktora phosphate wybór",
+    "full_content": "PYTANIE: Zastanawiam się nad kupnem reaktora AF, ale nie wiem, który będzie mi potrzebny. Mam zbiornik około 800 litrów po przemieszczeniu i chcę zalać rowafosem. Wiem, że istnieje wiele zmiennych, ale jaki mniej więcej rozmiar pompy i reaktora byś polecił? Czasami w tym samym czasie mogę także używać węgla. ODPOWIEDŹ: Polecamy filtr AF130, na sam phosphate wystarczyłby pewnie AF 110, ale jeżeli będzie potrzeba dodania chociażby tego węgla to lepszym wyborem będzie AF 130. Pompa najlepiej z regulowaną mocą do 2000l/h.",
+    "domain": "seawater",
+    "category": "education",
+    "intent": ["product_info", "learning"],
+    "difficulty": "beginner",
+    "url": "none",
+    "tags": ["reaktor_AF", "AF130", "AF110", "800_litrów", "rowafos", "węgiel", "pompa_regulowana", "2000l/h", "phosphate", "wybór_reaktora"],
+    "related_items": ["reaktor-af130", "reaktor-af110", "rowafos", "węgiel-aktywny", "pompy-reaktora", "filtracja-chemiczna"],
+    "updated_at": "2025-06-03"
+  }
+  
