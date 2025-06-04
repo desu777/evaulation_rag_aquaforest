@@ -3,71 +3,30 @@ from datetime import datetime
 from langchain_core.messages import SystemMessage
 from state import EnhancedEvaluationRAGState
 from components import EvaluationRAGComponents
-from config import ENHANCED_AQUAFOREST_EXPERT_PROMPT, MAX_REASONING_ATTEMPTS, CONFIDENCE_THRESHOLDS
+from config import ENHANCED_AQUAFOREST_EXPERT_PROMPT, MAX_REASONING_ATTEMPTS
 
 # Initialize components
 components = EvaluationRAGComponents()
 
-def preprocess_query(query: str) -> str:
-    """Czyszczenie i normalizacja zapytania"""
-    
-    # Popraw częste błędy i niejasności
-    replacements = {
-        "component a": "component strong a",
-        "component b": "component strong b", 
-        "component c": "component strong c",
-        "component 1 2 3": "component 1+2+3",
-        "component 123": "component 1+2+3",
-        "af power": "af power elixir",
-        "probios": "pro bio s",
-        "probio": "pro bio",
-        "kh+": "kh plus",
-        "ca+": "ca plus",
-        "mg+": "mg plus",
-        "reef salt+": "reef salt plus",
-        "ocean guard": "oceanguard",
-        "icp test": "af test icp",
-        " sps ": " koralowce sps ",
-        " lps ": " koralowce lps "
-    }
-    
-    query_lower = query.lower()
-    
-    # Zastosuj poprawki
-    for old, new in replacements.items():
-        query_lower = query_lower.replace(old, new)
-    
-    # Usuń podwójne spacje
-    query_lower = " ".join(query_lower.split())
-        
-    return query_lower
-
 def initialize_evaluation(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
-    """Node 1: Initialize evaluation with preprocessing"""
-    
-    # Preprocess query to fix common issues
-    original_query = state["original_query"]
-    preprocessed_query = preprocess_query(original_query)
-    
-    if preprocessed_query != original_query.lower():
-        print(f"🔧 Query preprocessed: '{original_query}' → '{preprocessed_query}'")
-    
-    print(f"\n🏁 STARTING Enhanced Model Evaluation")
-    print(f"📝 Query: {preprocessed_query}")
+    """Node 1: Initialize evaluation-based reasoning"""
+    print(f"🧠 ENHANCED EVALUATION RAG: {state['original_query']}")
+    print("🎯 Model-based quality assessment + Intent detection")
     
     return {
         **state,
-        "original_query": preprocessed_query,  # Use preprocessed version
-        "current_query": "",
+        "current_query": state['original_query'],
         "attempt_count": 0,
         "attempt_history": [],
-        "search_results": [],
-        "model_confidence": 0.0,
         "all_results": [],
-        "evaluation_log": [f"Starting evaluation for: '{preprocessed_query}'"],
-        "final_answer": "",
+        "evaluation_log": [f"Starting evaluation for: '{state['original_query']}'"],
         "should_continue": True,
-        "escalate": False
+        "escalate": False,
+        "query_intent": "general",
+        "business_type": "none",
+        "requires_trade_secret_filter": False,
+        "confidence_threshold_override": 7.0,
+        "company_context_added": False
     }
 
 def execute_search_attempt(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
@@ -87,8 +46,8 @@ def execute_search_attempt(state: EnhancedEvaluationRAGState) -> EnhancedEvaluat
     
     print(f"🔧 Query: {optimized_query}")
     
-    # Search with optimized query and dynamic top_k
-    results = components.search_knowledge(optimized_query, attempt=attempt)
+    # Search with optimized query (no score filtering!)
+    results = components.search_knowledge(optimized_query)
     
     print(f"📊 Found {len(results)} results")
     
@@ -107,27 +66,20 @@ def execute_search_attempt(state: EnhancedEvaluationRAGState) -> EnhancedEvaluat
         "current_query": optimized_query,
         "attempt_count": attempt,
         "search_results": results,
-        "attempt_history": state["attempt_history"] + [attempt_info],
-        "all_results": state["all_results"] + [results],
-        "evaluation_log": state["evaluation_log"] + [evaluation_entry]
+        "attempt_history": [attempt_info],
+        "all_results": [results],
+        "evaluation_log": [evaluation_entry]
     }
 
 def enhanced_evaluate_content_quality(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
-    """Node 3: Enhanced evaluation with smart fallbacks and dynamic thresholds"""
+    """Node 3: Enhanced evaluation with smart fallbacks"""
     attempt = state["attempt_count"]
     results = state["search_results"]
     
     print(f"🤖 Model evaluating content quality...")
     
-    # Get dynamic threshold based on intent - NEW!
-    query_intent = state.get("query_intent", "general")
-    confidence_threshold = CONFIDENCE_THRESHOLDS.get(query_intent, 7.0)
-    
-    # Override if manually set (business/trade secrets use custom thresholds)
-    if "confidence_threshold_override" in state:
-        confidence_threshold = state["confidence_threshold_override"]
-    
-    print(f"🎯 Intent: {query_intent} → Threshold: {confidence_threshold}")
+    # Get dynamic threshold based on intent
+    confidence_threshold = state.get("confidence_threshold_override", 7.0)
     
     # Model evaluates content (ignoring Pinecone scores)
     confidence, reasoning = components.evaluate_content_quality(
@@ -145,19 +97,33 @@ def enhanced_evaluate_content_quality(state: EnhancedEvaluationRAGState) -> Enha
         confidence < confidence_threshold and 
         attempt >= MAX_REASONING_ATTEMPTS):
         
-        print(f"💊 DOSAGE FALLBACK: Providing intelligent dosage guidance")
+        print(f"💊 DOSAGE FALLBACK: Providing packaging instructions")
         
-        dosage_fallback = get_dosage_fallback(state['original_query'])
+        dosage_fallback = f"""Nie znalazłem szczegółowych informacji o dawkowaniu w bazie wiedzy Aquaforest.
+
+📦 **Instrukcje dawkowania znajdują się na opakowaniu produktu**
+- Zawsze sprawdź etykietę przed użyciem
+- Rozpocznij od najmniejszej zalecanej dawki  
+- Obserwuj reakcję akwarium i dostosuj dawkę
+
+💡 **Ogólne zasady Aquaforest:**
+- Dawki na etykiecie są bezpieczne dla standardowych akwariów
+- W przypadku wątpliwości skonsultuj z doświadczonym akwarystą
+- Regularnie testuj parametry wody po dodaniu preparatu
+
+📞 **Pomoc techniczna**: (+48) 14 691 79 79 (pon-pt, 8:00-16:00)
+
+🌐 **Więcej informacji**: https://aquaforest.eu/pl/kontakt/"""
         
         return {
             **state, 
             "final_answer": dosage_fallback,
             "should_continue": False,
             "model_confidence": 7.0,  # Good fallback response
-            "evaluation_log": state["evaluation_log"] + [evaluation_entry + " | Intelligent dosage fallback used"]
+            "evaluation_log": [evaluation_entry + " | Dosage fallback used"]
         }
     
-    # Standard confidence evaluation with dynamic threshold
+    # Standard confidence evaluation
     if confidence >= confidence_threshold:
         status = "EXCELLENT" if confidence >= 9.0 else "GOOD"
         print(f"✅ {status} content quality ({confidence}/10) - generating answer")
@@ -165,28 +131,28 @@ def enhanced_evaluate_content_quality(state: EnhancedEvaluationRAGState) -> Enha
             **state, 
             "model_confidence": confidence,
             "should_continue": False,
-            "evaluation_log": state["evaluation_log"] + [evaluation_entry]
+            "evaluation_log": [evaluation_entry]
         }
         
     elif attempt >= MAX_REASONING_ATTEMPTS:
         print(f"⚠️ Max attempts reached ({attempt}) - escalating")
-        evaluation_entry += f" | Max attempts reached (threshold: {confidence_threshold})"
+        evaluation_entry += f" | Max attempts reached"
         return {
             **state, 
             "model_confidence": confidence,
             "should_continue": False, 
             "escalate": True,
-            "evaluation_log": state["evaluation_log"] + [evaluation_entry]
+            "evaluation_log": [evaluation_entry]
         }
         
     else:
-        print(f"🤔 Content quality insufficient ({confidence}/{confidence_threshold}) - continuing reasoning")
-        evaluation_entry += f" | Insufficient quality, continuing (attempt {attempt}/{MAX_REASONING_ATTEMPTS})"
+        print(f"🤔 Content quality insufficient ({confidence}/10) - continuing reasoning")
+        evaluation_entry += f" | Insufficient quality, continuing"
         return {
             **state, 
             "model_confidence": confidence,
             "should_continue": True,
-            "evaluation_log": state["evaluation_log"] + [evaluation_entry]
+            "evaluation_log": [evaluation_entry]
         }
 
 def generate_evaluation_answer(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
@@ -267,82 +233,3 @@ Nasi specjaliści z przyjemnością odpowiedzą na wszystkie pytania! 🌊"""
         
     except Exception as e:
         return {**state, "final_answer": f"Przepraszam, wystąpił błąd. Spróbuj ponownie."}
-
-def get_dosage_fallback(original_query: str) -> str:
-    """Inteligentny fallback dla pytań o dawkowanie"""
-    
-    query_lower = original_query.lower()
-    
-    base_response = """📦 **Dokładne dawkowanie znajdziesz na opakowaniu produktu**
-
-Nie znalazłem szczegółowych informacji o dawkowaniu w bazie, ale oto ogólne wytyczne Aquaforest:"""
-
-    # Ogólne zasady dawkowania dla typowych produktów
-    general_guidelines = {
-        "component": """
-🔹 **Component 1+2+3**: Zazwyczaj 5-25ml/100L dziennie
-   - Rozpocznij od 5ml/100L każdego komponentu
-   - Zwiększaj stopniowo obserwując KH, Ca, Mg
-   - Dawkuj równe ilości każdego komponentu
-   - Testuj parametry co 2-3 dni podczas dostosowywania""",
-   
-        "power elixir": """
-🔹 **AF Power Elixir**: Zazwyczaj 1-10ml/100L dziennie
-   - Małe akwarium: 1-2ml/100L
-   - Średnie akwarium: 3-5ml/100L
-   - Duże akwarium z SPS: 5-10ml/100L
-   - Podziel dawkę na 2-3 porcje dziennie""",
-   
-        "pro bio": """
-🔹 **Pro Bio S**: Zazwyczaj 1-2 krople/100L dziennie
-   - Monitoruj NO3 i PO4 regularnie
-   - Zwiększaj dawkę stopniowo co tydzień
-   - Stosuj razem z AF -NP PRO jeśli nutrienty spadają za szybko
-   - W przypadku dużej bioobciążenia może być potrzebne więcej""",
-   
-        "vitality": """
-🔹 **AF Vitality**: 2-5ml/100L 2-3 razy w tygodniu
-   - Dawkuj wieczorem po wygaszeniu światła
-   - Obserwuj reakcję koralowców (polipowanie)
-   - Dostosuj częstotliwość do reakcji zwierząt""",
-   
-        "energy": """
-🔹 **AF Energy**: 2-10ml/100L dziennie
-   - Rozpocznij od najmniejszej dawki
-   - Zwiększaj stopniowo obserwując koralowce
-   - Najlepiej dawkować w kilku porcjach dziennie""",
-   
-        "kh pro": """
-🔹 **KH Pro**: Dawkuj według potrzeb alkaliczności
-   - 1ml KH Pro zwiększa alkaliczność o ~0.36 dKH na 100L
-   - Cel: 7-9 dKH dla rafy mieszanej
-   - Dawkuj powoli, maksymalnie 1 dKH wzrost na dobę"""
-    }
-    
-    # Sprawdź czy pytanie dotyczy znanego produktu
-    for key, guideline in general_guidelines.items():
-        if key in query_lower:
-            base_response += guideline
-            break
-    else:
-        # Ogólne wytyczne jeśli produkt nierozpoznany
-        base_response += """
-🔹 **Ogólne zasady dawkowania Aquaforest**:
-   - Zawsze rozpocznij od najmniejszej zalecanej dawki na etykiecie
-   - Zwiększaj dawkę stopniowo co 3-7 dni
-   - Obserwuj reakcję mieszkańców akwarium
-   - Testuj parametry wody regularnie podczas dostosowywania"""
-
-    base_response += """
-
-⚠️ **WAŻNE ZASADY BEZPIECZEŃSTWA**:
-- Zawsze przeczytaj instrukcję na opakowaniu
-- Nie przekraczaj maksymalnych dawek
-- W razie wątpliwości - mniej znaczy więcej!
-- Monitoruj zwierzęta przez kilka dni po zmianie dawkowania
-
-📞 **Pomoc techniczna**: (+48) 14 691 79 79 (pon-pt, 8:00-16:00)
-🌐 **Instrukcje online**: https://aquaforest.eu/pl/produkty/
-📧 **Kontakt**: https://aquaforest.eu/pl/kontakt/"""
-    
-    return base_response
