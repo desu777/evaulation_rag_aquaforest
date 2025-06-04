@@ -14,6 +14,18 @@ EXCELLENT_CONFIDENCE = 9.0      # Outstanding content quality
 GOOD_CONFIDENCE = 7.0           # Sufficient to answer user
 MAX_REASONING_ATTEMPTS = 3      # 3 reasoning attempts before escalation
 
+# === DYNAMIC CONFIDENCE THRESHOLDS PER INTENT ===
+CONFIDENCE_THRESHOLDS = {
+    "general": 7.0,
+    "dosage": 6.0,          # Niższy próg + fallback
+    "problem_solving": 6.5,
+    "business": 9.0,        # Wysoki próg ale obsługiwany przez handler
+    "production": 5.0,      # Niski bo i tak filtrowany trade secrets
+    "support": 6.5,
+    "product_info": 6.5,
+    "learning": 7.0
+}
+
 # === ENHANCED AQUAFOREST EXPERT SYSTEM PROMPT ===
 ENHANCED_AQUAFOREST_EXPERT_PROMPT = """
 # AQUAFOREST AI EXPERT - ASYSTENT KLIENTA

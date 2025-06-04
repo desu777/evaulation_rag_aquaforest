@@ -11,18 +11,28 @@ class EvaluationRAGComponents:
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
         self.llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
     
-    def search_knowledge(self, query: str, top_k: int = 8) -> List[Dict]:
-        """Simple search without score filtering - let model decide quality"""
+    def search_knowledge(self, query: str, top_k: int = 8, attempt: int = 1) -> List[Dict]:
+        """Search with dynamic top_k - more results in later attempts"""
         try:
             if not self.index:
                 return []
+            
+            # Zwiększ liczbę wyników w kolejnych próbach
+            dynamic_top_k = {
+                1: 8,   # Standardowo
+                2: 12,  # Więcej opcji
+                3: 16   # Maksymalnie szeroko
+            }
+            
+            final_top_k = dynamic_top_k.get(attempt, top_k)
+            print(f"🔍 Searching with top_k={final_top_k} (attempt {attempt})")
             
             query_embedding = self.embeddings.embed_query(query)
             
             results = self.index.query(
                 vector=query_embedding,
                 namespace='pl',
-                top_k=top_k,
+                top_k=final_top_k,
                 include_metadata=True
             )
             
@@ -48,74 +58,89 @@ class EvaluationRAGComponents:
             return []
     
     def optimize_query_for_attempt(self, original_query: str, attempt: int, previous_evaluations: List[str] = None) -> str:
-        """MUCH simpler, natural query optimization"""
+        """SIMPLE rule-based query optimization - NO LLM calls!"""
+        
+        # Wyciągamy kluczowe słowa
+        query_lower = original_query.lower()
+        
+        # Lista produktów AF do zachowania
+        af_products = [
+            "af power elixir", "component strong", "component 1+2+3", "component a", "component b", "component c",
+            "pro bio s", "pro bio f", "hybrid pro salt", "reef salt", "kh pro", "kh plus",
+            "life bio fil", "af vitality", "af energy", "zeomix", "carbon", "magnesium",
+            "calcium", "stone fix", "af rock", "liquid vege", "af test", "barium", "strontium"
+        ]
+        
+        # Zachowaj nazwy produktów
+        keywords = []
+        for product in af_products:
+            if product in query_lower:
+                keywords.append(product.replace(" ", "_"))  # Zastąp spacje podkreśleniami
         
         if attempt == 1:
-            # Keep it simple and natural
-            optimization_prompt = f"""
-            Skonwertuj pytanie na naturalne polskie słowa kluczowe dla wyszukiwania:
+            # Podstawowe słowa kluczowe + najbardziej trafne synonimy
+            synonyms = {
+                "dawkowanie": ["dawka", "stosowanie", "dozowanie"],
+                "problem": ["pozbyć", "zwalczyć", "usunąć"],
+                "koralowce": ["koralowiec", "sps", "lps"],
+                "ryby": ["rybka", "ryba", "fish"],
+                "akwarium": ["zbiornik", "tank"],
+                "woda": ["water", "parametry"],
+                "filtracja": ["filtr", "filter"],
+                "oświetlenie": ["światło", "led"]
+            }
             
-            PYTANIE: "{original_query}"
+            # Dodaj podstawowe słowa z zapytania
+            words = query_lower.split()
+            for word in words:
+                if len(word) > 3 and word not in ["jest", "jest", "które", "można", "moje"]:
+                    keywords.append(word)
             
-            ZASADY:
-            - Użyj naturalnych polskich fraz
-            - Zachowaj nazwy produktów (AF Power Elixir, Component Strong A)
-            - Dodaj synonimy (dawkowanie = dawka, stosowanie)
-            - MAX 10 słów
-            
-            NATURALNE SŁOWA KLUCZOWE:
-            """
-            
+            # Dodaj najbardziej trafne synonimy (max 2)
+            for base, syns in synonyms.items():
+                if base in query_lower:
+                    keywords.extend(syns[:2])
+                    
         elif attempt == 2:
-            # Broader terms
-            prev_feedback = previous_evaluations[-1] if previous_evaluations else "brak"
-            optimization_prompt = f"""
-            Rozszerz wyszukiwanie o pokrewne terminy:
+            # Szersze kategorie + wszystkie podstawowe słowa
+            words = query_lower.split()
+            keywords.extend([w for w in words if len(w) > 2])
             
-            ORYGINALNE: "{original_query}"
-            POPRZEDNIA PRÓBA DAŁA: {prev_feedback}
+            # Kategorie domenowe
+            if any(word in query_lower for word in ["morsk", "reef", "salt", "coral"]):
+                keywords.extend(["seawater", "marine", "reef", "coral"])
+            elif any(word in query_lower for word in ["słodkowod", "fresh", "roślinn"]):
+                keywords.extend(["freshwater", "planted", "aquascaping"])
+                
+            # Dodaj ogólne terminy Aquaforest
+            keywords.extend(["aquaforest", "af"])
             
-            Dodaj synonimy i powiązane terminy:
-            - dawkowanie → dawka, stosowanie, dozowanie, aplikacja
-            - akwarium → zbiornik, pojemność
-            - produkty → preparaty, środki
+        else:  # attempt 3
+            # Najbardziej ogólne - szerokie pokrycie
+            keywords = ["aquaforest", "af", "preparaty", "produkty", "akwarystyka", "akwarium"]
             
-            ROZSZERZONE SŁOWA KLUCZOWE:
-            """
-            
-        else:  # attempt == 3
-            # Very broad search
-            optimization_prompt = f"""
-            Ostatnia próba - najszersze wyszukiwanie:
-            
-            PYTANIE: "{original_query}"
-            
-            Użyj najogólniejszych terminów z kategorii produktu:
-            - morskie, słodkowodne
-            - akwarystyka, hodowla  
-            - chemia, preparaty
-            - Aquaforest, AF
-            
-            OGÓLNE TERMINY:
-            """
+            # Dodaj kategorie na podstawie poprzednich prób
+            if previous_evaluations:
+                last_eval = previous_evaluations[-1].lower()
+                if "brak" in last_eval or "insufficient" in last_eval:
+                    keywords.extend(["marine", "freshwater", "supplements", "care", "maintenance"])
         
-        try:
-            response = self.llm.invoke([SystemMessage(content=optimization_prompt)])
-            optimized = response.content.strip().replace('"', '')
+        # Usuń duplikaty zachowując kolejność
+        seen = set()
+        unique_keywords = []
+        for kw in keywords:
+            if kw not in seen and len(kw) > 1:
+                seen.add(kw)
+                unique_keywords.append(kw)
+        
+        # Maksymalnie 8 najważniejszych słów
+        final_query = " ".join(unique_keywords[:8])
+        
+        # Fallback jeśli query jest zbyt krótkie
+        if len(final_query) < 10:
+            final_query = original_query
             
-            # Clean up the response - extract only the keywords
-            lines = optimized.split('\n')
-            for line in lines:
-                if line.strip() and not line.startswith('PYTANIE:') and not line.startswith('ZASADY:'):
-                    if len(line.strip()) > 5:  # Skip very short lines
-                        optimized = line.strip()
-                        break
-                        
-            return optimized
-            
-        except Exception as e:
-            print(f"❌ Query optimization error: {e}")
-            return original_query
+        return final_query
     
     def evaluate_content_quality(self, query: str, results: List[Dict]) -> tuple[float, str]:
         """Model-based evaluation of content quality - NO Pinecone scores used!"""

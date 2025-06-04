@@ -26,8 +26,9 @@ class AquaforestRAGStressTester:
         print("🌊 AQUAFOREST RAG - COMPREHENSIVE STRESS TEST")
         print("=" * 70)
         print(f"📅 Start: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print("🎯 Cel: Test 60+ różnorodnych pytań")
+        print("🎯 Cel: Test 128+ różnorodnych pytań (włączając test usprawnień)")
         print("📊 Ocena: intent detection, confidence, business handling, trade secrets")
+        print("🔧 Nowe: query preprocessing, dynamic thresholds, dosage fallback")
         print("=" * 70)
         
         # Zdefiniuj wszystkie kategorie pytań
@@ -46,7 +47,8 @@ class AquaforestRAGStressTester:
             "🧪 LAB - Produkty laboratoryjne": self.lab_questions(),
             "🏛️ OCEANGUARD - Akwaria premium": self.oceanguard_questions(),
             "❓ AMBIGUOUS - Niejednoznaczne": self.ambiguous_questions(),
-            "🚀 EDGE CASES - Przypadki graniczne": self.edge_case_questions()
+            "🚀 EDGE CASES - Przypadki graniczne": self.edge_case_questions(),
+            "🔧 IMPROVEMENTS TEST - Test usprawnień": self.improvements_test_questions()
         }
         
         total_questions = sum(len(questions) for questions in test_categories.values())
@@ -316,6 +318,32 @@ class AquaforestRAGStressTester:
             "?!@#$%^&*()",  # Znaki specjalne
             "a",  # Jedno słowo
             "czy można używać produktów aquaforest w akwarium słodkowodnym morskim rafowym nano 10L 1000L jednocześnie",  # Konfuzyjne
+        ]
+    
+    def improvements_test_questions(self) -> List[str]:
+        """Pytania specjalnie testujące nasze usprawnienia"""
+        return [
+            # Query preprocessing test - should correct "Component A" to "Component Strong A"
+            "Component A dawkowanie w akwarium 300L",
+            "ProBios stosowanie w nowym zbiorniku",
+            "KH+ jak często dodawać?",
+            
+            # Dosage fallback test - should trigger intelligent fallback
+            "AF Power Elixir ile ml na 750L akwarium SPS?",
+            "Component 1+2+3 dawkowanie ultra precyzyjne nano reef 15L",
+            "Pro Bio S krople dla mega zbiornika 2000L",
+            
+            # Dynamic threshold test - lower thresholds should help
+            "Mały problem z glonami jak szybko rozwiązać",
+            "Średnie fosforany PO4 0.15 co robić stopniowo",
+            
+            # Simple query optimization test 
+            "najlepsze dawkowanie wszystkich suplementów jednocześnie optimum maximum",
+            "akwarium problemy rozwiązania szybkie skuteczne metody Aquaforest",
+            
+            # Edge cases for robustness
+            "af af af af power elixir dawkowanie",
+            "Component Strong A vs Component Strong B vs Component Strong C porównanie szczegółowe"
         ]
     
     def generate_summary_report(self):
