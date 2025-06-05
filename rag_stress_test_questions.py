@@ -9,7 +9,7 @@ Data: 2025-01-18
 Cel: Testowanie systemu Enhanced Evaluation RAG pod różnymi kątami
 """
 
-from agent import EnhancedEvaluationRAGAgent
+from agent import EnhancedEvaluationRAGAgentV2
 import time
 import json
 from typing import Dict, List
@@ -17,7 +17,7 @@ from datetime import datetime
 
 class AquaforestRAGStressTester:
     def __init__(self):
-        self.agent = EnhancedEvaluationRAGAgent()
+        self.agent = EnhancedEvaluationRAGAgentV2()
         self.results = []
         
     def run_comprehensive_stress_test(self):
@@ -78,11 +78,12 @@ class AquaforestRAGStressTester:
             result = self.agent.ask(question)
             end_time = time.time()
             
-            # Zapisz szczegółowe wyniki
+            # Zapisz szczegółowe wyniki z pełną odpowiedzią i polami v2
             test_result = {
                 "question_number": current,
                 "category": category,
                 "question": question,
+                "full_answer": result['answer'],  # 🆕 Pełna odpowiedź zamiast preview
                 "answer_preview": result['answer'][:200] + "..." if len(result['answer']) > 200 else result['answer'],
                 "intent": result['query_intent'],
                 "business_type": result['business_type'],
@@ -92,6 +93,13 @@ class AquaforestRAGStressTester:
                 "trade_secret_handled": result['trade_secret_handled'],
                 "response_time": round(end_time - start_time, 2),
                 "evaluation_log": result.get('evaluation_log', []),
+                # 🆕 NOWE POLA V2 - GPT AUGMENTATION
+                "augmentation_used": result.get('augmentation_used', False),
+                "augmentation_confidence": result.get('augmentation_confidence', 0.0),
+                "best_partial_confidence": result.get('best_partial_confidence', 0.0),
+                "attempt_confidences": result.get('attempt_confidences', []),
+                "augmentation_reasoning": result.get('augmentation_reasoning', ""),
+                "attempt_history": result.get('attempt_history', []),
                 "success": True
             }
             
@@ -113,7 +121,7 @@ class AquaforestRAGStressTester:
         self.results.append(test_result)
     
     def print_test_results(self, result: Dict):
-        """Wyświetl wyniki pojedynczego testu"""
+        """Wyświetl wyniki pojedynczego testu z informacjami v2"""
         # Kolorowanie na podstawie confidence
         if result['confidence'] >= 8.0:
             confidence_emoji = "🟢"
@@ -121,10 +129,21 @@ class AquaforestRAGStressTester:
             confidence_emoji = "🟡"
         else:
             confidence_emoji = "🔴"
+        
+        # Augmentation status
+        if result.get('augmentation_used', False):
+            augmentation_status = f"🧠 AUGMENTATION: ✅ USED ({result.get('best_partial_confidence', 0)}/10 → {result.get('augmentation_confidence', 0)}/10)"
+        elif result.get('best_partial_confidence', 0) > 0:
+            augmentation_status = f"🧠 AUGMENTATION: ⚪ AVAILABLE ({result.get('best_partial_confidence', 0)}/10) but not used"
+        else:
+            augmentation_status = "🧠 AUGMENTATION: ❌ N/A"
             
         print(f"🎯 Intent: {result['intent']} | Business: {result['business_type']}")
         print(f"{confidence_emoji} Confidence: {result['confidence']}/10 | Attempts: {result['attempts']} | Time: {result['response_time']}s")
         print(f"🔒 Trade Secret: {result['trade_secret_handled']} | Escalated: {result['escalated']}")
+        print(f"{augmentation_status}")
+        if result.get('attempt_confidences'):
+            print(f"📊 Attempt Confidences: {result['attempt_confidences']}")
         print(f"💬 Preview: {result['answer_preview']}")
     
     def beginner_questions(self) -> List[str]:
@@ -319,17 +338,23 @@ class AquaforestRAGStressTester:
         ]
     
     def generate_summary_report(self):
-        """Wygeneruj raport podsumowujący"""
+        """Wygeneruj raport podsumowujący z metrykami v2"""
         print("\n" + "=" * 70)
-        print("📊 FINAL STRESS TEST REPORT")
+        print("📊 ENHANCED RAG v2 STRESS TEST REPORT")
         print("=" * 70)
         
         successful_tests = [r for r in self.results if r.get('success', False)]
         failed_tests = [r for r in self.results if not r.get('success', False)]
         
+        # 🆕 AUGMENTATION METRICS
+        augmented_tests = [r for r in successful_tests if r.get('augmentation_used', False)]
+        partial_available = [r for r in successful_tests if r.get('best_partial_confidence', 0) > 0]
+        
         print(f"✅ Successful tests: {len(successful_tests)}/{len(self.results)}")
         print(f"❌ Failed tests: {len(failed_tests)}")
         print(f"📈 Success rate: {len(successful_tests)/len(self.results)*100:.1f}%")
+        print(f"🧠 GPT Augmentation used: {len(augmented_tests)}/{len(successful_tests)} ({len(augmented_tests)/len(successful_tests)*100:.1f}%)" if successful_tests else "")
+        print(f"📊 Partial results available: {len(partial_available)}/{len(successful_tests)} ({len(partial_available)/len(successful_tests)*100:.1f}%)" if successful_tests else "")
         
         if successful_tests:
             avg_confidence = sum(r['confidence'] for r in successful_tests) / len(successful_tests)
@@ -339,6 +364,13 @@ class AquaforestRAGStressTester:
             print(f"📊 Average confidence: {avg_confidence:.1f}/10")
             print(f"⏱️ Average response time: {avg_response_time:.2f}s")
             print(f"🔄 Average attempts: {avg_attempts:.1f}")
+            
+            # 🆕 AUGMENTATION DETAILED METRICS
+            if augmented_tests:
+                avg_augmented_confidence = sum(r.get('augmentation_confidence', 0) for r in augmented_tests) / len(augmented_tests)
+                avg_partial_confidence = sum(r.get('best_partial_confidence', 0) for r in partial_available) / len(partial_available) if partial_available else 0
+                print(f"🧠 Average augmented confidence: {avg_augmented_confidence:.1f}/10")
+                print(f"📊 Average partial confidence: {avg_partial_confidence:.1f}/10")
             
             # Analiza intencji
             intent_counts = {}
@@ -359,6 +391,25 @@ class AquaforestRAGStressTester:
             print(f"   🟢 High (8.0+): {high_confidence} ({high_confidence/len(successful_tests)*100:.1f}%)")
             print(f"   🟡 Medium (6.0-7.9): {medium_confidence} ({medium_confidence/len(successful_tests)*100:.1f}%)")
             print(f"   🔴 Low (<6.0): {low_confidence} ({low_confidence/len(successful_tests)*100:.1f}%)")
+            
+            # 🆕 AUGMENTATION BREAKDOWN BY CATEGORY
+            print(f"\n🧠 Augmentation Usage by Category:")
+            categories = {}
+            for result in successful_tests:
+                category = result.get('category', 'Unknown')
+                if category not in categories:
+                    categories[category] = {'total': 0, 'augmented': 0, 'partial_available': 0}
+                categories[category]['total'] += 1
+                if result.get('augmentation_used', False):
+                    categories[category]['augmented'] += 1
+                if result.get('best_partial_confidence', 0) > 0:
+                    categories[category]['partial_available'] += 1
+            
+            for category, stats in sorted(categories.items(), key=lambda x: x[1]['augmented'], reverse=True):
+                if stats['total'] > 0:
+                    aug_rate = stats['augmented'] / stats['total'] * 100
+                    partial_rate = stats['partial_available'] / stats['total'] * 100
+                    print(f"   {category}: {stats['augmented']}/{stats['total']} augmented ({aug_rate:.1f}%), {stats['partial_available']} partial ({partial_rate:.1f}%)")
         
         # Zapisz wyniki do pliku
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")

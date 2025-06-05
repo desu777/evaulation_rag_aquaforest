@@ -1,7 +1,7 @@
 # business_handlers.py - Business & Trade Secret Handlers
-from state import EnhancedEvaluationRAGState
+from state import EnhancedEvaluationRAGStateV2
 
-def handle_business_query(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
+def handle_business_query(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:
     """Direct handling for business inquiries"""
     
     if state["business_type"] == "partnership":
@@ -66,7 +66,7 @@ Nasi specjaliści odpowiedzą na wszystkie pytania techniczne! 🌊"""
     
     return state
 
-def check_trade_secrets(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
+def check_trade_secrets(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:
     """Handle production/trade secret queries"""
     
     if state.get("requires_trade_secret_filter"):

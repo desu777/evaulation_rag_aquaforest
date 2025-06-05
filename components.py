@@ -48,74 +48,77 @@ class EvaluationRAGComponents:
             return []
     
     def optimize_query_for_attempt(self, original_query: str, attempt: int, previous_evaluations: List[str] = None) -> str:
-        """MUCH simpler, natural query optimization"""
+        """Intelligent query optimization based on topic context and embeddings structure"""
+        
+        # TOPIC DETECTION - analyze query intent
+        query_lower = original_query.lower()
+        
+        # Detect main topic categories
+        is_salt_query = any(term in query_lower for term in ['sól', 'soli', 'salt', 'zasolenie', 'hybrid', 'reef salt'])
+        is_dosage_query = any(term in query_lower for term in ['dawkowanie', 'dawka', 'ile', 'ml', 'dozowanie', 'stosowanie'])
+        is_component_query = any(term in query_lower for term in ['component', 'komponent', 'a', 'b', 'c', '1', '2', '3'])
+        is_coral_query = any(term in query_lower for term in ['koralowce', 'sps', 'lps', 'coral', 'polip'])
+        is_problem_query = any(term in query_lower for term in ['problem', 'jak pozbyć', 'cyjan', 'glon', 'wysokie', 'niskie'])
+        is_fish_query = any(term in query_lower for term in ['rybka', 'ryby', 'fish', 'anthias', 'kwarantanna'])
+        is_water_query = any(term in query_lower for term in ['woda', 'parametry', 'ph', 'alkalicz', 'wapń', 'magnez'])
+        is_startup_query = any(term in query_lower for term in ['założyć', 'start', 'pierwsze', 'nowe', 'cykl'])
         
         if attempt == 1:
-            # Keep it simple and natural
-            optimization_prompt = f"""
-            Skonwertuj pytanie na naturalne polskie słowa kluczowe dla wyszukiwania:
-            
-            PYTANIE: "{original_query}"
-            
-            ZASADY:
-            - Użyj naturalnych polskich fraz
-            - Zachowaj nazwy produktów (AF Power Elixir, Component Strong A)
-            - Dodaj synonimy (dawkowanie = dawka, stosowanie)
-            - MAX 10 słów
-            
-            NATURALNE SŁOWA KLUCZOWE:
-            """
-            
+            # FOCUSED SEARCH - topic-specific keywords
+            if is_salt_query:
+                keywords = "sól morska seawater Reef Salt Hybrid Pro Salt 33ppt"
+            elif is_dosage_query and is_component_query:
+                keywords = "Component dawkowanie ml stosowanie akwarium"
+            elif is_dosage_query:
+                keywords = "dawkowanie dawka ml aplikacja stosowanie"
+            elif is_coral_query:
+                keywords = "koralowce SPS LPS miękkie twardy coral polyp"
+            elif is_problem_query:
+                keywords = "problem cyjanobakterie glony azotany fosforany"
+            elif is_fish_query:
+                keywords = "ryby fish aklimatyzacja kwarantanna choroba"
+            elif is_water_query:
+                keywords = "parametry wody pH alkaliczność wapń magnez"
+            elif is_startup_query:
+                keywords = "start akwarium założyć cykl azotowy nowe"
+            else:
+                # Extract main keywords from query
+                keywords = " ".join([word for word in query_lower.split() if len(word) > 3])
+                keywords = f"{keywords} akwarium Aquaforest"
+                
         elif attempt == 2:
-            # Broader terms
-            prev_feedback = previous_evaluations[-1] if previous_evaluations else "brak"
-            optimization_prompt = f"""
-            Rozszerz wyszukiwanie o pokrewne terminy:
-            
-            ORYGINALNE: "{original_query}"
-            POPRZEDNIA PRÓBA DAŁA: {prev_feedback}
-            
-            Dodaj synonimy i powiązane terminy:
-            - dawkowanie → dawka, stosowanie, dozowanie, aplikacja
-            - akwarium → zbiornik, pojemność
-            - produkty → preparaty, środki
-            
-            ROZSZERZONE SŁOWA KLUCZOWE:
-            """
-            
+            # BROADER SEARCH - add synonyms and related terms
+            if is_salt_query:
+                keywords = "sól morska salt seawater Hybrid Pro bakterie probiotyczne aminokwasy witamina"
+            elif is_dosage_query:
+                keywords = "dawkowanie dawka stosowanie dozowanie aplikacja ml instrukcja"
+            elif is_coral_query:
+                keywords = "koralowce coral SPS LPS miękkie twardy wzrost polipowanie"
+            elif is_problem_query:
+                keywords = "problem rozwiązanie cyjan glony azotany fosforany klarowanie"
+            elif is_fish_query:
+                keywords = "ryby fish aklimatyzacja choroba kwarantanna leczenie"
+            elif is_water_query:
+                keywords = "parametry woda chemia pH KH wapń magnez test"
+            elif is_startup_query:
+                keywords = "start założenie akwarium cykl bakterie dojrzewanie"
+            else:
+                keywords = f"akwarystyka morska słodkowodna Aquaforest AF hodowla"
+                
         else:  # attempt == 3
-            # Very broad search
-            optimization_prompt = f"""
-            Ostatnia próba - najszersze wyszukiwanie:
-            
-            PYTANIE: "{original_query}"
-            
-            Użyj najogólniejszych terminów z kategorii produktu:
-            - morskie, słodkowodne
-            - akwarystyka, hodowla  
-            - chemia, preparaty
-            - Aquaforest, AF
-            
-            OGÓLNE TERMINY:
-            """
+            # WIDEST SEARCH - domain-level keywords
+            if any([is_salt_query, is_coral_query, is_component_query]):
+                keywords = "akwarystyka morska seawater coral reef marine"
+            elif is_startup_query or is_water_query:
+                keywords = "akwarium start parametry woda bakterie Aquaforest"
+            elif is_fish_query:
+                keywords = "ryby akwarium hodowla marine fish care"
+            else:
+                keywords = "akwarystyka Aquaforest AF produkty akwarium"
         
-        try:
-            response = self.llm.invoke([SystemMessage(content=optimization_prompt)])
-            optimized = response.content.strip().replace('"', '')
-            
-            # Clean up the response - extract only the keywords
-            lines = optimized.split('\n')
-            for line in lines:
-                if line.strip() and not line.startswith('PYTANIE:') and not line.startswith('ZASADY:'):
-                    if len(line.strip()) > 5:  # Skip very short lines
-                        optimized = line.strip()
-                        break
-                        
-            return optimized
-            
-        except Exception as e:
-            print(f"❌ Query optimization error: {e}")
-            return original_query
+        print(f"🎯 Topic detection: salt={is_salt_query}, dosage={is_dosage_query}, coral={is_coral_query}")
+        
+        return keywords.strip()
     
     def evaluate_content_quality(self, query: str, results: List[Dict]) -> tuple[float, str]:
         """Model-based evaluation of content quality - NO Pinecone scores used!"""

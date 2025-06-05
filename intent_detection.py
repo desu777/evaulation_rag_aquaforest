@@ -1,7 +1,7 @@
 # intent_detection.py - Smart Intent Analysis
-from state import EnhancedEvaluationRAGState
+from state import EnhancedEvaluationRAGStateV2
 
-def analyze_query_intent(state: EnhancedEvaluationRAGState) -> EnhancedEvaluationRAGState:
+def analyze_query_intent(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:
     """Smart intent detection with pattern matching"""
     
     query = state['original_query'].lower()
