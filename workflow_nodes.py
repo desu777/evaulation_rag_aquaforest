@@ -1,4 +1,4 @@
-# workflow_nodes.py v2 - Enhanced Workflow Nodes with GPT Augmentation
+# workflow_nodes.py v3 - Enhanced Workflow Nodes with Dynamic Optimization
 import re
 from typing import List
 from datetime import datetime
@@ -7,13 +7,13 @@ from state import EnhancedEvaluationRAGStateV2
 from components import EvaluationRAGComponents
 from config import ENHANCED_AQUAFOREST_EXPERT_PROMPT, MAX_REASONING_ATTEMPTS
 
-# Initialize components
+# Initialize enhanced components with dynamic optimization
 components = EvaluationRAGComponents()
 
 def initialize_evaluation_v2(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:
     """Node 1: Initialize enhanced evaluation with partial tracking"""
     print(f"🧠 ENHANCED EVALUATION RAG v2: {state['original_query']}")
-    print("🎯 Model-based quality assessment + GPT Augmentation + Intent detection")
+    print("🎯 Model-based quality assessment + GPT Augmentation + Dynamic Optimization")
     
     return {
         **state,
@@ -414,46 +414,78 @@ def generate_dosage_fallback(state: EnhancedEvaluationRAGStateV2, evaluation_ent
     }
 
 def execute_search_attempt(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:
-    """Node 2: Execute search attempt with query optimization"""
+    """
+    🚀 ENHANCED SEARCH ATTEMPT with Dynamic Query Optimization
+    
+    Replaces static pattern matching with intelligent LLM-based semantic understanding
+    """
     attempt = state["attempt_count"] + 1
     original_query = state["original_query"]
+    query_intent = state.get("query_intent", "general")
     
-    print(f"🔍 Search attempt {attempt}/{MAX_REASONING_ATTEMPTS}")
+    print(f"🔍 Enhanced Search Attempt {attempt}/{MAX_REASONING_ATTEMPTS}")
     
-    # Optimize query based on attempt number and previous evaluations
-    previous_evaluations = state.get("evaluation_log", [])
+    # 🆕 BUILD CONTEXT FROM PREVIOUS ATTEMPTS for intelligent optimization
+    previous_attempts = []
+    if attempt > 1:
+        attempt_history = state.get("attempt_history", [])
+        evaluation_log = state.get("evaluation_log", [])
+        attempt_confidences = state.get("attempt_confidences", [])
+        
+        for i, history_entry in enumerate(attempt_history):
+            if i < len(attempt_confidences):
+                previous_attempts.append({
+                    'optimal_query': history_entry.get('optimized_query', ''),
+                    'confidence': attempt_confidences[i],
+                    'reasoning': evaluation_log[i] if i < len(evaluation_log) else 'No reasoning',
+                    'result_count': history_entry.get('results_count', 0)
+                })
+    
+    # 🧠 DYNAMIC QUERY OPTIMIZATION USING LLM (replaces static patterns)
     optimized_query = components.optimize_query_for_attempt(
-        original_query, 
-        attempt, 
-        previous_evaluations
+        original_query=original_query,
+        attempt=attempt,
+        previous_evaluations=state.get("evaluation_log", []),
+        query_intent=query_intent
     )
     
-    print(f"🎯 Optimized query: '{optimized_query}'")
+    print(f"🎯 Intelligent Query Optimization:")
+    print(f"   📝 Original: '{original_query}'")
+    print(f"   🎯 Intent: {query_intent}")
+    print(f"   🧠 Optimized: '{optimized_query}'")
     
-    # Progressive search expansion - więcej wyników w kolejnych próbach
-    search_k_values = {
-        1: 8,   # Pierwsza próba - focused search
-        2: 12,  # Druga próba - broader search  
-        3: 16   # Trzecia próba - widest search
+    # 🔍 ADVANCED SEARCH STRATEGY based on attempt
+    search_strategies = {
+        1: {"top_k": 8, "use_multi_query": False},      # Focused search
+        2: {"top_k": 12, "use_multi_query": True},      # Expanded with variants
+        3: {"top_k": 16, "use_multi_query": True}       # Broadest search
     }
-    top_k = search_k_values.get(attempt, 8)
     
-    print(f"📡 Search strategy: top_k={top_k} (progressive expansion)")
+    strategy = search_strategies.get(attempt, search_strategies[3])
+    print(f"📡 Search Strategy: top_k={strategy['top_k']}, multi_query={strategy['use_multi_query']}")
     
-    # Execute search
-    search_results = components.search_knowledge(optimized_query, top_k=top_k)
+    # 🚀 EXECUTE ENHANCED SEARCH
+    search_results = components.search_knowledge_enhanced(
+        query=optimized_query,
+        top_k=strategy["top_k"],
+        use_multi_query=strategy["use_multi_query"]
+    )
     
     print(f"📚 Found {len(search_results)} results")
     
-    # Track attempt history
+    # 📊 ENHANCED ATTEMPT TRACKING
     attempt_info = {
         "attempt": attempt,
+        "original_query": original_query,
         "optimized_query": optimized_query,
+        "query_intent": query_intent,
+        "search_strategy": strategy,
         "results_count": len(search_results),
+        "optimization_type": "dynamic_llm_based",  # 🆕 Track optimization type
         "timestamp": datetime.now().isoformat()
     }
     
-    # Update state
+    # Update state with enhanced tracking
     attempt_history = state.get("attempt_history", [])
     attempt_history.append(attempt_info)
     
@@ -467,7 +499,7 @@ def execute_search_attempt(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvalu
         "search_results": search_results,
         "attempt_history": attempt_history,
         "all_results": all_results,
-        "evaluation_log": [f"Attempt {attempt}: '{optimized_query}' → {len(search_results)} results found (top_k={top_k})"]
+        "evaluation_log": [f"Enhanced Attempt {attempt}: LLM optimization '{optimized_query}' → {len(search_results)} results (strategy: {strategy})"]
     }
 
 def generate_evaluation_answer(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:

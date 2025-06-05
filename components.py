@@ -1,15 +1,28 @@
-# components.py - Core RAG Components
+# components.py - Enhanced RAG Components with Dynamic Optimization
 import re
 from typing import List, Dict
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_core.messages import SystemMessage
 from config import get_pinecone_index, ENHANCED_AQUAFOREST_EXPERT_PROMPT
+from dynamic_query_optimizer import DynamicQueryOptimizer
 
 class EvaluationRAGComponents:
     def __init__(self):
         self.index = get_pinecone_index()
         self.embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
         self.llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.1)
+        self._dynamic_optimizer = None  # Lazy initialization
+    
+    @property
+    def dynamic_optimizer(self):
+        """Lazy initialization of dynamic optimizer"""
+        if self._dynamic_optimizer is None:
+            try:
+                self._dynamic_optimizer = DynamicQueryOptimizer()
+            except Exception as e:
+                print(f"⚠️ Warning: Dynamic optimizer initialization failed: {e}")
+                return None
+        return self._dynamic_optimizer
     
     def search_knowledge(self, query: str, top_k: int = 8) -> List[Dict]:
         """Simple search without score filtering - let model decide quality"""
@@ -47,8 +60,99 @@ class EvaluationRAGComponents:
             print(f"❌ Search error: {e}")
             return []
     
-    def optimize_query_for_attempt(self, original_query: str, attempt: int, previous_evaluations: List[str] = None) -> str:
-        """Intelligent query optimization based on topic context and embeddings structure"""
+    def search_knowledge_enhanced(self, 
+                                query: str, 
+                                top_k: int = 8,
+                                use_multi_query: bool = False) -> List[Dict]:
+        """
+        🔍 ENHANCED SEARCH with optional multi-query capability
+        
+        Can use multiple query variants for broader search coverage
+        """
+        if use_multi_query and self.dynamic_optimizer is not None:
+            try:
+                # Generate multiple query variants
+                query_variants = self.dynamic_optimizer.generate_query_variants(query, 3)
+                
+                # Search for each variant
+                all_results = []
+                for variant in query_variants:
+                    variant_results = self.search_knowledge(variant, top_k//len(query_variants))
+                    all_results.extend(variant_results)
+                
+                # Deduplicate and return best results
+                seen_titles = set()
+                unique_results = []
+                for result in all_results:
+                    if result['title'] not in seen_titles:
+                        seen_titles.add(result['title'])
+                        unique_results.append(result)
+                
+                return unique_results[:top_k]
+            except Exception as e:
+                print(f"⚠️ Multi-query search failed, falling back to single query: {e}")
+                return self.search_knowledge(query, top_k)
+        else:
+            # Standard single query search
+            return self.search_knowledge(query, top_k)
+    
+    def optimize_query_for_attempt(self, original_query: str, attempt: int, previous_evaluations: List[str] = None, query_intent: str = "general") -> str:
+        """
+        🚀 DYNAMIC QUERY OPTIMIZATION - REPLACES STATIC PATTERNS
+        
+        Uses LLM-based semantic understanding instead of hardcoded topic detection
+        """
+        
+        # Check if dynamic optimizer is available
+        if self.dynamic_optimizer is None:
+            print("⚠️ Dynamic optimizer not available, falling back to legacy optimization")
+            return self.optimize_query_for_attempt_legacy(original_query, attempt, previous_evaluations)
+        
+        try:
+            # 🆕 BUILD CONTEXT FROM PREVIOUS ATTEMPTS for intelligent optimization
+            previous_attempts = []
+            if attempt > 1 and previous_evaluations:
+                # Extract information from previous attempts (simplified for now)
+                for i, eval_text in enumerate(previous_evaluations[:attempt-1]):
+                    # Extract confidence from evaluation text (simplified pattern)
+                    confidence_match = re.search(r'(\d+(?:\.\d+)?)/10', eval_text)
+                    confidence = float(confidence_match.group(1)) if confidence_match else 0.0
+                    
+                    previous_attempts.append({
+                        'optimal_query': f"attempt_{i+1}_query",  # Would be stored in state
+                        'confidence': confidence,
+                        'reasoning': eval_text[:100],
+                        'result_count': 0  # Would be tracked in state
+                    })
+            
+            # 🧠 INTELLIGENT DYNAMIC OPTIMIZATION USING LLM
+            optimized_query = self.dynamic_optimizer.optimize_query_dynamically(
+                original_query=original_query,
+                attempt=attempt,
+                previous_attempts=previous_attempts,
+                query_intent=query_intent
+            )
+            
+            print(f"🎯 Dynamic Optimization Result:")
+            print(f"   📝 Original: '{original_query}'")
+            print(f"   🎯 Intent: {query_intent}")
+            print(f"   🧠 Optimized: '{optimized_query}'")
+            print(f"   📊 Attempt: {attempt}/3")
+            
+            return optimized_query
+            
+        except Exception as e:
+            print(f"⚠️ Dynamic optimization failed: {e}")
+            print("🔄 Falling back to legacy optimization")
+            return self.optimize_query_for_attempt_legacy(original_query, attempt, previous_evaluations)
+    
+    def optimize_query_for_attempt_legacy(self, original_query: str, attempt: int, previous_evaluations: List[str] = None) -> str:
+        """
+        ⚠️ LEGACY STATIC OPTIMIZATION - DEPRECATED
+        
+        Kept for backward compatibility but should be replaced with dynamic optimization
+        """
+        print("⚠️ Using legacy static optimization - consider upgrading to dynamic optimization")
         
         # TOPIC DETECTION - analyze query intent
         query_lower = original_query.lower()
@@ -116,7 +220,7 @@ class EvaluationRAGComponents:
             else:
                 keywords = "akwarystyka Aquaforest AF produkty akwarium"
         
-        print(f"🎯 Topic detection: salt={is_salt_query}, dosage={is_dosage_query}, coral={is_coral_query}")
+        print(f"🎯 Legacy topic detection: salt={is_salt_query}, dosage={is_dosage_query}, coral={is_coral_query}")
         
         return keywords.strip()
     

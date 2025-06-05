@@ -1,17 +1,35 @@
-# intent_detection.py - Smart Intent Analysis
+# intent_detection.py - Enhanced Intent Analysis with LLM Support
 from state import EnhancedEvaluationRAGStateV2
+from dynamic_query_optimizer import DynamicQueryOptimizer
+
+# Lazy initialization to avoid import-time API key issues
+_dynamic_optimizer = None
+
+def get_dynamic_optimizer():
+    """Get or create dynamic optimizer instance"""
+    global _dynamic_optimizer
+    if _dynamic_optimizer is None:
+        try:
+            _dynamic_optimizer = DynamicQueryOptimizer()
+        except Exception as e:
+            print(f"⚠️ Warning: Dynamic optimizer initialization failed: {e}")
+            return None
+    return _dynamic_optimizer
 
 def analyze_query_intent(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluationRAGStateV2:
-    """Smart intent detection with pattern matching"""
+    """
+    🎯 ENHANCED INTENT DETECTION with LLM support for edge cases
+    
+    Combines pattern-based detection with LLM reasoning for complex queries
+    """
     
     query = state['original_query'].lower()
-    
-    # Pattern-based detection (faster than LLM)
     intent = "general"
     business_type = "none"
     trade_secret = False
     threshold = 7.0
     
+    # 🔍 PATTERN-BASED DETECTION (fast for common cases)
     # Business patterns
     business_patterns = [
         "współpraca", "dystrybucja", "partnership", "zostać dystrybutorem", 
@@ -57,7 +75,7 @@ def analyze_query_intent(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluat
     ]
     
     if any(phrase in query for phrase in problem_patterns):
-        intent = "problem_solving"
+        intent = "troubleshooting"
         threshold = 6.5
         
     # Support patterns
@@ -71,7 +89,47 @@ def analyze_query_intent(state: EnhancedEvaluationRAGStateV2) -> EnhancedEvaluat
         business_type = "technical_support"
         threshold = 6.5
     
-    print(f"🎯 Detected intent: {intent}, business: {business_type}, trade_secret: {trade_secret}")
+    # 🧠 ENHANCED LLM DETECTION for ambiguous cases
+    if intent == "general":
+        print(f"🧠 Using LLM for ambiguous intent detection...")
+        dynamic_optimizer = get_dynamic_optimizer()
+        
+        if dynamic_optimizer is not None:
+            try:
+                llm_intent = dynamic_optimizer.detect_intent_with_llm(state['original_query'])
+                
+                # Map LLM intents to our system intents with thresholds
+                intent_mapping = {
+                    "technical": ("technical", 6.5),
+                    "product": ("product_info", 7.0),
+                    "troubleshooting": ("troubleshooting", 6.5),
+                    "setup": ("setup", 6.0),
+                    "maintenance": ("maintenance", 6.5),
+                    "general": ("general", 7.0)
+                }
+                
+                if llm_intent in intent_mapping:
+                    intent, threshold = intent_mapping[llm_intent]
+                else:
+                    intent = "general"
+                    threshold = 7.0
+                
+                print(f"🎯 LLM detected intent: {llm_intent} → mapped to: {intent}")
+            except Exception as e:
+                print(f"⚠️ LLM intent detection failed: {e}")
+                intent = "general"
+                threshold = 7.0
+        else:
+            print(f"⚠️ Dynamic optimizer not available, using general intent")
+            intent = "general"
+            threshold = 7.0
+    
+    print(f"🎯 Enhanced Intent Detection:")
+    print(f"   📝 Query: '{state['original_query']}'")
+    print(f"   🎯 Intent: {intent}")
+    print(f"   🏢 Business: {business_type}")
+    print(f"   🔒 Trade Secret: {trade_secret}")
+    print(f"   📊 Threshold: {threshold}")
     
     return {
         **state,

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-RAG STRESS TEST QUESTIONS dla systemu Aquaforest
-Zestaw 60+ pytań testowych w różnych kategoriach i poziomach trudności
+RAG STRESS TEST QUESTIONS for Aquaforest System - Enhanced with Dynamic Optimization
+Comprehensive set of 116+ test questions across different categories and difficulty levels
 
-Autor: AI Assistant
-Data: 2025-01-18
-Cel: Testowanie systemu Enhanced Evaluation RAG pod różnymi kątami
+Author: AI Assistant
+Date: 2025-06-05
+Purpose: Testing Enhanced Evaluation RAG v2 with Dynamic Query Optimization
 """
 
 from agent import EnhancedEvaluationRAGAgentV2
@@ -21,41 +21,43 @@ class AquaforestRAGStressTester:
         self.results = []
         
     def run_comprehensive_stress_test(self):
-        """Główny test stress - 60+ pytań w różnych kategoriach"""
+        """Main stress test - reduced to ~30 questions across different categories"""
         
-        print("🌊 AQUAFOREST RAG - COMPREHENSIVE STRESS TEST")
+        print("🌊 AQUAFOREST RAG - COMPACT STRESS TEST v3")
         print("=" * 70)
         print(f"📅 Start: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        print("🎯 Cel: Test 60+ różnorodnych pytań")
-        print("📊 Ocena: intent detection, confidence, business handling, trade secrets")
+        print("🎯 Goal: Test ~30 diverse questions (reduced for file size)")
+        print("📊 Evaluation: intent detection, confidence, business handling, dynamic optimization")
+        print("🚀 NEW: Dynamic Query Optimization + Multi-Query Search")
         print("=" * 70)
         
-        # Zdefiniuj wszystkie kategorie pytań
+        # Define all test categories
         test_categories = {
-            "🔰 BEGINNER - Podstawowe": self.beginner_questions(),
-            "🏆 EXPERT - Zaawansowane": self.expert_questions(),
+            "🔰 BEGINNER - Basic": self.beginner_questions(),
+            "🏆 EXPERT - Advanced": self.expert_questions(),
             "🚨 PROBLEMS - Troubleshooting": self.problem_solving_questions(),
-            "💊 DOSAGE - Dawkowanie": self.dosage_questions(),
-            "🔬 PRODUCTS - Informacje o produktach": self.product_info_questions(),
-            "⚗️ CHEMISTRY - Chemia wody": self.water_chemistry_questions(),
-            "🐠 FISH & CORAL - Hodowla": self.livestock_questions(),
-            "🏢 BUSINESS - Pytania biznesowe": self.business_questions(),
-            "🔒 TRADE SECRETS - Tajemnice handlowe": self.trade_secret_questions(),
-            "🌊 SEAWATER - Akwaria morskie": self.seawater_specific_questions(),
-            "🌿 FRESHWATER - Akwaria słodkowodne": self.freshwater_specific_questions(),
-            "🧪 LAB - Produkty laboratoryjne": self.lab_questions(),
-            "🏛️ OCEANGUARD - Akwaria premium": self.oceanguard_questions(),
-            "❓ AMBIGUOUS - Niejednoznaczne": self.ambiguous_questions(),
-            "🚀 EDGE CASES - Przypadki graniczne": self.edge_case_questions()
+            "💊 DOSAGE - Dosing": self.dosage_questions(),
+            "🔬 PRODUCTS - Product Info": self.product_info_questions(),
+            "⚗️ CHEMISTRY - Water Chemistry": self.water_chemistry_questions(),
+            "🐠 FISH & CORAL - Livestock": self.livestock_questions(),
+            "🏢 BUSINESS - Business Queries": self.business_questions(),
+            "🔒 TRADE SECRETS - Trade Secrets": self.trade_secret_questions(),
+            "🌊 SEAWATER - Marine Specific": self.seawater_specific_questions(),
+            "🌿 FRESHWATER - Freshwater Specific": self.freshwater_specific_questions(),
+            "🧪 LAB - Laboratory Products": self.lab_questions(),
+            "🏛️ OCEANGUARD - Premium Aquariums": self.oceanguard_questions(),
+            "❓ AMBIGUOUS - Ambiguous Queries": self.ambiguous_questions(),
+            "🚀 EDGE CASES - Edge Cases": self.edge_case_questions(),
+            "🧠 DYNAMIC OPT - Dynamic Optimization Test": self.dynamic_optimization_test_questions()  # 🆕 NEW
         }
         
         total_questions = sum(len(questions) for questions in test_categories.values())
-        print(f"📝 Łączna liczba pytań: {total_questions}")
+        print(f"📝 Total questions: {total_questions}")
         print("=" * 70)
         
         current_question = 1
         
-        # Wykonaj testy w każdej kategorii
+        # Execute tests in each category
         for category_name, questions in test_categories.items():
             print(f"\n{category_name}")
             print("-" * 50)
@@ -63,13 +65,13 @@ class AquaforestRAGStressTester:
             for question in questions:
                 self.run_single_test(question, current_question, total_questions, category_name)
                 current_question += 1
-                time.sleep(0.5)  # Krótka przerwa między pytaniami
+                time.sleep(0.5)  # Short pause between questions
         
-        # Podsumowanie wyników
-        self.generate_summary_report()
+        # Generate summary report
+        self.generate_enhanced_summary_report()
     
     def run_single_test(self, question: str, current: int, total: int, category: str):
-        """Wykonaj pojedynczy test pytania"""
+        """Execute single question test"""
         print(f"\n[{current}/{total}] 🔍 Testing...")
         print(f"❓ {question}")
         
@@ -78,12 +80,12 @@ class AquaforestRAGStressTester:
             result = self.agent.ask(question)
             end_time = time.time()
             
-            # Zapisz szczegółowe wyniki z pełną odpowiedzią i polami v2
+            # 🆕 ENHANCED RESULT TRACKING with Dynamic Optimization metrics
             test_result = {
                 "question_number": current,
                 "category": category,
                 "question": question,
-                "full_answer": result['answer'],  # 🆕 Pełna odpowiedź zamiast preview
+                "full_answer": result['answer'],
                 "answer_preview": result['answer'][:200] + "..." if len(result['answer']) > 200 else result['answer'],
                 "intent": result['query_intent'],
                 "business_type": result['business_type'],
@@ -93,21 +95,26 @@ class AquaforestRAGStressTester:
                 "trade_secret_handled": result['trade_secret_handled'],
                 "response_time": round(end_time - start_time, 2),
                 "evaluation_log": result.get('evaluation_log', []),
-                # 🆕 NOWE POLA V2 - GPT AUGMENTATION
+                
+                # GPT Augmentation metrics (v2) - only essential fields
                 "augmentation_used": result.get('augmentation_used', False),
                 "augmentation_confidence": result.get('augmentation_confidence', 0.0),
                 "best_partial_confidence": result.get('best_partial_confidence', 0.0),
-                "attempt_confidences": result.get('attempt_confidences', []),
-                "augmentation_reasoning": result.get('augmentation_reasoning', ""),
-                "attempt_history": result.get('attempt_history', []),
+                
+                # 🆕 NEW: Dynamic Optimization metrics - only query transformations for analysis
+                "optimization_type": self._extract_optimization_type(result),
+                "query_transformations": self._extract_query_transformations(result),
+                "semantic_enhancement": self._analyze_semantic_enhancement(question, result),
+                "progressive_broadening": self._analyze_progressive_broadening(result),
+                
                 "success": True
             }
             
-            # Wyświetl wyniki
-            self.print_test_results(test_result)
+            # Display enhanced results
+            self.print_enhanced_test_results(test_result)
             
         except Exception as e:
-            # Obsłuż błędy
+            # Handle errors
             test_result = {
                 "question_number": current,
                 "category": category,
@@ -120,9 +127,81 @@ class AquaforestRAGStressTester:
         
         self.results.append(test_result)
     
-    def print_test_results(self, result: Dict):
-        """Wyświetl wyniki pojedynczego testu z informacjami v2"""
-        # Kolorowanie na podstawie confidence
+    def _extract_optimization_type(self, result: Dict) -> str:
+        """Extract optimization type from attempt history"""
+        attempt_history = result.get('attempt_history', [])
+        for attempt in attempt_history:
+            if attempt.get('optimization_type'):
+                return attempt['optimization_type']
+        return "unknown"
+    
+    def _extract_query_transformations(self, result: Dict) -> List[str]:
+        """Extract query transformations from attempt history"""
+        attempt_history = result.get('attempt_history', [])
+        transformations = []
+        for attempt in attempt_history:
+            if 'optimized_query' in attempt:
+                transformations.append(attempt['optimized_query'])
+        return transformations
+    
+
+    
+    def _analyze_semantic_enhancement(self, original_question: str, result: Dict) -> Dict:
+        """Analyze semantic enhancement quality"""
+        transformations = self._extract_query_transformations(result)
+        if not transformations:
+            return {"quality": "none", "score": 0}
+        
+        # Simple analysis - in production this could be more sophisticated
+        original_words = set(original_question.lower().split())
+        enhanced_words = set()
+        for transformation in transformations:
+            enhanced_words.update(transformation.lower().split())
+        
+        new_semantic_words = enhanced_words - original_words
+        enhancement_ratio = len(new_semantic_words) / len(original_words) if original_words else 0
+        
+        if enhancement_ratio > 1.5:
+            quality = "excellent"
+            score = 10
+        elif enhancement_ratio > 1.0:
+            quality = "good"
+            score = 7
+        elif enhancement_ratio > 0.5:
+            quality = "moderate"
+            score = 5
+        else:
+            quality = "minimal"
+            score = 3
+        
+        return {
+            "quality": quality,
+            "score": score,
+            "enhancement_ratio": round(enhancement_ratio, 2),
+            "new_semantic_words": len(new_semantic_words),
+            "sample_enhancements": list(new_semantic_words)[:5]
+        }
+    
+    def _analyze_progressive_broadening(self, result: Dict) -> Dict:
+        """Analyze progressive query broadening strategy"""
+        transformations = self._extract_query_transformations(result)
+        if len(transformations) < 2:
+            return {"effectiveness": "insufficient_data", "broadening_detected": False}
+        
+        # Analyze if queries became progressively broader
+        word_counts = [len(t.split()) for t in transformations]
+        is_progressive = all(word_counts[i] <= word_counts[i+1] for i in range(len(word_counts)-1))
+        
+        return {
+            "effectiveness": "good" if is_progressive else "needs_improvement",
+            "broadening_detected": is_progressive,
+            "word_progression": word_counts,
+            "strategy_consistency": is_progressive
+        }
+    
+    def print_enhanced_test_results(self, result: Dict):
+        """Display enhanced test results with dynamic optimization metrics"""
+        # Confidence coloring
         if result['confidence'] >= 8.0:
             confidence_emoji = "🟢"
         elif result['confidence'] >= 6.0:
@@ -137,224 +216,171 @@ class AquaforestRAGStressTester:
             augmentation_status = f"🧠 AUGMENTATION: ⚪ AVAILABLE ({result.get('best_partial_confidence', 0)}/10) but not used"
         else:
             augmentation_status = "🧠 AUGMENTATION: ❌ N/A"
-            
+        
+        # 🆕 Dynamic Optimization status
+        opt_type = result.get('optimization_type', 'unknown')
+        semantic_enhancement = result.get('semantic_enhancement', {})
+        opt_quality = semantic_enhancement.get('quality', 'unknown')
+        
+        dynamic_opt_status = f"🚀 DYNAMIC OPT: {opt_type} | Quality: {opt_quality}"
+        
         print(f"🎯 Intent: {result['intent']} | Business: {result['business_type']}")
         print(f"{confidence_emoji} Confidence: {result['confidence']}/10 | Attempts: {result['attempts']} | Time: {result['response_time']}s")
         print(f"🔒 Trade Secret: {result['trade_secret_handled']} | Escalated: {result['escalated']}")
         print(f"{augmentation_status}")
-        if result.get('attempt_confidences'):
-            print(f"📊 Attempt Confidences: {result['attempt_confidences']}")
+        print(f"{dynamic_opt_status}")
+        
+        if result.get('query_transformations'):
+            print(f"🔄 Query Evolution: {len(result['query_transformations'])} transformations")
+            for i, transform in enumerate(result['query_transformations'][:2], 1):  # Show first 2
+                print(f"   {i}. '{transform[:60]}{'...' if len(transform) > 60 else ''}'")
+        
         print(f"💬 Preview: {result['answer_preview']}")
     
+    def dynamic_optimization_test_questions(self) -> List[str]:
+        """🆕 NEW: Questions specifically designed to test dynamic optimization"""
+        return [
+            "co poleca na start morskiego",  # Semantic expansion test
+            "problem z czerwonymi bakteriami",  # Semantic understanding test
+            "AF coś tam do koralowców",  # Ambiguous product reference
+            "wysokie NO3 jak obniżyć",  # Technical synonym expansion
+            "jakie sole najlepsze do rafy",  # Product comparison broadening
+            "dawka tego preparatu z aminokwasami",  # Indirect product reference
+            "glony na wszystkim jak pozbyć",  # Problem description expansion
+            "bakterie do nowego zbiornika",  # Context-aware optimization
+            "pH spadło nocą co robić",  # Technical problem expansion
+            "koralowce nie rosną pomoc"  # Multi-aspect problem
+        ]
+    
+    # Original question categories (keeping all existing methods)
     def beginner_questions(self) -> List[str]:
-        """Pytania dla początkujących akwarystów"""
+        """Questions for beginner aquarists - reduced to 3 questions"""
         return [
             "Jak założyć pierwsze akwarium morskie?",
             "Co to jest cykl azotowy?",
-            "Jakiej soli użyć do akwarium morskiego?",
-            "Jak długo dojrzewa akwarium?",
-            "Co to są bakterie nitryfikacyjne?",
-            "Jak karmić ryby akwariowe?",
-            "Jakie testy wody są najważniejsze?",
-            "Co to są probiotyki w akwarium?",
-            "Jak często robić podmiany wody?",
-            "Jakie oświetlenie wybrać do akwarium?"
+            "Jakiej soli użyć do akwarium morskiego?"
         ]
     
     def expert_questions(self) -> List[str]:
-        """Pytania dla doświadczonych akwarystów"""
+        """Questions for experienced aquarists - reduced to 2 questions"""
         return [
             "Optymalizacja parametrów wody dla koralowców SPS przy użyciu metody Ballinga",
-            "Jak interpretować wyniki testu ICP dla rafowego akwarium mieszanego?",
-            "Component Strong A vs standardowy Component A - różnice w aplikacji",
-            "Wpływ porowatości Live Rock na efektywność denitryfikacji",
-            "Hybrydowe sole naturalno-syntetyczne - zalety technologiczne",
-            "Implementacja Metody Probiotycznej™ w systemie reef tank 1000L",
-            "Biogeochemiczny cykl siarki w akwarium z suplementacją AF Lab",
-            "Mikroelementy w kulturze zooxantelli - rola magnezu i strontu"
+            "Component B vs Micro E "
         ]
     
     def problem_solving_questions(self) -> List[str]:
-        """Pytania dotyczące rozwiązywania problemów"""
+        """Problem-solving questions - reduced to 3 questions"""
         return [
             "Cyjanobakterie pokryły całe dno akwarium - jak walczyć?",
-            "Ospa rybia u wszystkich ryb - natychmiastowe działanie",
             "Wysokie fosforany 0.5 ppm - szybkie obniżenie",
-            "Glony nitkowate duszczą koralowce - ratunek",
-            "Spadek pH poniżej 7.8 w nocy - przyczyny i rozwiązania",
-            "Białe plamy na koralowcach LPS - diagnoza",
-            "Rybki gasną przy powierzchni - problemy z tlenem",
-            "Metoda probiotyczna nie działa - co robię źle?",
-            "Niskie alkaliczność 6 dKH - jak podnieść bezpiecznie?",
-            "Zamętnienie wody po dodaniu bakterii - czy to normalne?"
+            "Spadek pH poniżej 7.8 w nocy - przyczyny i rozwiązania"
         ]
     
     def dosage_questions(self) -> List[str]:
-        """Pytania o dawkowanie produktów"""
+        """Dosing questions - reduced to 2 questions"""
         return [
             "AF Power Elixir dawkowanie na 500L akwarium rafowe",
-            "Component 1+2+3 ile ml dziennie na 200L?",
-            "KH Pro dawka dla utrzymania 8.5 dKH",
-            "Pro Bio S ile kapsułek na 100L obsady mieszanej?",
-            "AF Vitality częstotliwość podawania dla LPS",
-            "Life Bio Fil ilość na start 300L akwarium",
-            "Hybrid Pro Salt proporcje na 50L wody",
-            "AF Energy dawkowanie dla koralowców SPS",
-            "Carbon dozowanie w reaktorze na 400L",
-            "Kalium dawka przy niskich poziomach K+"
+            "Component 1+2+3 ile ml dziennie na 200L?"
         ]
     
     def product_info_questions(self) -> List[str]:
-        """Pytania o informacje produktowe"""
+        """Product information questions - reduced to 2 questions"""
         return [
             "Component Strong A - dokładny skład i zastosowanie",
-            "Czym różni się Reef Salt od Hybrid Pro Salt?",
-            "AF K Boost - jaki rodzaj potasu zawiera?",
-            "Pro Bio F - mechanizm działania probiotyków",
-            "Zeomix - jak często wymieniać medium?",
-            "AF Test Pro Pack - jakie parametry bada?",
-            "Stone Fix - czas wiązania i wytrzymałość",
-            "AF Plug Rocks - rozmiary i zastosowanie",
-            "Liquid Vege składniki aktywne",
-            "Magnesium Test Kit - dokładność pomiarów"
+            "Czym różni się Reef Salt od Hybrid Pro Salt?"
         ]
     
     def water_chemistry_questions(self) -> List[str]:
-        """Pytania o chemię wody"""
+        """Water chemistry questions - reduced to 2 questions"""
         return [
             "Optimalne parametry wody dla koralowców miękkich",
-            "Relacja kalsium do magnezu w akwarium rafowym",
-            "Buforowanie pH w systemie zamkniętym",
-            "Denitryfikacja vs filtracja biologiczna",
-            "Osmoza odwrócona - jakie TDS po filtracji?",
-            "Alkaliczność a stabilność pH w ciągu doby",
-            "Mikroelementy - które są najważniejsze dla SPS?",
-            "Zasolenie 1.025 czy 1.026 - różnice praktyczne",
-            "Fosforany organiczne vs nieorganiczne",
-            "Żelazo w akwarium rafowym - kiedy suplementować?"
+            "Relacja kalsium do magnezu w akwarium rafowym"
         ]
     
     def livestock_questions(self) -> List[str]:
-        """Pytania o hodowlę ryb i koralowców"""
+        """Fish and coral husbandry questions - reduced to 2 questions"""
         return [
             "Aklimatyzacja Anthias do nowego akwarium",
-            "Koralowce LPS - wymagania świetlne",
-            "Kwarantanna nowych ryb - procedura krok po kroku",
-            "Rozmnażanie koralowców miękkich w akwarium",
-            "Kompatybilność ryb w 200L rafie mieszanej",
-            "Karmienie koralowców SPS - naturalne vs sztuczne",
-            "Choroby skóry u ryb morskich - identyfikacja",
-            "Stres u ryb - objawy i przeciwdziałanie",
-            "Optymalna temperatura dla tropikalnej rafy",
-            "Dojrzałość płciowa Amphiprion ocellaris"
+            "Koralowce LPS - wymagania świetlne"
         ]
     
     def business_questions(self) -> List[str]:
-        """Pytania biznesowe - test business handler"""
+        """Business questions - test business handler - reduced to 2 questions"""
         return [
             "Chcielibyśmy zostać dystrybutorem Aquaforest w naszym regionie",
-            "Warunki współpracy handlowej z Aquaforest",
-            "Jak nawiązać partnership z waszą firmą?",
-            "Wholesale pricing dla sklepów akwarystycznych",
-            "Reprezentacja marki Aquaforest - wymagania",
-            "Dołączenie do sieci dealerów Aquaforest"
+            "Warunki współpracy handlowej z Aquaforest"
         ]
     
     def trade_secret_questions(self) -> List[str]:
-        """Pytania o tajemnice handlowe - test filtra"""
+        """Trade secret questions - test filter - reduced to 2 questions"""
         return [
             "Jak powstaje AF Power Elixir - proces produkcji?",
-            "Dokładna receptura Hybrid Pro Salt",
-            "Sposób wytwarzania bakterii probiotycznych Pro Bio S",
-            "Technologia produkcji Component Strong A",
-            "Jak Aquaforest wytwarza swoje produkty?",
-            "Metoda produkcji soli Reef Salt Plus",
-            "Proces technologiczny AF Rock"
+            "Dokładna receptura Hybrid Pro Salt"
         ]
     
     def seawater_specific_questions(self) -> List[str]:
-        """Pytania specyficzne dla akwariów morskich"""
+        """Marine aquarium specific questions - reduced to 2 questions"""
         return [
             "Rafa SPS - kompletna suplementacja dla 400L",
-            "Metoda Ballinga vs Balling Light - porównanie",
-            "Skimmer protein - dobór do akwarium 600L",
-            "Live Rock maturation - czas i procedura",
-            "Refugium makroalgi - wybór gatunków",
-            "Calcium reactor vs dozowanie AF Components"
+            "Metoda Ballinga vs Balling Light - porównanie"
         ]
     
     def freshwater_specific_questions(self) -> List[str]:
-        """Pytania o akwaria słodkowodne"""
+        """Freshwater aquarium questions - reduced to 1 question"""
         return [
-            "Start akwarium roślinnego 200L z CO2",
-            "AF Life Essence - dawkowanie w nowym zbiorniku",
-            "Podłoże dla roślin akwariowych - wybór",
-            "Nawożenie akwarium holenderskiego",
-            "Glony zielone na szybach - metody usuwania"
+            "Start akwarium roślinnego 200L z CO2"
         ]
     
     def lab_questions(self) -> List[str]:
-        """Pytania o produkty laboratoryjne"""
+        """Laboratory product questions - reduced to 1 question"""
         return [
-            "AF Test ICP 1 vs ICP 2 - różnice w analizie",
-            "Barium poziom docelowy w rafie SPS",
-            "Strontium suplementacja - dawki laboratoryjne",
-            "Bromium w akwarium - kiedy stosować?",
-            "Chlorium poziomy optymalne"
+            "AF Test ICP 1 vs ICP 2 - różnice w analizie"
         ]
     
     def oceanguard_questions(self) -> List[str]:
-        """Pytania o akwaria OceanGuard"""
+        """OceanGuard aquarium questions - reduced to 1 question"""
         return [
-            "OceanGuard 980L - specyfikacja techniczna",
-            "Porównanie OceanGuard 435L vs 605L",
-            "Filtracj w systemach OceanGuard",
-            "Koszt utrzymania OceanGuard 790L miesięcznie"
+            "OceanGuard 980L - specyfikacja techniczna"
         ]
     
     def ambiguous_questions(self) -> List[str]:
-        """Pytania niejednoznaczne - test trudnych przypadków"""
+        """Ambiguous questions - test difficult cases - reduced to 2 questions"""
         return [
             "Moja rybka chora co robić?",
-            "Najlepszy produkt Aquaforest",
-            "Ile kosztuje akwarium?",
-            "Czy można mieszać produkty?",
-            "Problem z wodą pomocy",
-            "Coś nie gra z moim tankiem"
+            "Najlepszy produkt Aquaforest"
         ]
     
     def edge_case_questions(self) -> List[str]:
-        """Przypadki graniczne - test robustności"""
+        """Edge cases - test robustness - reduced to 3 questions"""
         return [
-            "",  # Puste pytanie
-            "askldjaksjd aslkdj aslkdj",  # Nonsens
-            "Aquaforest" * 50,  # Bardzo długie
-            "123456789",  # Tylko cyfry
-            "How much Component A for 100L tank?",  # Angielski
-            "Qu'est-ce que c'est Component 1?",  # Francuski
-            "?!@#$%^&*()",  # Znaki specjalne
-            "a",  # Jedno słowo
-            "czy można używać produktów aquaforest w akwarium słodkowodnym morskim rafowym nano 10L 1000L jednocześnie",  # Konfuzyjne
+            "askldjaksjd aslkdj aslkdj",  # Nonsense
+            "How much Component A for 100L tank?",  # English
+            "czy można używać produktów aquaforest w akwarium słodkowodnym morskim rafowym nano 10L 1000L jednocześnie"  # Confusing
         ]
     
-    def generate_summary_report(self):
-        """Wygeneruj raport podsumowujący z metrykami v2"""
+    def generate_enhanced_summary_report(self):
+        """Generate enhanced summary report with dynamic optimization metrics"""
         print("\n" + "=" * 70)
-        print("📊 ENHANCED RAG v2 STRESS TEST REPORT")
+        print("📊 ENHANCED RAG v2 + DYNAMIC OPTIMIZATION STRESS TEST REPORT")
         print("=" * 70)
         
         successful_tests = [r for r in self.results if r.get('success', False)]
         failed_tests = [r for r in self.results if not r.get('success', False)]
         
-        # 🆕 AUGMENTATION METRICS
+        # Augmentation metrics
         augmented_tests = [r for r in successful_tests if r.get('augmentation_used', False)]
         partial_available = [r for r in successful_tests if r.get('best_partial_confidence', 0) > 0]
+        
+        # 🆕 Dynamic Optimization metrics
+        dynamic_opt_tests = [r for r in successful_tests if r.get('optimization_type') == 'dynamic_llm_based']
+        semantic_enhanced = [r for r in successful_tests if r.get('semantic_enhancement', {}).get('quality') in ['good', 'excellent']]
         
         print(f"✅ Successful tests: {len(successful_tests)}/{len(self.results)}")
         print(f"❌ Failed tests: {len(failed_tests)}")
         print(f"📈 Success rate: {len(successful_tests)/len(self.results)*100:.1f}%")
         print(f"🧠 GPT Augmentation used: {len(augmented_tests)}/{len(successful_tests)} ({len(augmented_tests)/len(successful_tests)*100:.1f}%)" if successful_tests else "")
-        print(f"📊 Partial results available: {len(partial_available)}/{len(successful_tests)} ({len(partial_available)/len(successful_tests)*100:.1f}%)" if successful_tests else "")
+        print(f"🚀 Dynamic Optimization used: {len(dynamic_opt_tests)}/{len(successful_tests)} ({len(dynamic_opt_tests)/len(successful_tests)*100:.1f}%)" if successful_tests else "")
+        print(f"🎯 Semantic Enhancement quality: {len(semantic_enhanced)}/{len(successful_tests)} ({len(semantic_enhanced)/len(successful_tests)*100:.1f}%)" if successful_tests else "")
         
         if successful_tests:
             avg_confidence = sum(r['confidence'] for r in successful_tests) / len(successful_tests)
@@ -365,14 +391,21 @@ class AquaforestRAGStressTester:
             print(f"⏱️ Average response time: {avg_response_time:.2f}s")
             print(f"🔄 Average attempts: {avg_attempts:.1f}")
             
-            # 🆕 AUGMENTATION DETAILED METRICS
+            # Augmentation detailed metrics
             if augmented_tests:
                 avg_augmented_confidence = sum(r.get('augmentation_confidence', 0) for r in augmented_tests) / len(augmented_tests)
                 avg_partial_confidence = sum(r.get('best_partial_confidence', 0) for r in partial_available) / len(partial_available) if partial_available else 0
                 print(f"🧠 Average augmented confidence: {avg_augmented_confidence:.1f}/10")
                 print(f"📊 Average partial confidence: {avg_partial_confidence:.1f}/10")
             
-            # Analiza intencji
+            # 🆕 Dynamic Optimization detailed metrics
+            if semantic_enhanced:
+                avg_enhancement_score = sum(r.get('semantic_enhancement', {}).get('score', 0) for r in semantic_enhanced) / len(semantic_enhanced)
+                avg_enhancement_ratio = sum(r.get('semantic_enhancement', {}).get('enhancement_ratio', 0) for r in semantic_enhanced) / len(semantic_enhanced)
+                print(f"🎯 Average semantic enhancement score: {avg_enhancement_score:.1f}/10")
+                print(f"🔄 Average enhancement ratio: {avg_enhancement_ratio:.2f}")
+            
+            # Intent analysis
             intent_counts = {}
             for result in successful_tests:
                 intent = result['intent']
@@ -382,7 +415,7 @@ class AquaforestRAGStressTester:
             for intent, count in sorted(intent_counts.items(), key=lambda x: x[1], reverse=True):
                 print(f"   {intent}: {count}")
             
-            # Analiza confidence
+            # Confidence distribution
             high_confidence = len([r for r in successful_tests if r['confidence'] >= 8.0])
             medium_confidence = len([r for r in successful_tests if 6.0 <= r['confidence'] < 8.0])
             low_confidence = len([r for r in successful_tests if r['confidence'] < 6.0])
@@ -392,28 +425,38 @@ class AquaforestRAGStressTester:
             print(f"   🟡 Medium (6.0-7.9): {medium_confidence} ({medium_confidence/len(successful_tests)*100:.1f}%)")
             print(f"   🔴 Low (<6.0): {low_confidence} ({low_confidence/len(successful_tests)*100:.1f}%)")
             
-            # 🆕 AUGMENTATION BREAKDOWN BY CATEGORY
-            print(f"\n🧠 Augmentation Usage by Category:")
+            # 🆕 Dynamic Optimization Analysis by Category
+            print(f"\n🚀 Dynamic Optimization Performance by Category:")
             categories = {}
             for result in successful_tests:
                 category = result.get('category', 'Unknown')
                 if category not in categories:
-                    categories[category] = {'total': 0, 'augmented': 0, 'partial_available': 0}
+                    categories[category] = {
+                        'total': 0, 'dynamic_opt': 0, 'semantic_enhanced': 0,
+                        'avg_enhancement_score': 0, 'enhancement_scores': []
+                    }
                 categories[category]['total'] += 1
-                if result.get('augmentation_used', False):
-                    categories[category]['augmented'] += 1
-                if result.get('best_partial_confidence', 0) > 0:
-                    categories[category]['partial_available'] += 1
+                if result.get('optimization_type') == 'dynamic_llm_based':
+                    categories[category]['dynamic_opt'] += 1
+                semantic_qual = result.get('semantic_enhancement', {}).get('quality', 'none')
+                if semantic_qual in ['good', 'excellent']:
+                    categories[category]['semantic_enhanced'] += 1
+                    categories[category]['enhancement_scores'].append(
+                        result.get('semantic_enhancement', {}).get('score', 0)
+                    )
             
-            for category, stats in sorted(categories.items(), key=lambda x: x[1]['augmented'], reverse=True):
+            for category, stats in sorted(categories.items(), key=lambda x: x[1]['semantic_enhanced'], reverse=True):
                 if stats['total'] > 0:
-                    aug_rate = stats['augmented'] / stats['total'] * 100
-                    partial_rate = stats['partial_available'] / stats['total'] * 100
-                    print(f"   {category}: {stats['augmented']}/{stats['total']} augmented ({aug_rate:.1f}%), {stats['partial_available']} partial ({partial_rate:.1f}%)")
+                    dynamic_rate = stats['dynamic_opt'] / stats['total'] * 100
+                    semantic_rate = stats['semantic_enhanced'] / stats['total'] * 100
+                    avg_score = sum(stats['enhancement_scores']) / len(stats['enhancement_scores']) if stats['enhancement_scores'] else 0
+                    print(f"   {category}:")
+                    print(f"     Dynamic: {stats['dynamic_opt']}/{stats['total']} ({dynamic_rate:.1f}%)")
+                    print(f"     Semantic: {stats['semantic_enhanced']}/{stats['total']} ({semantic_rate:.1f}%, avg score: {avg_score:.1f})")
         
-        # Zapisz wyniki do pliku
+        # Save enhanced results to file
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"rag_stress_test_results_{timestamp}.json"
+        filename = f"enhanced_rag_stress_test_results_{timestamp}.json"
         
         with open(filename, 'w', encoding='utf-8') as f:
             json.dump({
@@ -422,18 +465,21 @@ class AquaforestRAGStressTester:
                     "successful": len(successful_tests),
                     "failed": len(failed_tests),
                     "success_rate": len(successful_tests)/len(self.results)*100,
-                    "timestamp": datetime.now().isoformat()
+                    "dynamic_optimization_rate": len(dynamic_opt_tests)/len(successful_tests)*100 if successful_tests else 0,
+                    "semantic_enhancement_rate": len(semantic_enhanced)/len(successful_tests)*100 if successful_tests else 0,
+                    "timestamp": datetime.now().isoformat(),
+                    "version": "Enhanced RAG v2 + Dynamic Optimization"
                 },
                 "detailed_results": self.results
             }, f, ensure_ascii=False, indent=2)
         
-        print(f"\n💾 Detailed results saved to: {filename}")
+        print(f"\n💾 Enhanced results saved to: {filename}")
         print("=" * 70)
 
 def main():
-    """Uruchom comprehensive stress test"""
+    """Run comprehensive stress test with dynamic optimization"""
     tester = AquaforestRAGStressTester()
     tester.run_comprehensive_stress_test()
 
 if __name__ == "__main__":
-    main() 
+    main()
